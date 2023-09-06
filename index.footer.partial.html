@@ -2,7 +2,20 @@
 	<div class="footer__container-contact">
 		<div class="contact__call">
 			<div class="contact__call-title">CALL US</div>
-			<p class="contact__call-number">+1 (234) 567 8900</p>
+			<a href="tel:+12345678900" class="contact__call-number">+1 (234) 567 8900</a>
+			<!-- 
+					<div id="phone-block" onclick="showPhoneNumberPopup()">+1 (234) 567 8900</div>
+через js
+	<script>
+		function showPhoneNumberPopup() {
+			const phoneNumber = "+12345678900";
+			const confirmation = confirm(`Call ${phoneNumber}?`);
+			if (confirmation) {
+				window.location.href = `tel:${phoneNumber}`;
+			}
+		}
+	</script>
+ -->
 		</div>
 		<div class="contact__subscription">
 			<p class="contact__subscription-description">Subscribe to our newsletter and be aware of all of our new products,
