@@ -1,4 +1,5 @@
 @import url(global.css);
+@import url(index.cards-container.css);
+@import url(index.carousel-any-products-container.css);
 @import url(index.dry-food-treats.partial.css);
-@import url(index.our-news-articles.partial.css
-);
+@import url(index.our-news-articles.partial.css);
