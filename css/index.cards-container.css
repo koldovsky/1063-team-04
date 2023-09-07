@@ -1,0 +1,19 @@
+/* card__content-brands background */
+.card__content-brands {
+    background-image: url(../img/cards-container-backgroud/cards-container-background-1.webp);
+    background-size: cover;
+}
+
+.card__text-brands {
+    font-size: inherit;
+}
+
+.card__content-sale {
+    background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
+    background-size: cover;
+}
+
+.card__text-brands {
+    color: #ed6435;
+}
+
