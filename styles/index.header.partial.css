@@ -1,3 +1,23 @@
-h1 {
-  color: rgb(237, 100, 53)
+.header__info-item {
+  color: rgb(237, 100, 53);
+  font-family: "PT Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  }
+.header__menu-item {
+  color: rgb(107, 107, 107);
+  font-family: "PT Sans", sans-serif;;
+ 
+.header__social-item {
+color: rgb(51, 162, 168);
+  font-family: "PT Sans", sans-serif;
+font-weight: 400;
+  text-align: left;
+  }
+.header__title {
+  color: rgb(60, 55, 49);
+  font-size: 82px;
+font-family: "Baloo 2", cursive;
+  font-weight: 700;
+  line-height: 82px;
 }
