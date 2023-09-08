@@ -1,9 +1,9 @@
-.p {
+.header__info-item {
   color: rgb(237, 100, 53);
   font-family: "PT Sans", sans-serif 15px;
   font-weight: bold;
   }
-.li {
+.header__menu-item {
   color: rgb(107, 107, 107);
   font-family: "PT Sans", sans-serif;;
   margin-block-start: -12.5px   
@@ -14,3 +14,16 @@ margin-left: -20px;;
 margin-right: -20px
 margin-top: -12.5px;
   }
+.header__social-item {
+color: rgb(51, 162, 168);
+  font-family: "PT Sans", sans-serif;
+font-weight: 400;
+  text-align: left;
+  }
+.header__title {
+  color: rgb(60, 55, 49);
+  font-size: 82px;
+font-family: "Baloo 2", cursive;
+  font-weight: 700;
+  line-height: 82px;
+}
