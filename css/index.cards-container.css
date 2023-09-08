@@ -4,16 +4,55 @@
     background-size: cover;
 }
 
-.card__text-brands {
-    font-size: inherit;
+:root {
+    scroll-behavior: smooth;
 }
 
+/* card__content-sale background */
 .card__content-sale {
     background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
     background-size: cover;
 }
 
+/* p brands */
 .card__text-brands {
     color: #ed6435;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif,'Montserrat', sans-serif;
+    font-stretch: 100%;
 }
 
+/* h2 brands */
+.card__title-part {
+display: block;
+color: #3c3731;
+font-size: 44px;
+font-family: 'Baloo 2', cursive;
+line-height: 52.8px;
+max-width: 100%;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+/* button container */
+.card__button {
+    background-color: #ffe6d4;
+    background-position-x: 25px;
+    background-position-y: 25px;
+    border-radius: 50%;
+    width: 123.312px;
+    height: 48.5px;
+    text-align: center;
+    margin: 10px;
+} 
+
+.card__button a {
+    text-decoration: none;
+    display: block;
+}
+
+
+.card__bottom-text {
+    color: #ed6435;
+    font-size: 16.5px; 
+}
