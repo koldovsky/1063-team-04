@@ -1,17 +1,18 @@
+
 .cards {
     padding-top: 60px;
     padding-bottom: 60px;
-    width: 100%;
-    height: 100%;
-}
-
-.xyina {
-    padding-left: 32px;
-    padding-right: 32px;
+    display: flex;
+    justify-content: center; /* Горизонтальне центрування */
+  align-items: center; /* Вертикальне центрування */
+  flex-wrap: wrap; /* Переносити на інший рядок при необхідності */
 }
 
 .card__conteiner {
-    font-weight: 400px;
+    margin: 0;
+    padding: 0;
+     width: 100%;
+    height: 100%;
 }
 
 /* card__content-brands background */
@@ -21,23 +22,34 @@
     height: 100%;
     text-align: left;
     display: inline-block;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
 
 /* card__content-sale background */
 .card__content-sale {
     background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
     background-size: cover;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
     display: inline-block;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 :root {
     scroll-behavior: smooth;
 }
 
+.shoto-tam {
+    padding-right: 32px;
+    padding-left: 32px;
+}
 
 /* BUTCHERS, ROYAL CANIN, PEDIGREE */
 .card__text-brands {
@@ -79,7 +91,7 @@
     margin: 10px;
 } 
 
-/*  */
+/* get 10% Off for Cats & Dogs Stuff */
 .card__text-sale {
     font-size: 30px;
     line-height: 36px;
@@ -87,15 +99,38 @@
     text-align: center;
 }
 
+.card__content-sale {
+    padding-right: 28px;
+    padding-left: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 /* span  card__text-sale*/
 .card__discount {
     color: #ed6435;
 }
 
+.card__button-brands {
+    margin-top: 35px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.opapa {
+   margin: -10px;
+}
+
 .card__button a {
     text-decoration: none;
-    display: block;
+    display: flex;
     text-align: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 10px;
 }
 
 
@@ -105,7 +140,7 @@
 }
 
 .card__button {
-    display: flex;
-    justify-content: center; /* Горизонтальне центрування */
-    align-items: center; /* Вертикальне центрування */
+        display: flex;
+        justify-content: center; /* Горизонтальне центрування */
+        align-items: center; /* Вертикальне центрування */
 }
