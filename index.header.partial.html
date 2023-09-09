@@ -1,43 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-<section style="background-color: #faf4f2;">
-    <nav>
-        <div>
-            <img width="182" src="img/index.header/petshop-logo.svg" alt="Pet Shop Logo">
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Categories</a>
-                </li>
-                <li>
-                    <a href="#">Best Sellers</a>
-                </li>
-                <li>
-                    <a href="#">New Arrivals</a>
-                </li>
-                <li>
-                    <a href="#">Our Shop</a>
-                </li>
-            </ul>
-        </div>
+<header class="header">
+    <section class="header__section-background" style="background-color: #faf4f2">
+    <div class="header__section-info" style="background: #f2e8e4">
+      <p class="header__info-item">Working Hours: 08 AM - 08 PM</p>
+      <p class="header__info-item">Email: happypaw@email.com Phone: +1 (234) 567 89 00</p>
+    </div>
+    <nav class="header__nav">
+      <div class="header__logo-container">
+        <img class="header__logo-image"
+          width="182"
+          src="img/index.header/petshop-logo.svg"
+          alt="Pet Shop Logo"
+        />
+      </div>
+      <div class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">About Us</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Categories</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Best Sellers</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">New Arrivals</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Our Shop</a>
+          </li>
+        </ul>
+        <ul class="header__social-list">
+          <li class="header__social-item">
+            <a class="header__social-link" href="#">Facebook</a>
+          </li>
+          <li class="header__social-item">
+            <a class="header__social-link" href="#">Instagram</a>
+          </li>
+          <li class="header__social-item">
+            <a class="header__social-link" href="#">You Tube</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <h1>Everything Your Pet Needs</h1>
-    <p>Pet supplies, food, and products from the best manufacturers.</p>
-    <div>
-    <a href="#" class="button">About Us</a>
-    <a href="#" class="button">Categories</a>
-</div>
-    <div></div>
-</section>
-    </body>
-</html>
+    <h1 class="header__title">Everything Your Pet Needs</h1>
+
+    <p class="header__description">Pet supplies, food, and products from the best manufacturers.</p>
+
+    <div class="header__buttons">
+      <a href="#" class="button button--primary">About Us</a>
+      <a href="#" class="button">Categories</a>
+      <img class="header__background-image" width="1340" src="img/index.header/header-background.png" alt="Background Photo" />
+    </div>
+  </section>
+</header>

@@ -1,0 +1,111 @@
+.cards {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 100%;
+}
+
+.xyina {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.card__conteiner {
+    font-weight: 400px;
+}
+
+/* card__content-brands background */
+.card__content-brands {
+    background-image: url(../img/cards-container-backgroud/cards-container-background-1.webp);
+    background-size: cover;
+    height: 100%;
+    text-align: left;
+    display: inline-block;
+}
+
+/* card__content-sale background */
+.card__content-sale {
+    background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+/* BUTCHERS, ROYAL CANIN, PEDIGREE */
+.card__text-brands {
+    color: #ed6435;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif,'Montserrat', sans-serif;
+    font-stretch: 100%;
+}
+
+/* Best-Quality and Food for Pets and get 10% Off for Cats & Dogs Stuff */
+.card__title {
+    color: #3c3731;
+    font-family: 'Baloo 2', cursive;
+    font-weight: bold;
+}
+
+/* Best-Quality and Food for Pets */
+.card__title-brands {
+    font-size: 44px;
+    line-height: 52.8px;
+    max-width: 100%;
+}
+
+
+.card__title-part {
+    display: block;
+}
+
+
+/* button container (2) */
+.card__button {
+    background-color: #ffe6d4;
+    background-position-x: 25px;
+    background-position-y: 25px;
+    border-radius: 50%;
+    width: 123.312px;
+    height: 48.5px;
+    text-align: center;
+    margin: 10px;
+} 
+
+/*  */
+.card__text-sale {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* span  card__text-sale*/
+.card__discount {
+    color: #ed6435;
+}
+
+.card__button a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+
+.card__bottom-text {
+    color: #ed6435;
+    font-size: 16.5px; 
+}
+
+.card__button {
+    display: flex;
+    justify-content: center; /* Горизонтальне центрування */
+    align-items: center; /* Вертикальне центрування */
+}

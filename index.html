@@ -7,43 +7,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pet Store</title>
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+<!-- 	<link rel="stylesheet" type="text/css" href="styles/global.css" /> -->
+	<link rel="stylesheet" type="text/css" href="styles/index.css" />
 	<script src="scripts.js"></script>
 </head>
 
 <body>
 
-	<header>
+	<header data-include="index.header.partial.html">
 
 	</header>
-
 
 	<main>
 
 		<!-- Зозуля Ліза -->
 		<section data-include="index.cards-container.partial.html"></section>
+
 		<section data-include="index.carousel-any-products-container.partial.html"></section>
 
 		<!-- Sofiia Yevush -->
 		<section data-include="index.about-us.partial.html"></section>
 
 		<section data-include="index.promotion.partial.html"></section>
+
+		<!-- Anton -->
 		<section data-include="index.recommend.partial.html"></section>
+
+		<section data-include="index.promo.partial.html"></section>
 
 		<!-- Serhii Karpeniuk -->
 		<section data-include="index.trending-products.partial.html"></section>
+
 		<section data-include="index.container-carousel-card.partial.html"></section>
+
+		<!--Zoriana Kovalchuk=-->
+		<section data-include="index.new-arrivals.partial.html"></section>
+
+		<!-- Duma Svyatoslav -->
+		<section data-include="index.testimonials.partial.html"></section>
+
+		<!-- Nestor Kisil -->
+		<section data-include="index.dry-food-treats.partial.html"></section>
+
+		<section data-include="index.our-news-articles.partial.html"></section>
+
 	</main>
 
-	<section data-include="index.header.partial.html"></section>
 	<!--Zoriana Kovalchuk-->
-	<section date-include="index.footer.partial.html"></section>
-
-	<footer>
-
+	<footer data-include="index.footer.partial.html">
 	</footer>
 
 	<section data-include="index.shopping-cart.partial.html"></section>
+
+	<section data-include="index.popup-of-order.partial.html"></section>
+
+	<section data-include="index.scroll-up.partial.html"></section>
 
 	<script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>

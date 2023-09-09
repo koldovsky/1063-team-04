@@ -1,0 +1,23 @@
+/* all block */
+.carousel {
+    text-align: center;
+}
+
+/* block header and carousel */
+.carousel__slides {
+    background-color: aqua;
+}
+
+.carousel__header-top-text {
+    color: #3c3731;
+    font-family: 'Baloo 2', cursive;
+    font-size: 44px;
+    word-wrap: break-word;
+    font-weight: bold;
+    line-height: 52.8px;
+}
+
+/* logo bone */
+.carousel__header-logo {
+    hi
+}
