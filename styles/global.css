@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=PT+Sans&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --text-color:#3c3731
+
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 /* .scroll-to-top {

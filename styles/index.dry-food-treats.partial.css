@@ -1,0 +1,58 @@
+.food-section {
+    font-family: 'Baloo 2', cursive;
+    background-color: #faf4f2;
+    text-align: center;
+}
+
+.food-section__title {
+    color: var(--text-color);
+    font-size: inherit;
+    font-size: 30px;
+}
+
+.food-section__image {
+    width: 69px;
+    text-align: center;
+    display: inline-block;
+}
+
+.food-section__description {
+    font-family: 'PT Sans', sans-serif;
+    color: var(--text-color);
+    font-size: 19px;
+}
+
+.food-category__title {
+    color: var(--text-color);
+    font-family: 'Baloo 2', cursive;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 28px;
+    padding-bottom: 12px;
+
+}
+
+.short-line {
+    width: 27.19px;
+    height: 3px;
+    background-color: #45c1c7;
+    border: none;
+}
+
+.food-item__name {
+    font-size: 22px;
+    color: var(--text-color);
+    text-align: center;
+   
+}
+
+.food-item__image {
+    width: 70px;
+    height: 70px;
+    text-align: left;
+   
+    
+}
+
+
+
