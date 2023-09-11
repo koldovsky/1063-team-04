@@ -1,61 +1,57 @@
-
 .cards {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 32px;
     display: flex;
-    justify-content: center; /* Горизонтальне центрування */
-  align-items: center; /* Вертикальне центрування */
-  flex-wrap: wrap; /* Переносити на інший рядок при необхідності */
+    justify-content: center;
+    /* Горизонтальне центрування */
+    align-items: center;
+    /* Вертикальне центрування */
+    flex-wrap: wrap;
+    /* Переносити на інший рядок при необхідності */
 }
 
-.card__conteiner {
-    margin: 0;
-    padding: 0;
-     width: 100%;
-    height: 100%;
+.card__container {
+    display: flex;
+    align-items: center; /* Вертикальне центрування */
 }
+
+.card__content {
+   background-size: cover;
+   text-align: center;
+   min-height: 284.7px;
+   width: 50%;
+   box-sizing: border-box;
+   margin: 0 15px;
+   font-stretch: 100%;
+}
+
+
 
 /* card__content-brands background */
 .card__content-brands {
     background-image: url(../img/cards-container-backgroud/cards-container-background-1.webp);
-    background-size: cover;
-    height: 100%;
     text-align: left;
-    display: inline-block;
-    padding-left: 34px;
-    padding-right: 34px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 34px;
+    border-image-repeat: stretch; /* Розтягувати зображення, щоб заповнити всю межу */
 }
 
 
 /* card__content-sale background */
 .card__content-sale {
     background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
-    background-size: cover;
-    height: 100%;
-    text-align: left;
-    display: inline-block;
-    padding-left: 34px;
-    padding-right: 34px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    text-align: center;
+    padding: 40px 34px;
+    border-image-repeat: stretch; /* Розтягувати зображення, щоб заповнити всю межу */
 }
 
 :root {
     scroll-behavior: smooth;
 }
 
-.shoto-tam {
-    padding-right: 32px;
-    padding-left: 32px;
-}
-
 /* BUTCHERS, ROYAL CANIN, PEDIGREE */
 .card__text-brands {
     color: #ed6435;
     font-size: 14px;
-    font-family: 'PT Sans', sans-serif,'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif, 'Montserrat', sans-serif;
     font-stretch: 100%;
 }
 
@@ -68,9 +64,11 @@
 
 /* Best-Quality and Food for Pets */
 .card__title-brands {
-    font-size: 44px;
-    line-height: 52.8px;
-    max-width: 100%;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700px;
+    font-stretch: 100%;
+    font-weight: 700px;
 }
 
 
@@ -78,18 +76,6 @@
     display: block;
 }
 
-
-/* button container (2) */
-.card__button {
-    background-color: #ffe6d4;
-    background-position-x: 25px;
-    background-position-y: 25px;
-    border-radius: 50%;
-    width: 123.312px;
-    height: 48.5px;
-    text-align: center;
-    margin: 10px;
-} 
 
 /* get 10% Off for Cats & Dogs Stuff */
 .card__text-sale {
@@ -100,10 +86,7 @@
 }
 
 .card__content-sale {
-    padding-right: 28px;
-    padding-left: 28px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 28px;
 }
 
 /* span  card__text-sale*/
@@ -111,36 +94,35 @@
     color: #ed6435;
 }
 
-.card__button-brands {
-    margin-top: 35px;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-left: 0;
-}
-
-.opapa {
-   margin: -10px;
-}
 
 .card__button a {
     text-decoration: none;
     display: flex;
-    text-align: center;
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 28px;
     margin: 10px;
+    white-space: nowrap; /* Запобігає переносу тексту на іншу лінію */
+}
+
+/* button container (2) */
+.card__button {
+    background-color: #ffe6d4;
+    background-position-x: 25px;
+    background-position-y: 25px;
+    border-radius: 50%;
+    width: 123.312px;
+    height: 48.5px;
+    margin: 10px;
+    padding: 16px 28px;
+    display: flex;
+    justify-content: center;
+    /* Горизонтальне центрування */
+    align-items: center;
+    /* Вертикальне центрування */
 }
 
 
 .card__bottom-text {
     color: #ed6435;
-    font-size: 16.5px; 
+    font-size: 16.5px;
 }
 
-.card__button {
-        display: flex;
-        justify-content: center; /* Горизонтальне центрування */
-        align-items: center; /* Вертикальне центрування */
-}
