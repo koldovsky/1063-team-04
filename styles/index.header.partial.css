@@ -1,23 +1,71 @@
-.header__info-item {
-  color: rgb(237, 100, 53);
-  font-family: "PT Sans", sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  }
-.header__menu-item {
-  color: rgb(107, 107, 107);
-  font-family: "PT Sans", sans-serif;;
- 
-.header__social-item {
-color: rgb(51, 162, 168);
-  font-family: "PT Sans", sans-serif;
-font-weight: 400;
-  text-align: left;
-  }
-.header__title {
-  color: rgb(60, 55, 49);
-  font-size: 82px;
-font-family: "Baloo 2", cursive;
-  font-weight: 700;
-  line-height: 82px;
-}
+.header {
+        background-color: #f2e8e4;
+      }
+      .header__section-info {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+      }
+      .header__info-item {
+        background-color: #f2e8e4;
+        height: 16px;
+        font-weight: bold;
+        font-family: PT Sans;
+        color: rgb(237, 100, 53);
+        font-size: 15px;
+        margin-left: 90px;
+        margin-right: 90px;
+        margin-top: 10px;
+      }
+      .header__logo-image {
+        width: 182;
+        margin-top: -10px;
+      }
+      .header__nav {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+      }
+      .header__logo-container {
+        margin-top: 37px;
+        margin-left: 93px;
+      }
+      .header__menu-list {
+        font-size: 0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex: 1;
+      }
+      .header__menu-item {
+        font-size: 15px;
+        margin: -100px;
+        padding-left: 60px;
+        display: inline-block;
+        justify-content: center;
+        margin-left: 80px;
+        margin-top: 80px;
+        margin-block: 40px;
+      }
+      .header__menu-link {
+        font-weight: bold;
+        color: #6b6b6b;
+        font-family: PT Sans;
+      }
+      .header__social-list {
+        align-items: center;
+      }
+      .header__social-item {
+      }
+      .header__social-link {
+        color: rgb(69, 193, 199);
+      }
+      <!--can be not correct -->
+      .header__title {
+        font-family: Baloo 2;
+        font-weight: bold;
+        color: rgb(60, 55, 49);
+        font-size: 82px;
+        font-stretch: 100%;
+      }
