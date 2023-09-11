@@ -1,5 +1,9 @@
 /* all block */
 .carousel {
+    margin-top: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 120px;
     text-align: center;
 }
 
@@ -17,4 +21,24 @@
     line-height: 52.8px;
 }
 
+.carousel__header-text {
+    color: rgb(149, 139, 126);
+    margin-top: 20px;
+    font-size: 19px;
+    font-stretch: 100%;
+}
+
+.carousel__header-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /* logo bone */
+.carousel__header-logo {
+    padding-top: 27.5px;
+}
+
+.carousel__image-item {
+  
+}
+ 
