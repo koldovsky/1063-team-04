@@ -1,0 +1,3 @@
+.smooth-scroll {
+    transition: scroll-behavior 0.5s ease-in-out;
+}

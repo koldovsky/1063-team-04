@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.smooth-scroll {
+    transition: scroll-behavior 0.5s ease-in-out;
+}
+
+.cta {
+    background-image: url('../img/promotion/cta.jpg');
+    background-size: cover; 
+    height: 1000px;
+    width: 1515px;
+    display: inline-block;
+}
+
+.promotion {
+    color: #45C1C7;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+}
+
+.cat-week {
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    color: #3C3731;
+    font-size: 80px;
+}
+
+.special-prices {
+    color: #958B7E;
+    font-size: 20px;
+    font-family: "PT Sans", sans-serif;
+}
+
+.discount {
+    color: #ED6435;
+    font-weight: bold;
+}
