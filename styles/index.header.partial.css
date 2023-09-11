@@ -10,7 +10,7 @@
         background-color: #f2e8e4;
         height: 16px;
         font-weight: bold;
-        font-family: PT Sans;
+        font-family: "PT Sans";
         color: rgb(237, 100, 53);
         font-size: 15px;
         margin-left: 90px;
@@ -51,7 +51,7 @@
       .header__menu-link {
         font-weight: bold;
         color: #6b6b6b;
-        font-family: PT Sans;
+        font-family: "PT Sans";
       }
       .header__social-list {
         align-items: center;
@@ -61,9 +61,9 @@
       .header__social-link {
         color: rgb(69, 193, 199);
       }
-      <!--can be incorrect -->
+      
       .header__title {
-        font-family: Baloo 2;
+        font-family: "Baloo 2";
         font-weight: bold;
         color: rgb(60, 55, 49);
         font-size: 82px;
