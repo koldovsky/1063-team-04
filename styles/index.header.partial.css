@@ -57,6 +57,12 @@
         align-items: center;
       }
       .header__social-item {
+        margin-bottom: -15px;
+        margin-right: -7.5px;
+        margin-left: -7.5px;
+        width: 30px;
+        margin: 5px;
+      }
       }
       .header__social-link {
         color: rgb(69, 193, 199);
@@ -67,5 +73,5 @@
         font-weight: bold;
         color: rgb(60, 55, 49);
         font-size: 82px;
-        font-stretch: 100%;
+        display: block;
       }
