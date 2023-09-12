@@ -1,58 +1,88 @@
 .food-section {
-    font-family: 'Baloo 2', cursive;
-    background-color: #faf4f2;
+    background-color: var(--light-pink);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    font-size: 30px;
+    margin-bottom: 20px;
     text-align: center;
+    font-family: 'Baloo 2', cursive;
+    color: var(--dark-grey);
 }
 
 .food-section__title {
-    color: var(--text-color);
-    font-size: inherit;
     font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .food-section__image {
+    object-fit: contain;
+    object-position: 50% 50%;
     width: 69px;
-    text-align: center;
-    display: inline-block;
+
 }
 
 .food-section__description {
-    font-family: 'PT Sans', sans-serif;
-    color: var(--text-color);
     font-size: 19px;
+    line-height: 1.5;
+    font-family: 'PT Sans', sans-serif;
+    color: var();
+}
+
+
+.food-category {
+    margin-bottom: 20px;
+    text-align: right
+    
 }
 
 .food-category__title {
-    color: var(--text-color);
-    font-family: 'Baloo 2', cursive;
-    text-align: left;
-    margin-left: 10px;
     font-size: 28px;
-    padding-bottom: 12px;
-
+    margin-bottom: 10px;
+    text-align: left;
+    color: var(--dark-grey);
 }
 
-.short-line {
-    width: 27.19px;
-    height: 3px;
-    background-color: #45c1c7;
-    border: none;
-}
+/* Food item */
 
-.food-item__name {
-    font-size: 22px;
-    color: var(--text-color);
-    text-align: center;
-   
+.food-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .food-item__image {
     width: 70px;
     height: 70px;
-    text-align: left;
-   
-    
+
 }
 
+.food-item__name {
+    font-size: 22px;
+    color: var(--dark-grey);
+    font-weight: bold;
+}
 
+.food-item__price {
+    font-size: 14px;
+    text-align: right;
+}
 
+.food-item__ingredients {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--gray-olive);
+}
+
+.food-item__ingredients li {
+    margin-bottom: 5px;
+}
+
+.short-line {
+    height: 3px;
+    width: 27.19px;
+    border: none;
+    background-color: var(--seashell);
+}

@@ -8,12 +8,17 @@
 
 :root {
   scroll-behavior: smooth;
-  --text-color: #3c3731;
+  --dark-grey: #3c3731;
   --text-color: #f2E8E4;
   --text-color: #faf4f2;
   --ui-subtitle-color: #958b7e;
   --black-color: #121212;
+  --light-pink: #faf4f2;
+  --gray-olive: #958B7E;
+  --seashell: #45c1c7;
+  --tangerine:#ed6435;
 }
+
 /* 
 img {
   display: block;
