@@ -63,11 +63,8 @@
         align-items: center;
       }
       .header__social-item {
-        margin-bottom: -15px;
-        margin-right: -7.5px;
-        margin-left: -7.5px;
-        width: 30px;
-        margin: 5px;
+            width: 6%;
+        list-style-type: none;
       }
       }
       .header__social-link {
