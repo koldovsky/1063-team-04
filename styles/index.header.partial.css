@@ -73,5 +73,7 @@
         font-weight: bold;
         color: rgb(60, 55, 49);
         font-size: 82px;
-        display: block;
+        padding-left: 70px;
+        padding-top: 70px;
+        display: block;   
       }
