@@ -6,6 +6,12 @@
         flex: 1;
         justify-content: space-between;
       }
+      @media (min-width: 500px) {
+      
+      .header__section-info {
+            flex-direction:row;
+      }
+}
       .header__info-item {
         background-color: #f2e8e4;
         height: 20px;
