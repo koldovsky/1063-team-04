@@ -20,29 +20,13 @@
     font-weight: bold;
     line-height: 52.8px;
 }
-<<<<<<< HEAD
-=======
-
-.carousel__header-text {
-    color: rgb(149, 139, 126);
-    margin-top: 20px;
-    font-size: 19px;
-    font-stretch: 100%;
-}
-
 .carousel__header-container {
     padding-left: 15px;
     padding-right: 15px;
 }
 
 /* logo bone */
-<<<<<<< HEAD
+
 .carousel__logo {
     padding-top: 27.5px;
 }
-
-
- 
-=======
->>>>>>> e346e0e9dd6d9bda973e633c559141afc8f024ba
->>>>>>> 96214156b16717716dafd58601aab8a872a0dc28
