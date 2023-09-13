@@ -15,7 +15,7 @@
 }
 
 .food-section__image {
-   width: 69px;
+    width: 69px;
 }
 
 .food-section__description {
@@ -34,15 +34,6 @@
 .food-item__info {
     display: flex;
     align-items: center;
-
-}
-
-@media (min-width:500px) {
-
-    .food-item__info {
-        flex-direction: row;
-        align-items: flex-start;
-    }
 
 }
 
