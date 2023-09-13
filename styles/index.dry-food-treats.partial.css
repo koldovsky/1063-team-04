@@ -39,10 +39,9 @@
 .short-line {
     flex-grow: 1;
     height: 3px;
-    background-color: var(--seashell);
     margin-left: 1px;
     margin-right: 1px;
-    border-bottom: 1px
+    border-bottom: 1px solid var(--seashell);
 }
 
 .food-category__separator {
