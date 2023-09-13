@@ -1,8 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  scroll-behavior: smooth;
+  --dark-grey: #3c3731;
+  --text-color: #f2E8E4;
+  --light-pink: #faf4f2;
+  --antique-white:#ffe6d4;
+  --misty-rose:#f4e6e2;
+  --gray-olive: #958B7E;
+  --seashell: #45c1c7;
+  --sea-green:#32a1a7;
+  --dark-gray:#9a9898;
+  --pale-turquoise:#b2e7e9;
+  --tangerine:#ed6435;
+  font-family: "PT Sans", sans-serif;
+}
+/* 
+img {
+  display: block;
+  width: 100%;
+} */
 
 /* .scroll-to-top {
   position: fixed;

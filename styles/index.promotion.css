@@ -1,0 +1,56 @@
+.smooth-scroll {
+    transition: scroll-behavior 0.5s ease-in-out;
+}
+
+.cta {
+    background-image: url('../img/promotion/cta.jpg');
+    background-size: cover; 
+    height: 705px;
+    width: 385px;
+    display: inline-block;
+    padding: 90px 0 100px;
+}
+
+.promotion {
+    color: #45C1C7;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+}
+
+.cat-week {
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    color: #3C3731;
+    font-size: 48px;
+    display: flex;
+    width: 300px;
+    word-break: break-word;
+}
+
+.special-prices {
+    color: #958B7E;
+    font-size: 19px;
+    font-family: "PT Sans", sans-serif;
+    display: flex;
+    width: 350px;
+    word-break: break-word;
+    flex-wrap: wrap;
+}
+
+.discount {
+    color: #ED6435;
+    font-weight: bold;
+}
+
+.smooth-scroll {
+    text-decoration: none;
+    background-color: #b2e7e9;
+    color: #45C1C7;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+    position: absolute;
+    padding: 10px 25px;
+    border-radius: 20px;
+}

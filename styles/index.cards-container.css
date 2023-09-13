@@ -1,49 +1,57 @@
 .cards {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    width: 100%;
-    height: 100%;
+    padding: 60px 32px;
+    display: flex;
+    justify-content: center;
+    /* Горизонтальне центрування */
+    align-items: center;
+    /* Вертикальне центрування */
+    flex-wrap: wrap;
+    /* Переносити на інший рядок при необхідності */
 }
 
-.xyina {
-    padding-left: 32px;
-    padding-right: 32px;
+.card__container {
+    display: flex;
+    align-items: center; /* Вертикальне центрування */
 }
 
-.card__conteiner {
-    font-weight: 400px;
+.card__content {
+   background-size: cover;
+   text-align: center;
+   min-height: 284.7px;
+   width: 50%;
+   box-sizing: border-box;
+   margin: 0 15px;
+   font-stretch: 100%;
 }
+
+
 
 /* card__content-brands background */
 .card__content-brands {
     background-image: url(../img/cards-container-backgroud/cards-container-background-1.webp);
-    background-size: cover;
-    height: 100%;
     text-align: left;
-    display: inline-block;
+    padding: 40px 34px;
+    border-image-repeat: stretch; /* Розтягувати зображення, щоб заповнити всю межу */
 }
+
 
 /* card__content-sale background */
 .card__content-sale {
     background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
-    background-size: cover;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: inline-block;
+    text-align: center;
+    padding: 40px 34px;
+    border-image-repeat: stretch; /* Розтягувати зображення, щоб заповнити всю межу */
 }
 
 :root {
     scroll-behavior: smooth;
 }
 
-
 /* BUTCHERS, ROYAL CANIN, PEDIGREE */
 .card__text-brands {
     color: #ed6435;
     font-size: 14px;
-    font-family: 'PT Sans', sans-serif,'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif, 'Montserrat', sans-serif;
     font-stretch: 100%;
 }
 
@@ -56,9 +64,11 @@
 
 /* Best-Quality and Food for Pets */
 .card__title-brands {
-    font-size: 44px;
-    line-height: 52.8px;
-    max-width: 100%;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700px;
+    font-stretch: 100%;
+    font-weight: 700px;
 }
 
 
@@ -66,6 +76,32 @@
     display: block;
 }
 
+
+/* get 10% Off for Cats & Dogs Stuff */
+.card__text-sale {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.card__content-sale {
+    padding: 30px 28px;
+}
+
+/* span  card__text-sale*/
+.card__discount {
+    color: #ed6435;
+}
+
+
+.card__button a {
+    text-decoration: none;
+    display: flex;
+    padding: 16px 28px;
+    margin: 10px;
+    white-space: nowrap; /* Запобігає переносу тексту на іншу лінію */
+}
 
 /* button container (2) */
 .card__button {
@@ -75,37 +111,18 @@
     border-radius: 50%;
     width: 123.312px;
     height: 48.5px;
-    text-align: center;
     margin: 10px;
-} 
-
-/*  */
-.card__text-sale {
-    font-size: 30px;
-    line-height: 36px;
-    max-width: 100%;
-    text-align: center;
-}
-
-/* span  card__text-sale*/
-.card__discount {
-    color: #ed6435;
-}
-
-.card__button a {
-    text-decoration: none;
-    display: block;
-    text-align: center;
+    padding: 16px 28px;
+    display: flex;
+    justify-content: center;
+    /* Горизонтальне центрування */
+    align-items: center;
+    /* Вертикальне центрування */
 }
 
 
 .card__bottom-text {
     color: #ed6435;
-    font-size: 16.5px; 
+    font-size: 16.5px;
 }
 
-.card__button {
-    display: flex;
-    justify-content: center; /* Горизонтальне центрування */
-    align-items: center; /* Вертикальне центрування */
-}

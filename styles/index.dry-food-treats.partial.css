@@ -1,0 +1,75 @@
+.food-section {
+    background-color: var(--light-pink);
+    padding-top: 90px;
+    padding-bottom: 90px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    color: var(--dark-grey);
+}
+
+.food-section__title {
+    font-size: 30px;
+    text-align: center;
+}
+
+.food-section__image {
+    width: 69px;
+}
+
+.food-section__description {
+    font-size: 19px;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--ui-subtitle-color);
+}
+
+.food-category__title {
+    font-size: 28px;
+    color: var(--dark-grey);
+    font-weight: bold;
+    text-align: left;
+}
+
+.food-item__info {
+    display: flex;
+    align-items: center;
+}
+
+.short-line {
+    flex-grow: 1;
+    height: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-bottom: 1px solid var(--seashell);
+}
+
+.food-category__separator {
+    width: 27.19px;
+    height: 4px;
+    background-color: var(--seashell);
+    border: none;
+}
+
+.food-item__name {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.food-item__img {
+    width: 70px;
+    float: left;
+}
+
+.food-item__ingredients {
+    display: flex;
+    font-size: 17px;
+    font-family: 'PT Sans', sans-serif;
+    color: var(--ui-subtitle-color);
+}
+
+.food-item__price {
+    color: var(--tangerine);
+    font-size: 22px;
+}
