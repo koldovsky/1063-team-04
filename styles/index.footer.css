@@ -1,0 +1,219 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #FAF4F2;
+    padding-bottom: 50px;
+}
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+}
+.contact__call {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap:24px;
+    padding: 0 15px;
+}
+.contact__call-title {
+    color:rgb(69, 193, 199);
+    font-size:15px;
+    font-weight:700;
+    line-height: 21.4275px;
+    
+}
+.contact__call-number {
+    color:rgb(237, 100, 53);
+    font-family: "Baloo 2", cursive;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-decoration: none;
+}
+.contact__subscription {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 15px;
+    gap:24px;
+}
+.contact__subscription-description {
+    color:rgb(149,139,126);
+    font-family: "PT Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21.4px;
+
+}
+.contact__subscription-link {
+    color:rgb(60, 55, 49);
+    font-family: "PT Sans", sans-serif;
+    font-size:15px;
+    font-weight:700;
+    line-height: 21.4px;
+    text-decoration: none;
+
+}
+.highlighted {
+    color: rgb(69, 193, 199);
+}
+.contact__email {
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    gap:24px;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+.contact__email-input {
+    border: none;
+    background-color: #F4E6E2;
+    border-radius: 20px;
+    color:rgb(60, 55, 49);
+    padding: 11px 22px;
+    line-height :18px;
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.input {
+}
+.contact__email-button {
+    font-family: "PT Sans", sans-serif;
+    border: none;
+    background-color: #FFE6D4;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.75px;
+    color:rgb(237, 100, 53);
+    line-height: 15px;
+    padding: 11px 0px
+}
+.button {
+}
+.footer__navlinks {
+    display: flex;
+    flex-direction: column;
+    gap:64px;
+}
+.footer__about {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    align-items: center;
+}
+.footer__about-logo {
+}
+.about__logo-img {
+    width: 193px;
+}
+.footer__about-description {
+    color:rgb(149, 139, 126);
+    align-items: stretch;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    line-height:27.2px;
+}
+.footer__about-socialnetworks {
+    display: flex;
+    gap:16px;
+}
+.about__socialnetwork-link-item {
+    list-style-type: none;
+}
+.about__socialnetwork-link {
+    text-decoration: none;
+    background-color: rgb(69, 193, 199);  
+}
+.about__socialnetwork-img {
+    display: block;
+    background-color: rgb(69, 193, 199);
+    padding: 5px;
+    border-radius: 50%;
+}
+.footer__navigation,.footer__service, .footer__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+}
+.footer__navigation-title,.footer__service-title,.footer__information-title  {
+    color:rgb(60, 55, 49);
+    font-family: "Baloo 2", cursive;
+    font-size:22px;
+    font-weight: 700;
+    line-height: 28.6px;
+    position: relative;
+}
+.footer__navigation-divider{
+    width: 36px;
+    height: 3px;
+    background-color:rgb(237, 100, 53) ;
+}
+.footer__navigation-links, .footer__service-links, .footer__information-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
+}
+.navigation__link-item, .service__link-item, .information__link-item {
+    list-style-type: none;
+}
+.navigation__link, .service__link, .information__link{
+    text-decoration: none;
+    color:rgb(154, 152, 152);
+    font-size: 17px;
+    font-weight: 600;
+}
+@media(min-width:768px){
+
+    .footer__contact{
+       display: grid;
+       grid-template-columns: 2fr 2fr 1fr;
+    }
+    .footer__navlinks{
+        display: flex;
+        flex-direction:row;
+        align-items: flex-start;
+        flex: 1; 
+        flex-basis: 0;
+        margin: 45px 32px 90px 32px;
+    }
+    .contact__subscription, .contact__email,.contact__email-input{
+        margin:0;
+    }
+    .footer__navlinks{
+        flex-grow:1;
+        flex-basis: 100%;
+        justify-content: space-around;  
+    }
+    .contact__call{
+        min-width: 223px;
+    }
+    .footer__about{
+        width:min-content;
+        align-items: flex-start;
+    }
+    .footer__about-description, .footer__about-socialnetworks{
+        text-align: left;
+    }
+    .footer__navigation-links, .footer__service-links, .footer__information-links{
+        align-items: flex-start;
+    }
+    .footer__navigation,.footer__service, .footer__information{
+        align-items: flex-start;
+    }
+    .contact__call-number{
+        font-size: 44px;
+    }
+}
+@media(min-width:990px){
+    .contact__call-number{
+        font-size: 50px;
+    }
+}

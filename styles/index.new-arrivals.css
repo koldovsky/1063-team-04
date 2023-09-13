@@ -1,0 +1,116 @@
+
+.new-arrivals {
+    padding: 90px 0;
+}
+.new-arrivals__title-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:  27.2px;
+    padding: 0 15px;
+}
+.new-arrivals__title {
+    font-family: "Baloo 2", cursive;
+    font-size:30px;
+    font-weight: 700;
+    color: rgb(60, 55, 49);
+    line-height: 48px;
+}
+.new-arrivals__decoration {
+    
+}
+.newarrivals__decoration-img {
+    width:70px;
+    line-height: 32px;
+    padding: 15px 0;
+}
+.new-arrivals__text {
+    font-family: "PT Sans", sans-serif;
+    color:rgb(149, 139, 126);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+    text-align: center;
+}
+.new-arrivals__carousel { 
+   display: flex;
+   align-items: center;
+   margin-top: 32px;
+}
+.carousel__button-prev {
+}
+.carousel__button--navigation {
+    background-color: black;
+    color:#fff;
+    border-radius: 50%;
+    padding: 3px; 
+}
+.carousel__cards {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+} 
+.carousel__card {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin:0;
+    padding:0 15px;
+    font-family: "PT Sans", sans-serif;
+    line-height: 27.2px;
+    width: fit-content;
+    justify-content: center; 
+    align-items: center;
+}
+@media(min-width: 768px) {
+    .carousel__card {
+      flex: 1 0 50%; 
+    }
+  }
+  
+  @media(min-width: 992px) {
+    .carousel__card {
+      flex: 0 0 25%; 
+    }
+  }
+.carousel__card-img {
+    width: 242px;
+}
+.carousel__card-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: fit-content;
+}
+.carousel__card-title {
+    color:rgb(149, 139, 126);
+    font-family: "PT Sans", sans-serif;
+    font-size:18px;
+    font-weight:400;
+
+}
+.carousel__card-price {
+    color:rgb(237, 100, 53);
+    font-family: "PT Sans", sans-serif;
+    font-size:18px;
+    font-weight:700;
+}
+.carousel__card-button {
+    font-family: "PT Sans", sans-serif;
+    border-radius: 25px;
+    color:rgb(69, 193, 199);
+    font-size:16.5px;
+    font-weight:700;
+    background-color: #B2E7E9;
+    text-decoration: none;
+    padding:10px 32px;
+    margin-top:20px;
+    width: fit-content;
+}
+.button {
+
+}
+.carousel__button-next {
+}
