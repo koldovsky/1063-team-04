@@ -6,9 +6,6 @@
     font-weight: bold;
     text-align: center;
 }
-.carousel-control-next-icon {
-    color: black;
-}
 
 .trending_image {
     display: block;
@@ -20,41 +17,124 @@
     color: var(--ui-subtitle-color);
 }
 
-.carousel-control-next-icon {
-    color: black;
+@media (max-width: 320px) {
+    .carousel-card {
+        display: block;
+        /* Відображати всі картки як стандартно */
+    }
+
+    .carousel-card__image {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
 }
 
 @media (min-width: 320px) {
-    .trending_image {
-        width: 70px;
-        height: 32px;
-        margin: 10px auto;
+
+    .carousel-card {
+        text-align: center;
+        /* Центруємо текст всередині блоку */
+        padding: 10px 40px;
     }
 
-    .carousel-container {
-        display: flex;
-        justify-content: center;
+    .carousel-card__image {
+        display: block;
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .carousel-card__title,
+    .carousel-card__price,
+    .carousel-card__button {
+        display: block;
+        /* Зробити текст і кнопку блоковими елементами */
+        margin: 0 auto;
+        /* Центруємо їх по горизонталі */
+    }
+
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .carousel-button--prev {
+        left: 10px;
+        top: 380px;
+    }
+
+    .carousel-button--next {
+        right: 10px;
+        top: 380px;
     }
 }
 
-/* @media (min-width: 767px) {
-    .carousel-inner {
+@media (min-width: 767px) {
+    .carousel-card-container {
         display: grid;
-        grid-template-columns: 1fr 1fr; /* Два стовпці з однаковою шириною */
-    
-   /* .carousel-item {
-        padding: 10px;
-        border: 1px solid #ccc;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        /* Відступ між картками (за бажанням) */
     }
-    .flex-fill {
-        display: flex;
-        justify-content: space-between;
-    }
-    .carousel-item active {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 20px;
-        padding: 0 20px;
-    }
-} 
 
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .carousel-button--prev {
+        left: 10px;
+        top: 580px;
+        transform: translateY(-50%);
+    }
+
+    .carousel-button--next {
+        right: 10px;
+        top: 580px;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 991px) {
+    .carousel-card-container {
+        display: flex;
+        position: relative;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .carousel-card__image {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .carousel-button {
+        position: absolute; /* Встановлюємо позицію "absolute" для стрілок */
+        transform: translateY(-50%); /* Вирівнюємо вертикально за допомогою зміщення */
+        /* Додайте інші стилі для стрілок */
+    }
+
+    .carousel-button--prev {
+        left: 10px;
+        top: 590px;
+    }
+
+    .carousel-button--next {
+        right: 10px;
+        top: 590px;
+    }
+}
