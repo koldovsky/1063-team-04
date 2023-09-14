@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=PT+Sans&display=swap");
+=======
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Libre+Franklin:ital@1&family=PT+Sans&display=swap");
+>>>>>>> Stashed changes
 
 * {
   margin: 0;
@@ -8,12 +13,33 @@
 
 :root {
   scroll-behavior: smooth;
+<<<<<<< Updated upstream
   --text-color: #3c3731;
+=======
+  --dark-grey: #3c3731;
+  --text-color: #f2e8e4;
+  --light-pink: #faf4f2;
+  --antique-white: #ffe6d4;
+  --misty-rose: #f4e6e2;
+  --gray-olive: #958b7e;
+  --seashell: #45c1c7;
+  --sea-green: #32a1a7;
+  --dark-gray: #9a9898;
+  --pale-turquoise: #b2e7e9;
+  --tangerine: #ed6435;
+  font-family: "PT Sans", sans-serif;
+>>>>>>> Stashed changes
 }
-/* 
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 img {
   display: block;
   width: 100%;
+<<<<<<< Updated upstream
 } */
 
 /* .scroll-to-top {
@@ -31,3 +57,6 @@ img {
   cursor: pointer;
   padding-bottom: 5px;
 } */
+=======
+}
+>>>>>>> Stashed changes
