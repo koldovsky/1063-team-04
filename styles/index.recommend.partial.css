@@ -45,18 +45,23 @@
 
 .recommend__cards-tab {
   margin-bottom: 30px;
-  font-size: 17px;
+  border-bottom: 1px solid #e6e6e5;
 }
 
 .recommend__cards-tab-btn {
   border: 0;
   background-color: #ffffff;
-  color: var(--dark-grey);
+  color: var(--gray-olive);
+  font-size: 17px;
   padding: 20px 15px;
   font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  transition: 0.2s ease-in-out;
 }
 
 .recommend__cards-tab-btn:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
   color: black;
 }
 
@@ -77,6 +82,7 @@
 
 .recommend-card__image {
   margin-bottom: 8px;
+  max-width: 270px;
 }
 
 .recommend-card__title {
@@ -155,5 +161,11 @@
 
   .recommend__wrap {
     padding: 0 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .recommend__wrap {
+    padding: 0 15px;
   }
 }
