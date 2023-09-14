@@ -1,8 +1,3 @@
-:root {
-    scroll-behavior: smooth;
-}
-
-/* main section */
 .cards {
     padding: 60px 32px;
     display: flex;
@@ -14,13 +9,11 @@
     /* Переносити на інший рядок при необхідності */
 }
 
-/* container with two elements */
 .card__container {
     display: flex;
     align-items: center; /* Вертикальне центрування */
 }
 
-/* two div (main) */
 .card__content {
    background-size: cover;
    text-align: center;
@@ -47,11 +40,11 @@
     background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
     text-align: center;
     padding: 40px 34px;
-    border-image-repeat: stretch; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Горизонтальне центрування */
-    justify-content: center; /* Вертикальне центрування */
+    border-image-repeat: stretch; /* Розтягувати зображення, щоб заповнити всю межу */
+}
+
+:root {
+    scroll-behavior: smooth;
 }
 
 /* BUTCHERS, ROYAL CANIN, PEDIGREE */
@@ -78,7 +71,7 @@
     font-weight: 700px;
 }
 
-/* for 2 line */
+
 .card__title-part {
     display: block;
 }
@@ -89,6 +82,7 @@
     font-size: 30px;
     line-height: 36px;
     max-width: 100%;
+    text-align: center;
 }
 
 .card__content-sale {

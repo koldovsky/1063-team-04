@@ -1,22 +1,22 @@
 <footer class="footer">
-	<div class="footer__container-contact">
+	<div class="footer__contact">
 		<div class="contact__call">
 			<div class="contact__call-title">CALL US</div>
-			<a href="tel:+12345678900" class="contact__call-number">+1 (234) 567 8900</a>
+			<a href="tel:+12345678900" class="contact__call-number">+1 (234) 567 89 00</a>
 		</div>
 		<div class="contact__subscription">
 			<p class="contact__subscription-description">Subscribe to our newsletter and be aware of all of our new products,
 				discounts, and hot promotions.
 			</p>
-			<a href="#" class="contact__subscription-link">Sale Week<span class="highlighted">→</span></a>
+			<a href="#" class="contact__subscription-link">Sale Week <span class="highlighted">→</span></a>
 		</div>
 		<form class="contact__email">
-			<input type="email" name="email" class="contact__email-input input" required
-				pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-			<button class="contact__email-button button">Subscribe</button>
+			<input type="email" name="email" class="contact__email-input input" id="email-input" required
+				pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Email">
+			<button onclick="SendMail()" class="contact__email-button button">Subscribe</button>
 		</form>
 	</div>
-	<div class=" footer__container-navlinks">
+	<div class=" footer__navlinks">
 		<div class="footer__about">
 			<div class="footer__about-logo">
 				<img class="about__logo-img" src="img/footer/happypaw-logo.svg" alt="HAPPY PAW">
@@ -41,6 +41,7 @@
 		</div>
 		<div class="footer__navigation">
 			<h2 class="footer__navigation-title">Navigation</h2>
+			<div class="footer__navigation-divider"></div>
 			<ul class="footer__navigation-links">
 				<li class="navigation__link-item">
 					<a href="#" class="navigation__link">Track Order</a>
@@ -61,6 +62,7 @@
 		</div>
 		<div class="footer__service">
 			<h2 class="footer__service-title">Customer Service</h2>
+			<div class="footer__navigation-divider"></div>
 			<ul class="footer__service-links">
 				<li class="service__link-item">
 					<a href="#" class="service__link">About Us</a>
@@ -81,6 +83,7 @@
 		</div>
 		<div class="footer__information">
 			<h2 class="footer__information-title">Help & Information</h2>
+			<div class="footer__navigation-divider"></div>
 			<ul class="footer__information-links">
 				<li class="information__link-item">
 					<a href="#" class="information__link">Privacy Policy</a>

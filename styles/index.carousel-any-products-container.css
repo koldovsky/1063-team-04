@@ -20,23 +20,13 @@
     font-weight: bold;
     line-height: 52.8px;
 }
-
-.carousel__header-text {
-    color: rgb(149, 139, 126);
-    margin-top: 20px;
-    font-size: 19px;
-    font-stretch: 100%;
-}
-
 .carousel__header-container {
     padding-left: 15px;
     padding-right: 15px;
-    white-space: nowrap;
 }
 
 /* logo bone */
+
 .carousel__logo {
     padding-top: 27.5px;
 }
-
-
