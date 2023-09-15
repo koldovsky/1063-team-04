@@ -8,7 +8,6 @@
 }
 
 :root {
-   @media (min-width: 500px);
    scroll-behavior: smooth;
   --dark-grey: #3c3731;
   --text-color: #f2e8e4;
