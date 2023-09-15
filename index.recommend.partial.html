@@ -11,12 +11,12 @@
 
 		<div class="recommend__cards-wrapper">
 			<div class="recommend__cards-tab">
-				<button class="recommend__cards-tab-btn">For Dogs</button>
-				<button class="recommend__cards-tab-btn">For Cats</button>
-				<button class="recommend__cards-tab-btn">For Parrots</button>
-				<button class="recommend__cards-tab-btn">For Rabbits</button>
-				<button class="recommend__cards-tab-btn">For Hamsters</button>
-				<button class="recommend__cards-tab-btn">For Fish</button>
+				<button class="recommend__cards-tab-btn active" onclick="filterSelection('dogs')">For Dogs</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('cats')">For Cats</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('parrots')">For Parrots</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('rabbits')">For Rabbits</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('hamsters')">For Hamsters</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('fish')">For Fish</button>
 			</div>
 
 			<div id="dogs" class="recommend__list">

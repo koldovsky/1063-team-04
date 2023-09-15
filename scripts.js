@@ -1,10 +1,8 @@
 // document.addEventListener("DOMContentLoaded", function () {
-//   //scrollToSection
 //   function scrollToSection(sectionId) {
 //     document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
 //   }
 
-//   //scrollToTop
 //   const scrollToTopBtn = document.getElementById("scroll-btn");
 
 //   function updateScrollButtonVisibility() {
@@ -39,6 +37,44 @@
 //     });
 //   }
 
-//   // Перевірити видимість кнопки під час завантаження сторінки
 //   updateScrollButtonVisibility();
+
+//   const buttons = document.querySelectorAll(".recommend__cards-tab-btn");
+//   const lists = document.querySelectorAll(".recommend__list");
+
+//   buttons.forEach((button) => {
+//     button.addEventListener("click", () => {
+//       const id = button.getAttribute("onclick").match(/'([^']+)'/)[1];
+
+//       lists.forEach((list) => {
+//         list.style.display = "none";
+//       });
+
+//       document.getElementById(id).style.display = "flex";
+
+//       buttons.forEach((btn) => {
+//         btn.classList.remove("active");
+//       });
+
+//       button.classList.add("active");
+//     });
+//   });
+
+//   document.getElementById("dogs").style.display = "flex";
+//   document
+//     .querySelector(".recommend__cards-tab-btn[data-id='dogs']")
+//     .classList.add("active");
+
+//   var button_tab = document.getElementById("button-tab");
+//   var cards_tab_btn = button_tab.getElementsByClassName(
+//     "recommend__cards-tab-btn"
+//   );
+
+//   for (var i = 0; i < cards_tab_btn.length; i++) {
+//     cards_tab_btn[i].addEventListener("click", function () {
+//       var current = document.getElementsByClassName("active");
+//       current[0].className = current[0].className.replace(" active", "");
+//       this.className += " active";
+//     });
+//   }
 // });

@@ -1,6 +1,6 @@
 .scroll-to-top {
   position: fixed;
-  /* display: none; */
+  display: none;
   bottom: 20px;
   right: 50px;
   width: 60px;
