@@ -1,6 +1,6 @@
 @import url(global.css);
-@import url(index.promo.css);
-@import url(index.promotion.css);
+@import url(index.promo-food.css);
+@import url(index.promotion-discount.css);
 @import url(index.cards-container.css);
 @import url(index.carousel-any-products-container.css);
 @import url(index.dry-food-treats.partial.css);
