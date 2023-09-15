@@ -12,13 +12,26 @@
 }
 
 .carousel-card-container {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+  padding: 10px 40px;
 }
 
-@media (min-width: 768px) {
-  .trending__header-title {
-    font-size: 44px;
+
+.button__direction{
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+ 
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 767px) {
+  .carousel-card-container {
+    flex-direction: column; /* Один стовпець */
+    align-items: center; /* Вирівнювання по лівому краю */
   }
 }
+  /* Сховати всі крім першої картки */
+  .carousel-card:not(:first-child) {
+    display: none;
+  }
