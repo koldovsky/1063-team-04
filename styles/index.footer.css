@@ -1,9 +1,8 @@
-
 .footer {
     display: flex;
     flex-direction: column;
-    background-color: #FAF4F2;
     padding-bottom: 50px;
+    background-color: var(--light-pink);
 }
 .footer__contact {
     display: flex;
@@ -13,24 +12,26 @@
 .contact__call {
     display: flex;
     flex-direction: column;
-    text-align: left;
     gap:24px;
+    text-align: left;
     padding: 0 15px;
 }
 .contact__call-title {
-    color:rgb(69, 193, 199);
+    color:var(--seashell);
     font-size:15px;
     font-weight:700;
     line-height: 21.4275px;
-    
 }
 .contact__call-number {
-    color:rgb(237, 100, 53);
     font-family: "Baloo 2", cursive;
     font-size: 30px;
     font-weight: 700;
+    color:var(--tangerine);
     line-height: 36px;
     text-decoration: none;
+}
+.contact__call-number:hover{
+    text-decoration: underline;
 }
 .contact__subscription {
     display: flex;
@@ -40,57 +41,63 @@
     gap:24px;
 }
 .contact__subscription-description {
-    color:rgb(149,139,126);
-    font-family: "PT Sans", sans-serif;
+    color:var(--gray-olive);
     font-size: 15px;
     font-weight: 400;
     line-height: 21.4px;
-
 }
 .contact__subscription-link {
-    color:rgb(60, 55, 49);
-    font-family: "PT Sans", sans-serif;
+    color:var(--dark-grey);
     font-size:15px;
     font-weight:700;
     line-height: 21.4px;
     text-decoration: none;
 
 }
+.contact__subscription-link:hover{
+    text-decoration: underline; 
+}
 .highlighted {
-    color: rgb(69, 193, 199);
+    color: var(--seashell);
 }
 .contact__email {
     display: flex;
     flex-direction: column;
-    margin-top:50px;
     gap:24px;
     padding: 0 15px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 .contact__email-input {
-    border: none;
-    background-color: #F4E6E2;
+    font-size: 15px;
+    font-weight: 400;
+    color:var(--dark-grey);
+    background-color: var(--misty-rose);
     border-radius: 20px;
-    color:rgb(60, 55, 49);
+    border: none;
     padding: 11px 22px;
     line-height :18px;
     margin-top: 12px;
-    font-size: 15px;
-    font-weight: 400;
+    
 }
 .input {
 }
 .contact__email-button {
-    font-family: "PT Sans", sans-serif;
     border: none;
-    background-color: #FFE6D4;
+    background-color: var(--antique-white);
+    color:var(--tangerine);
     border-radius: 20px;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.75px;
-    color:rgb(237, 100, 53);
     line-height: 15px;
-    padding: 11px 0px
+    padding: 11px 0px;
+    cursor:pointer;
+    transition:all 0.2s ease-in;
+}
+.contact__email-button:hover{
+    background-color: var(--pale-turquoise);
+    color:var(--sea-green);
 }
 .button {
 }
@@ -111,7 +118,7 @@
     width: 193px;
 }
 .footer__about-description {
-    color:rgb(149, 139, 126);
+    color:var(--gray-olive);
     align-items: stretch;
     font-size: 17px;
     font-weight: 400;
@@ -127,13 +134,18 @@
 }
 .about__socialnetwork-link {
     text-decoration: none;
-    background-color: rgb(69, 193, 199);  
 }
+
 .about__socialnetwork-img {
     display: block;
-    background-color: rgb(69, 193, 199);
+    background-color: var(--seashell);
     padding: 5px;
     border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.about__socialnetwork-img:hover{
+    background-color: var(--sea-green); 
+    cursor: pointer;
 }
 .footer__navigation,.footer__service, .footer__information {
     display: flex;
@@ -143,7 +155,7 @@
     gap:12px;
 }
 .footer__navigation-title,.footer__service-title,.footer__information-title  {
-    color:rgb(60, 55, 49);
+    color:var(--dark-grey);
     font-family: "Baloo 2", cursive;
     font-size:22px;
     font-weight: 700;
@@ -153,7 +165,7 @@
 .footer__navigation-divider{
     width: 36px;
     height: 3px;
-    background-color:rgb(237, 100, 53) ;
+    background-color:var(--tangerine) ;
 }
 .footer__navigation-links, .footer__service-links, .footer__information-links {
     display: flex;
@@ -166,15 +178,20 @@
 }
 .navigation__link, .service__link, .information__link{
     text-decoration: none;
-    color:rgb(154, 152, 152);
+    color:var(--dark-gray);
     font-size: 17px;
     font-weight: 600;
 }
+.navigation__link:hover, .service__link:hover, .information__link:hover{
+    color:var(--dark-grey);
+    text-decoration: underline;
+}
 @media(min-width:768px){
-
     .footer__contact{
        display: grid;
        grid-template-columns: 2fr 2fr 1fr;
+       align-items:center;
+       padding: 95px 32px 25px 32px;
     }
     .footer__navlinks{
         display: flex;
@@ -183,6 +200,12 @@
         flex: 1; 
         flex-basis: 0;
         margin: 45px 32px 90px 32px;
+    }
+    .contact__call-number{
+        line-height:52.8px;
+    }
+    .contact__call-title{
+        font-size:14px;
     }
     .contact__subscription, .contact__email,.contact__email-input{
         margin:0;
