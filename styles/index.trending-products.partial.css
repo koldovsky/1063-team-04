@@ -15,14 +15,10 @@
   padding: 10px 40px;
 }
 
-
-.button__direction{
+.button__direction {
   display: flex;
   position: absolute;
   justify-content: space-between;
- 
-  width: 20px;
-  height: 20px;
 }
 
 @media (max-width: 767px) {
@@ -31,7 +27,7 @@
     align-items: center; /* Вирівнювання по лівому краю */
   }
 }
-  /* Сховати всі крім першої картки */
-  .carousel-card:not(:first-child) {
-    display: none;
-  }
+/* Сховати всі крім першої картки */
+.carousel-card:not(:first-child) {
+  display: none;
+}
