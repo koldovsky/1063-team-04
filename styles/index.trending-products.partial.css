@@ -6,6 +6,13 @@
   font-size: 30px;
 }
 
+.trending_products-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .trending_image {
   height: 32px;
   object-fit: contain;
@@ -13,12 +20,19 @@
 
 .carousel-card-container {
   padding: 10px 40px;
+  display: flex;
+  flex-direction: row;
 }
 
-.button__direction {
+/* .button__direction {
   display: flex;
   position: absolute;
   justify-content: space-between;
+} */
+
+/* Сховати всі крім першої картки */
+.carousel-card:not(:first-child) {
+  display: none;
 }
 
 @media (max-width: 767px) {
@@ -26,8 +40,4 @@
     flex-direction: column; /* Один стовпець */
     align-items: center; /* Вирівнювання по лівому краю */
   }
-}
-/* Сховати всі крім першої картки */
-.carousel-card:not(:first-child) {
-  display: none;
 }
