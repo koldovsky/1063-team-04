@@ -26,6 +26,22 @@
 }
 
 /* logo bone */
+.carousel__logo img {
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    font-family: "object-fit:cover";
+    font-size: 17px;
+    font-stretch: 100%;
+    font-weight: 400;
+    height: 32px;
+    line-height: 27,2px;
+    object-fit: contain;
+    object-position: 50% 50%;
+    overflow-clip-margin: content-box;
+    text-align: center;
+    width: 1102,4px;
+}
 
 .carousel__logo {
     padding-top: 27.5px;

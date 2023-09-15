@@ -65,6 +65,11 @@
   color: black;
 }
 
+.recommend__cards-tab-btn.active {
+  color: black;
+  border-bottom: 2px solid var(--tangerine);
+}
+
 .recommend__list {
   display: flex;
   flex-direction: column;
@@ -119,6 +124,7 @@
 }
 
 .recommend-card__button:hover {
+  cursor: pointer;
   background-color: var(--antique-white);
   color: var(--tangerine);
 }
