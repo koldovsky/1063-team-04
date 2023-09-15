@@ -1,4 +1,4 @@
-.smooth-scroll2 {
+.smooth-scroll-discover {
     transition: scroll-behavior 0.5s ease-in-out;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .promo-title {
-    color: #ED6435;
+    color: var(--tangerine);
     font-size: 15px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
@@ -32,7 +32,7 @@
 .food-for-dogs {
     font-family: "Baloo 2", cursive;
     font-weight: bold;
-    color: #3C3731;
+    color: var(--dark-grey);
     font-size: 32px;
     display: flex;
     width: 300px;
