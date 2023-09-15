@@ -1,10 +1,41 @@
-.shopping__cart {
+.shopping__cart-svg-wrap {
+  position: fixed;
+  top: 80px;
+  right: 30px;
+  border: 2px solid #ffe6d4;
+  background-color: white;
+  border-radius: 50%;
+  padding: 12px;
+  width: 50px;
+  height: 50px;
 }
+
 .shopping__cart-svg {
+  width: 22px;
+  height: 22px;
 }
-.svg_2UK {
-}
-.ui-cart-icon-color--light_3Gm {
-}
+
 .shopping__cart-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ed6435;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .shopping__cart-svg-wrap {
+    width: 66px;
+    height: 66px;
+  }
+
+  .shopping__cart-svg {
+    width: 36px;
+    height: 36px;
+  }
 }
