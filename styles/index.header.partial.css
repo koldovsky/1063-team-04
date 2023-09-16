@@ -22,7 +22,8 @@
         margin-right: 45px;
       }
       .header__logo-image {
-        width: 182px;
+        display: block;
+        max-width: 100%;
         margin-top: -10px;
       }
       .header__nav {
@@ -74,7 +75,7 @@
         padding-top: 200px;
         padding-bottom: 300px;
         height: 100vh;
-        background: url("header-background.png") center/cover;
+        background: url("img/index.header/header-background.png") center/cover;
       }
       .header__banner-image {
         position: absolute;
