@@ -19,7 +19,7 @@
   font-family: "Baloo 2", cursive;
   font-size: 30px;
   font-weight: bold;
-  color: var(--dark-grey);
+  color: var(--color-h-text);
   margin: 0;
   letter-spacing: -1px;
 }
@@ -33,7 +33,7 @@
 .recommend__description {
   font-family: "PT Sans", sans-serif;
   font-size: 19px;
-  color: var(--gray-olive);
+  color: var(--color-content-text);
   margin: 0;
   margin-top: 20px;
 }
@@ -45,13 +45,15 @@
 
 .recommend__cards-tab {
   margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
   border-bottom: 1px solid #e6e6e5;
 }
 
 .recommend__cards-tab-btn {
   border: 0;
-  background-color: #ffffff;
-  color: var(--gray-olive);
+  background-color: var(--color-default-backfround);
+  color: var(--color-content-text);
   font-size: 17px;
   padding: 20px 15px;
   font-weight: bold;
@@ -62,12 +64,12 @@
 .recommend__cards-tab-btn:hover {
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  color: black;
+  color: var(--color-default-text);
 }
 
 .recommend__cards-tab-btn.active {
-  color: black;
-  border-bottom: 2px solid var(--tangerine);
+  color: var(--color-default-text);
+  border-bottom: 2px solid var(--color-button-hover-text);
 }
 
 .recommend__list {
@@ -91,7 +93,7 @@
 }
 
 .recommend-card__title {
-  color: var(--gray-olive);
+  color: var(--color-content-text);
   font-size: 18px;
   text-decoration: none;
 }
@@ -105,15 +107,15 @@
 }
 
 .recommend-card__price {
-  color: var(--tangerine);
+  color: var(--color-price-text);
   font-size: 18px;
   margin: 0;
   font-weight: 700;
 }
 
 .recommend-card__button {
-  background-color: var(--pale-turquoise);
-  color: var(--seashell);
+  background-color: var(--color-background-gallery-button);
+  color: #45c1c7;
   font-size: 18px;
   font-weight: 700;
   margin-top: 24px;
@@ -125,8 +127,8 @@
 
 .recommend-card__button:hover {
   cursor: pointer;
-  background-color: var(--antique-white);
-  color: var(--tangerine);
+  background-color: var(--color-background-hover-button);
+  color: var(--color-button-hover-text);
 }
 
 @media (min-width: 768px) {
