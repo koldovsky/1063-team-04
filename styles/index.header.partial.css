@@ -22,7 +22,7 @@
         margin-right: 45px;
       }
       .header__logo-image {
-        width: 182;
+        width: 182px;
         margin-top: -10px;
       }
       .header__nav {
@@ -68,6 +68,20 @@
       }
       .header__social-link {
         color: rgb(69, 193, 199);
+      }
+      .header__banner {
+        position: relative;
+        padding-top: 200px;
+        padding-bottom: 300px;
+        height: 100vh;
+        background: url("header-background.png") center/cover;
+      }
+      .header__banner-image {
+        position: absolute;
+        top: 53%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        text-align: left;
       }
       .header__title {
         font-family: "Baloo 2";
