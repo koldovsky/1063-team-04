@@ -13,6 +13,7 @@
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .cat-week {
@@ -24,6 +25,7 @@
     width: 300px;
     word-break: break-word;
     margin-left: 20px;
+    line-height: 1.1;
 }
 
 .special-prices {
@@ -35,7 +37,7 @@
     word-break: break-word;
     flex-wrap: wrap;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .discount {
