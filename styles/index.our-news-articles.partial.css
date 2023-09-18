@@ -10,29 +10,47 @@
 
 .news__title {
     font-size: 30px;
-    margin-bottom: 20px;
-    color: var(--dark-grey);
-    
+    font-weight: bold;
+    color: var(--color-h-text);
+    margin: 0;
+    letter-spacing: -1px;
+    text-align: center;
+
 }
 
+
+
 .news__logo {
-    width: 100px;
+    height: 32px;
+    object-fit: contain;
+    margin-top: 25px;
 }
 
 .news__description {
+    font-family: "PT Sans", sans-serif;
     font-size: 19px;
-    font-family: 'PT Sans', sans-serif;
-    line-height: 1.5;
-    color: var(--gray-olive);
-    text-align: center;
-    padding-bottom: 24px;
+    color: var(--color-content-text);
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 24px;
 }
 
-.news__container {
+.our-news-container__item {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    word-wrap: break-word;
+
 }
+
+@media(min-width:768px){
+    .our-news-container__item{
+     
+    }
+}
+
 
 .news__item {
     margin-bottom: 20px;
@@ -41,36 +59,57 @@
 }
 
 .news__image {
-    width: 272px;
+    object-fit: cover;
+    object-position: 63.964% 0%;
+}
+
+@media (min-width:768px){
+    .news__image{
+        width: 337px;
+    }
 }
 
 .news__item-title {
     font-size: 22px;
     font-weight: bold;
-    
+    color: var(--color-h-text);
+    margin: 0;
+    letter-spacing: -1px;
+    text-align: left;
+
 }
 
 .news__item-description {
+    display: block;
+    font-family: "PT Sans", sans-serif;
     font-size: 17px;
-    color: var(--gray-olive);
-    text-align: center;
+    color: var(--color-content-text);
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 24px;
     word-wrap: break-word;
-    max-width: 500px;
-    text-align: left;
-    flex: 1;
-    
+    text-align: justify;
+
 }
 
 .news__item-button {
-    background-color: white;
+    display: flex;
+    background-color: var(--color-default-backfround);
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
     outline: none;
     font-weight: bold;
+    text-align: left;
+    font-size: 15px;
+    text-align: left;
+    margin: -10px;
+    
 }
 
-.news__item-button:active, .news__item-button:focus {
-    color: var(--tangerine);
+.news__item-button:active,
+.news__item-button:focus {
+    color: var(--color-divider-background);
+    text-decoration: underline;
+
 }
 
