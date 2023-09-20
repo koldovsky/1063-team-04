@@ -48,13 +48,6 @@ function warnTheSheep(queue) {
   }
 }
 
-function warnTheSheep(queue) {
-  const position = queue.reverse().indexOf("wolf");
-  return position === 0
-    ? "Pls go away and stop eating my sheep"
-    : `Oi! Sheep number ${position}! You are about to be eaten by a wolf!`;
-}
-
 // https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
 function maps(x) {
   let arr = [];
