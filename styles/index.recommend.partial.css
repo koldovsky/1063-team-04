@@ -82,6 +82,23 @@
   flex-direction: column;
 }
 
+.recommend__list .recommend-card:nth-child(2),
+.recommend__list div:nth-child(2) {
+  margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+  .recommend__list div:nth-child(2) {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .recommend__list .recommend-card:nth-child(2) {
+    margin-top: 0px;
+  }
+}
+
 .recommend-card {
   padding: 0 15px;
   text-align: left;
