@@ -1,17 +1,28 @@
 /* all block */
 .carousel {
-    margin-top: 50px;
+    /* margin-top: 50px;
     margin-right: 40px;
     margin-left: 40px;
-    margin-bottom: 120px;
+    margin-bottom: 120px; */
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
 }
 
-/* block header and carousel */
-.carousel__slides {
-    background-color: aqua;
+.carousel__container {
+    display: block;
 }
 
+
+
+.carousel__header-container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Any Products for Any Pets */
 .carousel__header-top-text {
     color: #3c3731;
     font-family: 'Baloo 2', cursive;
@@ -20,12 +31,8 @@
     font-weight: bold;
     line-height: 52.8px;
 }
-.carousel__header-container {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
-/* logo bone */
+/* logo bone image */
 .carousel__logo img {
     border-image-repeat: stretch;
     border-image-slice: 100%;
@@ -38,11 +45,168 @@
     line-height: 27,2px;
     object-fit: contain;
     object-position: 50% 50%;
-    overflow-clip-margin: content-box;
+    /* overflow-clip-margin: content-box; */
     text-align: center;
     width: 1102,4px;
 }
 
+/* blockimage */
 .carousel__logo {
     padding-top: 27.5px;
+}
+
+
+.carousel__header-text {
+    margin-top: 20px;
+}
+
+/* Best picks for your beloved companions only in Happy Paw. */
+.carousel__header-down-text {
+    color: rgb(149, 139, 126);
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 28.5px;
+    overflow-wrap: break-word;
+}
+
+
+
+
+
+/* block carousel */
+.carousel__slides {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+}
+
+.carosel-cards {
+    padding: 0 15px;
+}
+
+/* start card */
+.carousel__card {
+    /* display: flex; */
+    /* flex: 1; */
+    /* width: 200px;
+    height: 500px; */
+    /* min-height: 1px; */
+    /* overflow-wrap: break-word; */
+    /* float: left; */
+    /* padding: 0 0; */
+    /* margin: 0 10px; */
+    justify-content: center;
+    align-items: center;
+    border: 1.6px solid rgb(255, 230, 212);
+}
+
+.carousel__card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+/* mlock image */
+.image {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+/* image */
+.carousel__card-image {
+    min-height: 32px;
+    width: 120px;
+    height: 120xp;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+    /* overflow-clip-margin: content-box; */
+    
+}
+
+/* block For Cats */
+.carousel__card-name {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* For Cats */
+.carousel__card-category {
+    /* display: flex; */
+    font-family: "Baloo 2", cursive;
+    font-size: 24px;
+    display: inline;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.carousel__arrow {
+    color: rgb(69, 193, 199);
+}
+
+/* block text */
+.carousel__card-description {
+    margin-top: 20px;
+    display: inline;
+    max-width: 100%;
+    line-height: 21.4275px;
+    height: auto;
+}
+
+/* text */
+.carousel__card-text {
+    color: rgb(149, 139, 126);
+    font-size: 15px;
+    font-weight: 400;
+    /* display: inline; */
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel__button {
+    align-items: flex-start;
+    appearance: auto;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: black;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-width: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    cursor: pointer;
+    display: block;
+    font-stretch: 100%;
+    font-weight: 400;
+    height: 32px;
+    /* left: 15px;
+    opacity: 0.85; */
+    text-align: center;
+    /* top: 200.65px;
+    transform: matrix(1, 0, 0, 1, -16, -16);
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out; */
+    width: 32px;
+    /* writing-mode: horizontal-tb;
+    z-index: 1; */
 }
