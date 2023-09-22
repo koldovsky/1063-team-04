@@ -5,10 +5,13 @@
     margin-left: 40px;
     margin-bottom: 120px; */
     text-align: center;
-    display: flex;
+    /* display: flex; */
+    display: block;
     justify-content: center;
     align-items: center;
     font-family: "PT Sans", sans-serif;
+    padding: 0 40px;
+    min-width: 320px;
 }
 
 .carousel__container {
@@ -55,18 +58,24 @@
     padding-top: 27.5px;
 }
 
-
+/* block down text */
 .carousel__header-text {
     margin-top: 20px;
+    text-decoration-style: solid;
+    height: auto;
+        width: auto;
+        font-stretch: 100%;
+        margin-block-start: 20px;
+        
 }
 
 /* Best picks for your beloved companions only in Happy Paw. */
 .carousel__header-down-text {
     color: rgb(149, 139, 126);
     font-size: 19px;
-    font-weight: 400;
-    line-height: 28.5px;
-    overflow-wrap: break-word;
+        font-weight: 400;
+        line-height: 28.5px;
+        overflow-wrap: break-word;
 }
 
 
@@ -77,11 +86,20 @@
 .carousel__slides {
     margin-top: 50px;
     display: flex;
+    /* flex-wrap: wrap; */
     flex: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .carosel-cards {
     padding: 0 15px;
+    display: block;
+    width: 100%;
+    /* position: absolute; */
 }
 
 /* start card */
@@ -98,6 +116,7 @@
     justify-content: center;
     align-items: center;
     border: 1.6px solid rgb(255, 230, 212);
+
 }
 
 .carousel__card-content {
@@ -107,13 +126,14 @@
     align-items: center;
     text-align: center;
     padding: 45px 20px;
+    max-width: 1200px;
 }
 
-/* mlock image */
+/* block image */
 .image {
     display: flex;
-        justify-content: center;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* image */
@@ -168,11 +188,13 @@
     /* display: inline; */
 }
 
-.button {
+.button__carousel {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
+
+
 
 .carousel__button {
     align-items: flex-start;
