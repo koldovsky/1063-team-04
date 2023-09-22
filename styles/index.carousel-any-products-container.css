@@ -1,11 +1,6 @@
 /* all block */
-.carousel {
-    /* margin-top: 50px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 120px; */
+.carousel__wrap {
     text-align: center;
-    /* display: flex; */
     display: block;
     justify-content: center;
     align-items: center;
@@ -14,16 +9,13 @@
     min-width: 320px;
 }
 
-.carousel__container {
-    display: block;
-}
 
-
-
-.carousel__header-container {
+.carousel__header {
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
 
 /* Any Products for Any Pets */
 .carousel__header-top-text {
@@ -40,17 +32,10 @@
     border-image-repeat: stretch;
     border-image-slice: 100%;
     border-image-width: 1;
-    font-family: "object-fit:cover";
     font-size: 17px;
-    font-stretch: 100%;
-    font-weight: 400;
     height: 32px;
-    line-height: 27,2px;
-    object-fit: contain;
-    object-position: 50% 50%;
-    /* overflow-clip-margin: content-box; */
-    text-align: center;
-    width: 1102,4px;
+    line-height: 27.2px;
+    object-fit: contain; 
 }
 
 /* blockimage */
@@ -86,47 +71,42 @@
 .carousel__slides {
     margin-top: 50px;
     display: flex;
-    /* flex-wrap: wrap; */
     flex: 1;
     width: 100%;
-    overflow: hidden;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+} 
 
-.carosel-cards {
+.carosel-conteiner {
+    display: block;
+        justify-content: center;
+        align-items: center;
+        font-family: "PT Sans", sans-serif;
+        min-width: 320px;
     padding: 0 15px;
     display: block;
     width: 100%;
-    /* position: absolute; */
 }
 
 /* start card */
-.carousel__card {
-    /* display: flex; */
-    /* flex: 1; */
-    /* width: 200px;
-    height: 500px; */
-    /* min-height: 1px; */
-    /* overflow-wrap: break-word; */
-    /* float: left; */
-    /* padding: 0 0; */
-    /* margin: 0 10px; */
-    justify-content: center;
-    align-items: center;
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
     border: 1.6px solid rgb(255, 230, 212);
 
 }
 
-.carousel__card-content {
+.carousel-inner {
     display: flex;
-    flex-direction: column;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.carousel-card {
+flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 45px 20px;
-    max-width: 1200px;
 }
 
 /* block image */
@@ -140,15 +120,13 @@
 .carousel__card-image {
     min-height: 32px;
     width: 120px;
-    height: 120xp;
+    height: 120px;
     border-bottom-left-radius:50%;
     border-bottom-right-radius: 50%;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     object-fit: cover;
     object-position: 50% 0;
-    /* overflow-clip-margin: content-box; */
-    
 }
 
 /* block For Cats */
@@ -159,7 +137,6 @@
 
 /* For Cats */
 .carousel__card-category {
-    /* display: flex; */
     font-family: "Baloo 2", cursive;
     font-size: 24px;
     display: inline;
@@ -185,7 +162,6 @@
     color: rgb(149, 139, 126);
     font-size: 15px;
     font-weight: 400;
-    /* display: inline; */
 }
 
 .button__carousel {
@@ -195,8 +171,7 @@
 }
 
 
-
-.carousel__button {
+.carousel-button {
     align-items: flex-start;
     appearance: auto;
     background-attachment: scroll;
@@ -220,15 +195,18 @@
     font-stretch: 100%;
     font-weight: 400;
     height: 32px;
-    /* left: 15px;
-    opacity: 0.85; */
     text-align: center;
-    /* top: 200.65px;
-    transform: matrix(1, 0, 0, 1, -16, -16);
-    transition-delay: 0s;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-out; */
     width: 32px;
-    /* writing-mode: horizontal-tb;
-    z-index: 1; */
+    border: none;
 }
+
+.prev-button {
+    position: absolute;
+    left: 0;
+}
+
+.next-button {
+    position: absolute;
+    right: 0;
+}
+
