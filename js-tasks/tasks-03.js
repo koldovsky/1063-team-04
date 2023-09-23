@@ -23,7 +23,7 @@ function giveMeFive(obj) {
 
 // https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 function buildFun(n) {
-  var res = [];
+  let res = [];
 
   for (var i = 0; i < n; i++) {
     (function (index) {
