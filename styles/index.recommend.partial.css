@@ -132,6 +132,7 @@
 
 .recommend-card__button {
   background-color: var(--color-background-gallery-button);
+  font-family: "PT Sans", sans-serif;
   color: #45c1c7;
   font-size: 18px;
   font-weight: 700;

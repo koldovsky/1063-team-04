@@ -8,19 +8,8 @@
 }
 
 :root {
-   scroll-behavior: smooth;
-  --dark-grey: #3c3731;
-  --text-color: #f2e8e4;
-  --light-pink: #faf4f2;
-  --antique-white: #ffe6d4;
-  --misty-rose: #f4e6e2;
-  --gray-olive: #958b7e;
-  --seashell: #45c1c7;
-  --sea-green: #32a1a7;
-  --dark-gray: #9a9898;
-  --pale-turquoise: #b2e7e9;
-  --tangerine: #ed6435;
   scroll-behavior: smooth;
+
   /*   --tangerine: #ed6435; */
   --color-selection-text: #ed6435;
   --color-button-text: #ed6435;
@@ -30,7 +19,7 @@
   --color-button-border: #ed6435; /* тут треба додумати бо в нас два кольорои для бордера кнопки */
   --color-border-bottom: #ed6435;
   --color-footer-hor-line: #ed6435;
-  --color-divider-background:#ed6435;
+  --color-divider-background: #ed6435;
 
   /* color:#6b6b6b  */
   --color-nav-link-text: #6b6b6b;
@@ -43,7 +32,7 @@
   --color-content-text: #958b7e;
   --color-timer-text: #958b7e;
   --color-dont-active-button-text: #9a9898;
-  --color-link:#9a9898;
+  --color-link: #9a9898;
 
   /* --seashell: #45c1c7; */
   --color-card__bottom-text: #45c1c7;
@@ -52,7 +41,7 @@
   --color-arrow: #45c1c7;
   --color-dry-food-hot-line: #45c1c7;
   --color-title-footer: #45c1c7;
-  --color-icon-background:#45c1c7;
+  --color-icon-background: #45c1c7;
 
   /* --dark-gray: #9a9898; */
   --color-footer-list-content-text: #9a9898;
@@ -73,9 +62,9 @@
   --misty-rose: #f4e6e2;
   
   --sea-green: #32a1a7; */
-  --color-text-email-button-hover:#32a1a7;
-  --color-icon-background-hover:#32a1a7;
-  --color-button-background:#f4e6e2;
+  --color-text-email-button-hover: #32a1a7;
+  --color-icon-background-hover: #32a1a7;
+  --color-button-background: #f4e6e2;
   --color-background-footer: #faf4f2;
 }
 
