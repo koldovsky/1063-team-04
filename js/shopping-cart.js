@@ -58,11 +58,9 @@ function updateCartDisplay(count) {
   const cart = document.querySelector(".shopping__cart-svg-wrap");
   const countProductsCart = document.querySelector(".shopping__cart-count");
 
-  if (count === 0) {
-    cart.style.display = "none";
-  } else {
-    cart.style.display = "block";
-  }
+  if (count === 0) cart.style.display = "none";
+  else cart.style.display = "block";
+
   countProductsCart.innerText = count < 10 ? count : "9+";
 }
 
@@ -71,8 +69,16 @@ function addCount() {
   const newCount = currentCountProducts + 1;
   updateCountInStorage(newCount);
   updateCartDisplay(newCount);
+
+  const cartSvg = document.querySelector(".shopping__cart-svg");
+  cartSvg.classList.add("shopping__cart-increase");
+
+  setTimeout(() => {
+    cartSvg.classList.remove("shopping__cart-increase");
+  }, 500);
 }
 
+// wiil need remove
 function removeCount() {
   const currentCountProducts = getCurrentCountFromStorage();
   if (currentCountProducts > 0) {
@@ -81,6 +87,7 @@ function removeCount() {
     updateCartDisplay(newCount);
   }
 }
+//
 
 const initialCount = getCurrentCountFromStorage();
 updateCartDisplay(initialCount);
@@ -90,7 +97,9 @@ btnsAddCart.forEach((btn) => {
   btn.addEventListener("click", addCount);
 });
 
-const btnsRemoveCart = document.querySelectorAll(".recommend__cards-tab-btn");
+// wiil need remove
+const btnsRemoveCart = document.querySelectorAll(".recommend__title");
 btnsRemoveCart.forEach((btn) => {
   btn.addEventListener("click", removeCount);
 });
+//
