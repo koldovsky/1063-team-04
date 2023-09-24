@@ -1,7 +1,3 @@
-.smooth-scroll {
-    transition: scroll-behavior 0.5s ease-in-out;
-}
-
 .cta {
     background-image: url('../img/promotion/cta.jpg');
     background-size: cover; 
@@ -12,20 +8,24 @@
 }
 
 .promotion {
-    color: #45C1C7;
+    color: var(--seashell);
     font-size: 15px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .cat-week {
     font-family: "Baloo 2", cursive;
     font-weight: bold;
-    color: #3C3731;
+    color: var(--dark-grey);
     font-size: 48px;
     display: flex;
     width: 300px;
     word-break: break-word;
+    margin-left: 20px;
+    line-height: 1.1;
 }
 
 .special-prices {
@@ -33,24 +33,29 @@
     font-size: 19px;
     font-family: "PT Sans", sans-serif;
     display: flex;
-    width: 350px;
+    width: 310px;
     word-break: break-word;
     flex-wrap: wrap;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 .discount {
-    color: #ED6435;
+    color: var(--tangerine);
     font-weight: bold;
 }
 
-.smooth-scroll {
+.smooth-scroll-shop {
+    transition: scroll-behavior 0.5s ease-in-out;
     text-decoration: none;
-    background-color: #b2e7e9;
-    color: #45C1C7;
+    background-color: var(--pale-turquoise);
+    color: var(--seashell);
     font-size: 17px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
     position: absolute;
     padding: 10px 25px;
     border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 150px;
 }

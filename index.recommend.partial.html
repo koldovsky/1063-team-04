@@ -1,267 +1,349 @@
-<section id="our-shop" class="recommend">
-	<div class="recommend__container">
-		<div class="recommend_column-title">
-			<h2 class="recommend__title">Top recommendations</h2>
+<section id="our-shop" class="recommend container">
+	<div class="recommend__wrap">
+		<div class="recommend_header-title">
+			<span class="recommend__title">Top Recommendations</span>
 			<img src="img/recommend/bone.svg" class="recommend__title-img" alt="bone">
-			<p class="recommend__description">Shop the best products for your pets with affordable prices only in
-				the Happy Paw online store.</p>
+			<p class="recommend__description">
+				Shop the best products for your pets with affordable prices only in
+				the Happy Paw online store.
+			</p>
 		</div>
+
 		<div class="recommend__cards-wrapper">
 			<div class="recommend__cards-tab">
-				<button>For Dogs</button>
-				<button>For Cats</button>
-				<button>For Parrots</button>
-				<button>For Rabbits</button>
-				<button>For Fish</button>
+				<button class="recommend__cards-tab-btn active" onclick="filterSelection('dogs')">For Dogs</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('cats')">For Cats</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('parrots')">For Parrots</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('rabbits')">For Rabbits</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('hamsters')">For Hamsters</button>
+				<button class="recommend__cards-tab-btn" onclick="filterSelection('fish')">For Fish</button>
 			</div>
 
 			<div id="dogs" class="recommend__list">
-				<article class="recommend-card">
-					<div class="recommend-card__image">
-						<img src="img/recommend/dogs/doggy-fun-set.png" alt="DOGGY Fun Set">
-					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">doggy </span>Fun
-						Set</a>
-					<p class="recommend-card__price">$6,00</p>
-					<button class="recommend-card__button" type="button">Add to Cart</button>
-				</article>
+				<div>
+					<article class="recommend-card">
+						<div class="recommend-card__image">
+							<a href="#">
+								<img src="img/recommend/dogs/doggy-fun-set.png" alt="DOGGY Fun Set">
+							</a>
+						</div>
+						<a href="#" class="recommend-card__title">
+							<span class="recommend-card__title-wrapper">doggy </span>Fun Set
+						</a>
+						<p class="recommend-card__price">$6,00</p>
+						<button class="recommend-card__button" type="button">Add to Cart</button>
+					</article>
 
-				<article class="recommend-card">
-					<div class="recommend-card__image">
-						<img src="img/recommend/dogs/duna-pillow-bed.png" alt="DUNA Pillow Bed">
-					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">duna </span>Pillow
-						Bed</a>
-					<p class="recommend-card__price">$10,00</p>
-					<button class="recommend-card__button" type="button">Add to Cart</button>
-				</article>
+					<article class="recommend-card">
+						<div class="recommend-card__image">
+							<a href="#">
+								<img src="img/recommend/dogs/duna-pillow-bed.png" alt="DUNA Pillow Bed">
+							</a>
+						</div>
+						<a href="#" class="recommend-card__title">
+							<span class="recommend-card__title-wrapper">duna </span>Pillow Bed
+						</a>
+						<p class="recommend-card__price">$10,00</p>
+						<button class="recommend-card__button" type="button">Add to Cart</button>
+					</article>
+				</div>
 
-				<article class="recommend-card">
-					<div class="recommend-card__image">
-						<img src="img/recommend/dogs/aga-retractable-leash.png" alt="AGA Retractable Leash">
-					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">aga </span>Retractable
-						Leash</a>
-					<p class="recommend-card__price">$33,00</p>
-					<button class="recommend-card__button" type="button">Add to Cart</button>
-				</article>
+				<div>
+					<article class="recommend-card">
+						<div class="recommend-card__image">
+							<a href="#">
+								<img src="img/recommend/dogs/aga-retractable-leash.png" alt="AGA Retractable Leash">
+							</a>
+						</div>
+						<a href="#" class="recommend-card__title">
+							<span class="recommend-card__title-wrapper">aga </span>Retractable Leash
+						</a>
+						<p class="recommend-card__price">$33,00</p>
+						<button class="recommend-card__button" type="button">Add to Cart</button>
+					</article>
 
-				<article class="recommend-card">
-					<div class="recommend-card__image">
-						<img src="img/recommend/dogs/doggy-2-bunch-toy.png" alt="DOGGY 2-Bunch Toy">
-					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">doggy </span>2-Bunch
-						Toy</a>
-					<p class="recommend-card__price">$5,00</p>
-					<button class="recommend-card__button" type="button">Add to Cart</button>
-				</article>
+					<article class="recommend-card">
+						<div class="recommend-card__image">
+							<a href="#">
+								<img src="img/recommend/dogs/doggy-2-bunch-toy.png" alt="DOGGY 2-Bunch Toy">
+							</a>
+						</div>
+						<a href="#" class="recommend-card__title">
+							<span class="recommend-card__title-wrapper">doggy </span>2-Bunch Toy
+						</a>
+						<p class="recommend-card__price">$5,00</p>
+						<button class="recommend-card__button" type="button">Add to Cart</button>
+					</article>
+				</div>
 			</div>
 
-			<div id="cats" class="recommend__list">
+			<div id="cats" class="recommend__list" style="display: none;">
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/cats/aga-mice-set.png" alt="AGA Mice Set">
+						<a href="#">
+							<img src="img/recommend/cats/aga-mice-set.png" alt="AGA Mice Set">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">aga </span> Mice
-						Set</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">aga </span> Mice Set
+					</a>
 					<p class="recommend-card__price">$3,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/cats/vitalife-2-bowls-set.png" alt="VITALIFE 2-Bowls Set">
+						<a href="#">
+							<img src="img/recommend/cats/vitalife-2-bowls-set.png" alt="VITALIFE 2-Bowls Set">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">vitalife
-						</span>2-Bowls Set</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">vitalife </span>2-Bowls Set
+					</a>
 					<p class="recommend-card__price">$9,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/cats/aga-leash&collar.png" alt="AGA Leash & Collar">
+						<a href="#">
+							<img src="img/recommend/cats/aga-leash&collar.png" alt="AGA Leash & Collar">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">aga </span>Leash &
-						Collar</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">aga </span>Leash & Collar
+					</a>
 					<p class="recommend-card__price">$13,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/cats/duna-gray-bed.png" alt="DUNA Gray Bed">
+						<a href="#">
+							<img src="img/recommend/cats/duna-gray-bed.png" alt="DUNA Gray Bed">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">duna </span>Gray
-						Bed</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">duna </span>Gray Bed
+					</a>
 					<p class="recommend-card__price">$25,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 			</div>
 
-			<div id="parrots" class="recommend__list">
+			<div id="parrots" class="recommend__list" style="display: none;">
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/parrots/dora-hanging-mirror.png" alt="DORA Hanging Mirror">
+						<a href="#">
+							<img src="img/recommend/parrots/dora-hanging-mirror.png" alt="DORA Hanging Mirror">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">dora </span> Hanging
-						Mirror</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">dora </span> Hanging Mirror
+					</a>
 					<p class="recommend-card__price">$14,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
+						<a href="#">
+
+						</a>
 						<img src="img/recommend/parrots/vetra-hanging-nest.png" alt="VETRA Hanging Nest">
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">vetra </span>Hanging
-						Nest</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">vetra </span>Hanging Nest
+					</a>
 					<p class="recommend-card__price">$8,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
+						<a href="#">
+
+						</a>
 						<img src="img/recommend/parrots/dora-wood-swing.png" alt="DORA Wood Swing">
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">dora </span>Wood
-						Swing</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">dora </span>Wood Swing
+					</a>
 					<p class="recommend-card__price">$7,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/parrots/opty-wooden-stand.png" alt="OPTY Wooden Stand">
+						<a href="#">
+							<img src="img/recommend/parrots/opty-wooden-stand.png" alt="OPTY Wooden Stand">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">opty </span>Wooden
-						Stand</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">opty </span>Wooden Stand
+					</a>
 					<p class="recommend-card__price">$13,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 			</div>
 
-			<div id="rabbits" class="recommend__list">
+			<div id="rabbits" class="recommend__list" style="display: none;">
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/rabbits/sera-purple-collar.png" alt="SERA Purple Collar">
+						<a href="#">
+							<img src="img/recommend/rabbits/sera-purple-collar.png" alt="SERA Purple Collar">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">sera </span>Purple
-						Collar</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">sera </span>Purple Collar
+					</a>
 					<p class="recommend-card__price">$2,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/rabbits/aga-clinking-toy.png" alt="AGA Clinking Toy">
+						<a href="#">
+							<img src="img/recommend/rabbits/aga-clinking-toy.png" alt="AGA Clinking Toy">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">aga </span>Clinking
-						Toy</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">aga </span>Clinking Toy
+					</a>
 					<p class="recommend-card__price">$2,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/rabbits/harno-rabbit-cage.png" alt="HARNO Rabbit Cage">
+						<a href="#">
+							<img src="img/recommend/rabbits/harno-rabbit-cage.png" alt="HARNO Rabbit Cage">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">harno </span>Rabbit
-						Cage</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">harno </span>Rabbit Cage
+					</a>
 					<p class="recommend-card__price">$60,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/rabbits/dora-rabbit-brush.png" alt="DORA Rabbit Brush">
+						<a href="#">
+							<img src="img/recommend/rabbits/dora-rabbit-brush.png" alt="DORA Rabbit Brush">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">dora </span>Rabbit
-						Brush</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">dora </span>Rabbit Brush
+					</a>
 					<p class="recommend-card__price">$10,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 			</div>
 
-			<div id="hamsters" class="recommend__list">
+			<div id="hamsters" class="recommend__list" style="display: none;">
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/hamsters/aga-bowl-for-hamsters.png" alt="AGA Bowl for Hamsters">
+						<a href="#">
+							<img src="img/recommend/hamsters/aga-bowl-for-hamsters.png" alt="AGA Bowl for Hamsters">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">aga </span>Bowl for
-						Hamsters</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">aga </span>Bowl for Hamsters
+					</a>
 					<p class="recommend-card__price">$2,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/hamsters/tisco-toy-wheel.png" alt="TISCO Toy Wheel">
+						<a href="#">
+							<img src="img/recommend/hamsters/tisco-toy-wheel.png" alt="TISCO Toy Wheel">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">tisco </span>Toy
-						Wheel</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">tisco </span>Toy Wheel
+					</a>
 					<p class="recommend-card__price">$9,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/hamsters/sterco-rainbow-balls.png" alt="STERCO Rainbow Balls">
+						<a href="#">
+							<img src="img/recommend/hamsters/sterco-rainbow-balls.png" alt="STERCO Rainbow Balls">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">sterco </span>Rainbow
-						Balls</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">sterco </span>Rainbow Balls
+					</a>
 					<p class="recommend-card__price">$3,50</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/hamsters/aga-green-cage.png" alt="AGA Green Cage">
+						<a href="#">
+							<img src="img/recommend/hamsters/aga-green-cage.png" alt="AGA Green Cage">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">aga </span>Green
-						Cage</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">aga </span>Green Cage
+					</a>
 					<p class="recommend-card__price">$25,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 			</div>
 
-			<div id="fish" class="recommend__list">
+			<div id="fish" class="recommend__list" style="display: none;">
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/fish/ducca-air-pump.png" alt="DUCCA Air Pump">
+						<a href="#">
+							<img src="img/recommend/fish/ducca-air-pump.png" alt="DUCCA Air Pump">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">ducca </span>Air
-						Drop</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">ducca </span>Air Drop
+					</a>
 					<p class="recommend-card__price">$42,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/fish/tisco-50liter-aquarium.png" alt="TISCO 50 Liter Aquarium">
+						<a href="#">
+							<img src="img/recommend/fish/tisco-50liter-aquarium.png" alt="TISCO 50 Liter Aquarium">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">tisco </span>50 Liter
-						Aquarium</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">tisco </span>50 Liter Aquarium
+					</a>
 					<p class="recommend-card__price">$70,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/fish/vega-fish-castle.png" alt="VEGA Fish Castle">
+						<a href="#">
+							<img src="img/recommend/fish/vega-fish-castle.png" alt="VEGA Fish Castle">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">vega </span>Fish
-						Castle</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">vega </span>Fish Castle
+					</a>
 					<p class="recommend-card__price">$6,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>
 
 				<article class="recommend-card">
 					<div class="recommend-card__image">
-						<img src="img/recommend/fish/tisco-landing-net.png" alt="TISCO Landing Net">
+						<a href="#">
+							<img src="img/recommend/fish/tisco-landing-net.png" alt="TISCO Landing Net">
+						</a>
 					</div>
-					<a href="#" class="recommend-card__title"><span class="recommend-card__title-wrapper">tisco </span>Landing
-						Net</a>
+					<a href="#" class="recommend-card__title">
+						<span class="recommend-card__title-wrapper">tisco </span>Landing Net
+					</a>
 					<p class="recommend-card__price">$4,00</p>
 					<button class="recommend-card__button" type="button">Add to Cart</button>
 				</article>

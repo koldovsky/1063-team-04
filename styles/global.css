@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=PT+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,37 +9,71 @@
 
 :root {
   scroll-behavior: smooth;
-  --dark-grey: #3c3731;
-  --text-color: #f2E8E4;
-  --light-pink: #faf4f2;
-  --antique-white:#ffe6d4;
-  --misty-rose:#f4e6e2;
-  --gray-olive: #958B7E;
-  --seashell: #45c1c7;
-  --sea-green:#32a1a7;
-  --dark-gray:#9a9898;
-  --pale-turquoise:#b2e7e9;
-  --tangerine:#ed6435;
-  font-family: "PT Sans", sans-serif;
+
+  /*   --tangerine: #ed6435; */
+  --color-selection-text: #ed6435;
+  --color-button-text: #ed6435;
+  --color-price-text: #ed6435;
+  --color-number-text: #ed6435;
+  --color-button-hover-text: #ed6435;
+  --color-button-border: #ed6435; /* тут треба додумати бо в нас два кольорои для бордера кнопки */
+  --color-border-bottom: #ed6435;
+  --color-footer-hor-line: #ed6435;
+  --color-divider-background: #ed6435;
+
+  /* color:#6b6b6b  */
+  --color-nav-link-text: #6b6b6b;
+
+  /* --dark-grey: #3c3731; */
+  --color-h-text: #3c3731;
+  --color-p-text: #3c3731;
+
+  /* --gray-olive: #958b7e; */
+  --color-content-text: #958b7e;
+  --color-timer-text: #958b7e;
+  --color-dont-active-button-text: #9a9898;
+  --color-link: #9a9898;
+
+  /* --seashell: #45c1c7; */
+  --color-card__bottom-text: #45c1c7;
+  --color-button-text-secondary: #45c1c7;
+  --color-button-border: #45c1c7;
+  --color-arrow: #45c1c7;
+  --color-dry-food-hot-line: #45c1c7;
+  --color-title-footer: #45c1c7;
+  --color-icon-background: #45c1c7;
+
+  /* --dark-gray: #9a9898; */
+  --color-footer-list-content-text: #9a9898;
+
+  /* --pale-turquoise: #b2e7e9; */
+  --color-background-gallery-button: #b2e7e9;
+  --color-background-email-button-hover: #b2e7e9;
+
+  --color-default-text: #000000;
+  --color-default-backfround: #ffffff;
+
+  /* --antique-white: #ffe6d4; */
+  --color-background-hover-button: #ffe6d4;
+  --color-background-email-button: #ffe6d4;
+
+  /* --text-color: #f2e8e4;
+  
+  --misty-rose: #f4e6e2;
+  
+  --sea-green: #32a1a7; */
+  --color-text-email-button-hover: #32a1a7;
+  --color-icon-background-hover: #32a1a7;
+  --color-button-background: #f4e6e2;
+  --color-background-footer: #faf4f2;
 }
-/* 
+
 img {
   display: block;
   width: 100%;
-} */
+}
 
-/* .scroll-to-top {
-  position: fixed;
-  display: none;
-  bottom: 20px;
-  right: 50px;
-  width: 60px;
-  height: 60px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 50%;
-  font-size: 40px;
-  cursor: pointer;
-  padding-bottom: 5px;
-} */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}

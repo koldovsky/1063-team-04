@@ -1,30 +1,28 @@
-      .header {
-        background-color: #f2e8e4;
-      }
-      .header__section-info {
+    .header__section-info {
         display: flex;
         flex: 1;
         justify-content: space-between;
       }
-      @media (min-width: 500px) {
-      
-      .header__section-info {
-            flex-direction:row;
-      }
-}
       .header__info-item {
-        background-color: #f2e8e4;
-        height: 20px;
+        height: 16px;
         font-weight: bold;
         font-family: "PT Sans";
-        color: rgb(237, 100, 53);
         font-size: 15px;
         margin-left: 90px;
         margin-right: 90px;
         margin-top: 10px;
       }
+      .header__contactus-item {
+        color: rgb(237, 100, 53);
+        font-size: 15px;
+        font-weight: bold;
+        display: inline-block;
+        padding-top: 10px;
+        margin-bottom: -5px;
+        margin-right: 45px;
+      }
       .header__logo-image {
-        width: 182;
+        font-size: 16px;
         margin-top: -10px;
       }
       .header__nav {
@@ -37,9 +35,6 @@
         margin-left: 93px;
       }
       .header__menu-list {
-        font-size: 0;
-        margin: 0;
-        padding: 0;
         text-align: center;
         display: flex;
         flex: 1;
@@ -58,25 +53,83 @@
         font-weight: bold;
         color: #6b6b6b;
         font-family: "PT Sans";
+        text-decoration: none;
       }
       .header__social-list {
-        align-items: center;
+        display: flex;
+        justify-content: flex-end;
       }
       .header__social-item {
-            width: 6%;
+        width: 6%;
         list-style-type: none;
+        margin-left: 60px;
+        margin-top: 60px;
+        margin-block: 30px;
       }
-      
       .header__social-link {
         color: rgb(69, 193, 199);
       }
-      
+      .header__banner {
+        position: relative;
+        padding-top: 200px;
+        padding-bottom: 300px;
+        height: 100vh;
+        background: url("img/index.header/header-background.png") center/cover;
+      }
+      .header__banner-image {
+        position: absolute;
+        top: 53%;
+        left: 28%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+      }
       .header__title {
         font-family: "Baloo 2";
         font-weight: bold;
         color: rgb(60, 55, 49);
-        font-size: 82px;
-        padding-left: 70px;
-        padding-top: 70px;
-        display: block;   
+        font-size: 80px;
+        font-family: "Baloo 2";
+      }
+      .header__description {
+        color: rgb(149, 139, 126);
+        font-size: 19px;
+        margin-bottom: 60px;
+        margin-top: 30px;
+      }
+      .header__buttons-aboutus {
+        font-size: 16.5px;
+        border-radius: 20px;
+        background-color: #ffe6d4;
+        padding: 10px 25px 12px 25px;
+        color: #ed643c;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.5s ease;
+      }
+      .header__buttons-aboutus:hover {
+        color: #5ccbd7;
+        background-color: #b6e7e8;
+      }
+      .header__buttons-categories {
+        font-size: 16.5px;
+        margin-left: 20px;
+        border-bottom: 1px solid #45c1c7;
+        border-top: 1px solid #45c1c7;
+        border-radius: 25px;
+        border-right: 1px solid #45c1c7;
+        border-left: 1px solid #45c1c7;
+        background-color: rgb(250, 244, 242);
+        padding: 10px 30px 12px 30px;
+        color: #45c1c7;
+        font-weight: bold;
+        text-decoration: none;
+        transition: all 0.5s ease;
+      }
+      .header__buttons-categories:hover {
+        color: #fff;
+        background-color: #45c1c7;
+      }
+      .header__group-inner {
+        display: flex;
+        flex-direction: row;
       }

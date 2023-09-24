@@ -1,17 +1,23 @@
 /* all block */
-.carousel {
-    margin-top: 50px;
-    margin-right: 40px;
-    margin-left: 40px;
-    margin-bottom: 120px;
+.carousel__wrap {
     text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
+    padding: 0 40px;
+    min-width: 320px;
 }
 
-/* block header and carousel */
-.carousel__slides {
-    background-color: aqua;
+
+.carousel__header {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
+
+
+/* Any Products for Any Pets */
 .carousel__header-top-text {
     color: #3c3731;
     font-family: 'Baloo 2', cursive;
@@ -20,29 +26,187 @@
     font-weight: bold;
     line-height: 52.8px;
 }
-<<<<<<< HEAD
-=======
 
-.carousel__header-text {
-    color: rgb(149, 139, 126);
-    margin-top: 20px;
-    font-size: 19px;
-    font-stretch: 100%;
+/* logo bone image */
+.carousel__logo img {
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    font-size: 17px;
+    height: 32px;
+    line-height: 27.2px;
+    object-fit: contain; 
 }
 
-.carousel__header-container {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* logo bone */
-<<<<<<< HEAD
+/* blockimage */
 .carousel__logo {
     padding-top: 27.5px;
 }
 
+/* block down text */
+.carousel__header-text {
+    margin-top: 20px;
+    text-decoration-style: solid;
+    height: auto;
+        width: auto;
+        font-stretch: 100%;
+        margin-block-start: 20px;
+        
+}
 
- 
-=======
->>>>>>> e346e0e9dd6d9bda973e633c559141afc8f024ba
->>>>>>> 96214156b16717716dafd58601aab8a872a0dc28
+/* Best picks for your beloved companions only in Happy Paw. */
+.carousel__header-down-text {
+    color: rgb(149, 139, 126);
+    font-size: 19px;
+        font-weight: 400;
+        line-height: 28.5px;
+        overflow-wrap: break-word;
+}
+
+
+
+
+
+/* block carousel */
+.carousel__slides {
+    margin-top: 50px;
+    display: flex;
+    flex: 1;
+    width: 100%;
+} 
+
+.carosel-conteiner {
+    display: block;
+        justify-content: center;
+        align-items: center;
+        font-family: "PT Sans", sans-serif;
+        min-width: 320px;
+    padding: 0 15px;
+    display: block;
+    width: 100%;
+}
+
+/* start card */
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border: 1.6px solid rgb(255, 230, 212);
+
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.carousel-card {
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+/* block image */
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image */
+.carousel__card-image {
+    min-height: 32px;
+    width: 120px;
+    height: 120px;
+    border-bottom-left-radius:50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+
+/* block For Cats */
+.carousel__card-name {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* For Cats */
+.carousel__card-category {
+    font-family: "Baloo 2", cursive;
+    font-size: 24px;
+    display: inline;
+    max-width: 100%;
+    white-space: nowrap;
+}
+
+.carousel__arrow {
+    color: rgb(69, 193, 199);
+}
+
+/* block text */
+.carousel__card-description {
+    margin-top: 20px;
+    display: inline;
+    max-width: 100%;
+    line-height: 21.4275px;
+    height: auto;
+}
+
+/* text */
+.carousel__card-text {
+    color: rgb(149, 139, 126);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.button__carousel {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.carousel-button {
+    align-items: flex-start;
+    appearance: auto;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: black;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-width: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-width: 1;
+    cursor: pointer;
+    display: block;
+    font-stretch: 100%;
+    font-weight: 400;
+    height: 32px;
+    text-align: center;
+    width: 32px;
+    border: none;
+}
+
+.prev-button {
+    position: absolute;
+    left: 0;
+}
+
+.next-button {
+    position: absolute;
+    right: 0;
+}
+
