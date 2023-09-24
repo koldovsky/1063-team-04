@@ -1,3 +1,7 @@
+.shopping__cart:hover {
+  cursor: pointer;
+}
+
 .shopping__cart-svg-wrap {
   position: fixed;
   top: 80px;
