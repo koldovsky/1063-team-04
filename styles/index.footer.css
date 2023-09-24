@@ -89,6 +89,7 @@
     margin-top: 12px;   
 }
 .contact__email-button {
+    text-align: center;
     border: none;
     background-color: var(--color-background-email-button);
     color:var(--color-button-text);
