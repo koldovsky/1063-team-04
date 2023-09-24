@@ -6,6 +6,7 @@ document.addEventListener("partialsLoaded", () => {
   import("./trending-carousel.js");
   import("./scroll-up.js");
   import("./shopping-cart.js");
+  import("./testimonials.js");
   import('./new-arrivals.js');
   import('./new-arrivals-carousel-cards.js');
 });
