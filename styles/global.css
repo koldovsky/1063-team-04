@@ -66,6 +66,9 @@
   --color-icon-background-hover: #32a1a7;
   --color-button-background: #f4e6e2;
   --color-background-footer: #faf4f2;
+
+  --color-background-section: #faf4f2;
+  --color-text-section-text: #958B7E;
 }
 
 img {
