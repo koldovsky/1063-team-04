@@ -1,0 +1,24 @@
+.about-us{
+    background-color: var(--light-pink);
+}
+/*
+.about-us__container{
+    max-width: 551.200px;
+}
+.about-us__heading-image{
+    width: 100%;
+    display: block;
+
+}
+.about-us__heading{
+    display: flex;
+    flex-direction: column;
+    
+}*/
+.about-us__title{
+    font-family: 'Baloo 2', cursive;
+    color: var(--dark-grey);
+    font-size: 30px;
+    overflow-wrap: break-word;
+    font-weight: bold;
+}
