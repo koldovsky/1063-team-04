@@ -223,10 +223,7 @@
     align-items: center;
     font-size: 16.5px;
     transition: background-color 0.3s, color 0.3s;
-}
-
-.card__bottom-text {
-    color: var(--tangerine);
+    /* Додали анімацію зміни кольорів */
 }
 
 .card__button:hover {
@@ -234,9 +231,19 @@
     color: var(--sea-green) !important;
 }
 
+/* Змінюємо колір тексту при наведенні на контейнер */
 .card__button:hover .card__bottom-text {
     color: var(--sea-green) !important;
 }
+
+.card__bottom-text-brands {
+color: var(--tangerine);
+}
+
+.card__bottom-text-sale {
+color: var(--tangerine);
+}
+
 
 .button-sale {
     display: flex;
