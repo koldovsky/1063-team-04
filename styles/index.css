@@ -3,6 +3,7 @@
 @import url(index.promotion-discount.css);
 @import url(index.cards-container.css);
 @import url(index.carousel-any-products-container.css);
+@import url(index.about-us.css);
 @import url(index.dry-food-treats.partial.css);
 @import url(index.our-news-articles.partial.css);
 @import url(index.header.partial.css);
@@ -14,4 +15,4 @@
 @import url(index.recommend.partial.css);
 @import url(index.scroll-up.partial.css);
 @import url(index.shopping-cart.partial.css);
-@import url();
+@import url(index.modal-of-order.partial.css);

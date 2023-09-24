@@ -1,11 +1,15 @@
+.shopping__cart:hover {
+  cursor: pointer;
+}
+
 .shopping__cart-svg-wrap {
   position: fixed;
   top: 80px;
   right: 30px;
+  padding: 10px;
   border: 2px solid #ffe6d4;
   background-color: white;
   border-radius: 50%;
-  padding: 12px;
   width: 46px;
   height: 46px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -14,6 +18,23 @@
 .shopping__cart-svg {
   width: 22px;
   height: 22px;
+  transition: all 0.3s ease;
+}
+
+.shopping__cart-increase {
+  animation: cartIncrease 0.5s linear;
+}
+
+@keyframes cartIncrease {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .shopping__cart-count {
@@ -26,8 +47,8 @@
   background-color: #ed6435;
   color: #ffffff;
   font-size: 16px;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 
@@ -35,10 +56,16 @@
   .shopping__cart-svg-wrap {
     width: 66px;
     height: 66px;
+    padding: 13px;
   }
 
   .shopping__cart-svg {
     width: 36px;
     height: 36px;
+  }
+
+  .shopping__cart-count {
+    width: 24px;
+    height: 24px;
   }
 }
