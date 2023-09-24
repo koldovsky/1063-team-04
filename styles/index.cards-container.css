@@ -197,10 +197,10 @@
     margin-top: 35px;
 }
 
-/* button container (2) */
 .card__button {
     position: relative;
-    background-color: var(--antique-white);
+    /* Додайте це */
+    background-color: #ffe6d4;
     background-position-x: 50%;
     background-position-y: 50%;
     border-bottom-left-radius: 25px;
@@ -223,25 +223,22 @@
     align-items: center;
     font-size: 16.5px;
     transition: background-color 0.3s, color 0.3s;
-    /* Додали анімацію зміни кольорів */
+    /* Додайте це */
+}
+
+.card__bottom-text {
+    color: #ed6435;
 }
 
 .card__button:hover {
-    background-color: var(--color-background-gallery-button) !important;
-    color: var(--sea-green) !important;
+    background-color: #b2e7e9;
+    color: #32a1a7;
+    /* Додайте це */
 }
 
-/* Змінюємо колір тексту при наведенні на контейнер */
-.card__button:hover .card__bottom-text {
-    color: var(--sea-green) !important;
-}
-
-.card__bottom-text-brands {
-color: var(--tangerine);
-}
-
-.card__bottom-text-sale {
-color: var(--tangerine);
+.card__bottom-text:hover {
+    cursor: pointer;
+    color: #32a1a7;
 }
 
 
