@@ -5,4 +5,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./products-carousel.js");
   import("./scroll-up.js");
   import("./shopping-cart.js");
+  import("./testimonials.js");
 });
