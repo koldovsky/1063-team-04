@@ -41,10 +41,7 @@
 .about-us__goods-paw{
     height:24px;
     object-fit: contain;
-    /*fill: blue;*/
 }
-
-
 
 @media (min-width: 768px){
     .about-us__heading{
@@ -59,7 +56,7 @@
     }
     .about-us__heading-all-text{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         flex-direction: column;
     }
 }

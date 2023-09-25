@@ -21,34 +21,21 @@ const services = [
     }
 ];
 
-function renderServices {
-    let servicesHtml = '';
-    for (const service of services) {
-        servicesHtml += 
+renderServices(services);
+
+function renderServices(services){
+    const servicesContainer = document.querySelector('.about-us__services-list');
+    servicesContainer.innerHTML = '';
+    for(const service of services) {
+        servicesContainer.innerHTML += 
         `<article class="about-us__service-card">
             <div class="about-us__service-image">
-            <img src="${service.imageSvg}" alt="${service.title}">
+                ${service.imageSvg.outerHTML};
             </div>
             <div class="about-us__service-description">
                 <h3 class="about-us__service-title">${service.title}</h3>
                 <p class="about-us__service-text">${service.text}</p>
             </div>
-        </article>`
-
-       /* `<article class="product-card">
-            <img src="${product.imageUrl}" alt="${product.title}">
-            <h3 class="product-card__h3">${product.title}</h3>
-            <p class="product-card__description">${product.description}</p>
-            <div class="product-card__buttons">
-                <button class="product-card__buttons-info button button-card">
-                    Info
-                </button>
-                <button class="product-card__buttons-buy button button-card">
-                    Buy - ${product.price}
-                </button>
-            </div>
-        </article>`;*/
+        </article>`;
     }
-    document.querySelector('.about-us__services-list').innerHTML = servicesHtml;
 }
-renderServices(services);
