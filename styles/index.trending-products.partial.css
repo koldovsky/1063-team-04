@@ -1,11 +1,11 @@
 .trending__products-container {
-min-height: 100vh;
-padding: 90px 0;
+  min-height: 100vh;
+  padding: 90px 0;
 }
 
-@media (min-width: 992px){
-  .trending__products-container{
-    padding: 120px 0; 
+@media (min-width: 992px) {
+  .trending__products-container {
+    padding: 120px 0;
   }
 }
 
@@ -16,9 +16,9 @@ padding: 90px 0;
 }
 
 .trending__header {
-  display:flex;
-  flex-direction:column;
-  gap:16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -35,15 +35,15 @@ padding: 90px 0;
 
 @media (min-width: 768px) {
   .trending__header-title {
-    font-size:44px;
-    line-height:52.8px;
+    font-size: 44px;
+    line-height: 52.8px;
   }
 }
 
 @media (min-width: 992px) {
   .trending__header-title {
-    font-size:50px;
-    line-height:60px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
@@ -53,7 +53,7 @@ padding: 90px 0;
 }
 
 .trending_image {
-  height:32px;
+  height: 32px;
   object-fit: contain;
 }
 
@@ -71,17 +71,16 @@ padding: 90px 0;
   position: relative;
   width: 100%;
   justify-content: center;
-  margin-top:45px;
+  margin-top: 45px;
 }
 
 /* <!--buttons remember --> */
 
-
 @media (min-width: 768px) {
   .carousel__card-block {
     display: flex;
-  flex-direction: row;
-  overflow: hidden;
+    flex-direction: row;
+    overflow: hidden;
   }
 }
 

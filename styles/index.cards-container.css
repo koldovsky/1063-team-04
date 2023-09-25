@@ -1,245 +1,241 @@
 .cards {
-    justify-content: center;
-    align-items: center;
-    display: block;
-    padding: 60px 24px;
-    min-width: 320px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  padding: 60px 24px;
+  min-width: 320px;
 }
 
 .cards-conteiner {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 320px;
-    width: 100%;
-    height: 100%;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    -webkit-font-smoothing: antialiased;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
-
 .card__content {
-    display: flex;
-    width: 100%;
-    flex: 1;
-    margin: 0 15px;
+  display: flex;
+  width: 100%;
+  flex: 1;
+  margin: 0 15px;
 }
 
 /* large */
 @media (min-width: 768px) {
-    .card__container {
-        display: flex;
-    }
+  .card__container {
+    display: flex;
+  }
 }
 
 /* small */
 @media (max-width: 768px) {
-    .cards {
-        display: block;
-    }
+  .cards {
+    display: block;
+  }
 
-    .card__container {
-        height: 100%;
-        display: block;
-    }
+  .card__container {
+    height: 100%;
+    display: block;
+  }
 
-    .card__content-brands {
-        min-height: 320px;
-        display: flex;
-        align-items: center;
-    
-    }
+  .card__content-brands {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+  }
 
-    .card__content-sale {
-        margin-top: 50px;
-        background-origin: padding-box;
-        background-position-x: 47.66%;
-        background-position-y: 51.38%;
-        background-repeat: no-repeat;
-    }
+  .card__content-sale {
+    margin-top: 50px;
+    background-origin: padding-box;
+    background-position-x: 47.66%;
+    background-position-y: 51.38%;
+    background-repeat: no-repeat;
+  }
 
+  .card__header-brands {
+    padding: 35px 31px;
+    line-height: 36px;
+  }
 
-    .card__header-brands {
-        padding: 35px 31px;
-        line-height: 36px;
-    }
+  .card__header-sale {
+    padding: 31px 27px;
+    justify-content: space-between;
+    line-height: 33.6px;
+  }
 
-    .card__header-sale {
-        padding: 31px 27px;
-        justify-content: space-between;
-        line-height: 33.6px;
-    }
-
-    .card__title-part {
-        font-size: 30px;
-        line-height: 36px;
-    }
+  .card__title-part {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
-
 
 /* card__content-brands background */
 .card__content-brands {
-    background-image: url(../img/cards-container-backgroud/cards-container-background-1.webp);
-    text-align: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: content-box;
-    min-height: 320px;
+  background-image: url(../img/cards-container-backgroud/cards-container-background-1.webp);
+  text-align: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  min-height: 320px;
 }
 
 /* card__content-sale background */
 .card__content-sale {
-    background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
-    text-align: center;
-    background-origin: content-box;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
+  text-align: center;
+  background-origin: content-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    height: 100%;
-    width: 100%;
-    line-height: 52.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+  line-height: 52.8px;
 }
 
 .card__header-brands {
-    text-align: left;
-    font-size: 17px;
-    padding: 40px 50px;
-    justify-content: flex-start;
+  text-align: left;
+  font-size: 17px;
+  padding: 40px 50px;
+  justify-content: flex-start;
 }
 
 .card__header-sale {
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 30px;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 30px;
 }
 
 /* BUTCHERS, ROYAL CANIN, PEDIGREE */
 .card__header-text {
-    color: var(--tangerine);
-    font-size: 14px;
-    font-family: 'PT Sans', sans-serif, 'Montserrat', sans-serif;
-    line-height: 19.6px;
-    overflow-wrap: break-word;
-    font-weight: 700;
-    max-width: 100%;
+  color: var(--tangerine);
+  font-size: 14px;
+  font-family: "PT Sans", sans-serif, "Montserrat", sans-serif;
+  line-height: 19.6px;
+  overflow-wrap: break-word;
+  font-weight: 700;
+  max-width: 100%;
 }
 
 /* Best-Quality and Food for Pets and get 10% Off for Cats & Dogs Stuff */
 .card__title {
-    color: var(--dark-grey);
-    font-family: 'Baloo 2', cursive;
-    font-weight: bold;
-    margin-top: 20px;
+  color: var(--dark-grey);
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 /* Best-Quality and Food for Pets */
 .card__title-brands {
-    line-height: 1.2;
-    font-weight: 700px;
-    font-stretch: 100%;
-    font-weight: 700px;
-    white-space: nowrap;
-    text-decoration-style: solid;
-    overflow-wrap: break-word;
-    font-size: 50px;
-    max-width: 100%;
+  line-height: 1.2;
+  font-weight: 700px;
+  font-stretch: 100%;
+  font-weight: 700px;
+  white-space: nowrap;
+  text-decoration-style: solid;
+  overflow-wrap: break-word;
+  font-size: 50px;
+  max-width: 100%;
 }
 
 .card__title-part {
-    display: block;
-    font-size: 44px;
-    line-height: 52.8px;
+  display: block;
+  font-size: 44px;
+  line-height: 52.8px;
 }
 
 /* line top */
 .line {
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    color: transparent;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  color: transparent;
 }
 
 .line-line {
-    height: 1px;
-    width: 100%;
+  height: 1px;
+  width: 100%;
 }
 
 /* get 10% Off for Cats & Dogs Stuff */
 .card__text-sale {
-    font-size: 30px;
-    line-height: 36px;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 /* span  card__text-sale*/
 .card__discount {
-    color: var(--tangerine);
+  color: var(--tangerine);
 }
 
 .card__button a {
-    text-decoration: none;
-    white-space: nowrap;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .button {
-    display: flex;
-    margin-top: 35px;
+  display: flex;
+  margin-top: 35px;
 }
 
 /* button container (2) */
 .card__button {
-    position: relative;
-    background-color: var(--antique-white);
-    background-position-x: 50%;
-    background-position-y: 50%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
-    cursor: pointer;
-    letter-spacing: 0.825px;
-    font-weight: 700;
-    margin: 10px;
-    max-width: 100%;
-    overflow-wrap: break-word;
-    overflow-x: visible;
-    overflow-y: visible;
-    padding: 16px 28px;
-    word-break: break-word;
-    height: 48.5px;
-    font-family: 'PT Sans', sans-serif;
-    display: flex;
-    align-items: center;
-    font-size: 16.5px;
-    transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  background-color: var(--antique-white);
+  background-position-x: 50%;
+  background-position-y: 50%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  cursor: pointer;
+  letter-spacing: 0.825px;
+  font-weight: 700;
+  margin: 10px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  overflow-x: visible;
+  overflow-y: visible;
+  padding: 16px 28px;
+  word-break: break-word;
+  height: 48.5px;
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: 16.5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .card__bottom-text {
-    color: var(--tangerine);
+  color: var(--tangerine);
 }
 
 .card__button:hover {
-    background-color: var(--color-background-gallery-button) !important;
-    color: var(--sea-green) !important;
+  background-color: var(--color-background-gallery-button) !important;
+  color: var(--sea-green) !important;
 }
 
 .card__button:hover .card__bottom-text {
-    color: var(--sea-green) !important;
+  color: var(--sea-green) !important;
 }
 
 .button-sale {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
