@@ -8,7 +8,7 @@
 }
 
 .promotion {
-    color: var(--seashell);
+    color: var(--color-button-border);
     font-size: 15px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
@@ -19,7 +19,7 @@
 .cat-week {
     font-family: "Baloo 2", cursive;
     font-weight: bold;
-    color: var(--dark-grey);
+    color: var(--color-p-text);
     font-size: 48px;
     display: flex;
     width: 300px;
@@ -29,7 +29,7 @@
 }
 
 .special-prices {
-    color: #958B7E;
+    color: var(--color-content-text);
     font-size: 19px;
     font-family: "PT Sans", sans-serif;
     display: flex;
@@ -41,15 +41,15 @@
 }
 
 .discount {
-    color: var(--tangerine);
+    color: var(--color-number-text);
     font-weight: bold;
 }
 
 .smooth-scroll-shop {
     transition: scroll-behavior 0.5s ease-in-out;
     text-decoration: none;
-    background-color: var(--pale-turquoise);
-    color: var(--seashell);
+    background-color: var(--color-background-gallery-button);
+    color: var(--color-button-border);
     font-size: 17px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
