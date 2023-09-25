@@ -1,93 +1,91 @@
 /* Клас для контейнера, який містить блок */
 .news-articles--container {
-    width: 90%;
-    padding-top: 90px;
-    padding-bottom: 90px;
-    margin-left: 15px;
-    margin-right: 15px;
+  width: 90%;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .news-section__image {
-    height: 32px;
-    object-fit: contain;
-    margin-bottom: 25px;
+  height: 32px;
+  object-fit: contain;
+  margin-bottom: 25px;
 }
 
 /* Клас для заголовка блоку */
 .news-articles__title {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-    font-family: 'Baloo 2', cursive;
-    color: var(--color-h-text);
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  color: var(--color-h-text);
 }
 
 /* Клас для списку новин та статей */
 .news-articles--list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
 }
 
 /* Базовий клас для елемента */
 .news-articles__item {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    align-items: left;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  margin-bottom: 20px;
 }
 
 /* Клас для зображення */
 .news-articles__item--img {
-    width: 272px;
-    height: 182px;
+  width: 272px;
+  height: 182px;
 }
 
 /* Клас для заголовка */
 .news-articles__item--h3 {
-    font-size: 22px;
-    color: var(--color-h-text);
-    font-weight: 600;
-    font-family: 'Baloo 2', cursive;
-
+  font-size: 22px;
+  color: var(--color-h-text);
+  font-weight: 600;
+  font-family: "Baloo 2", cursive;
 }
 
 /* Клас для опису */
 .news-articles__item--p {
-    font-size: 17px;
-    font-family: 'PT Sans', sans-serif;
-    color: var(--color-content-text);
-    text-align: justify;
-    word-wrap: break-word;
+  font-size: 17px;
+  font-family: "PT Sans", sans-serif;
+  color: var(--color-content-text);
+  text-align: justify;
+  word-wrap: break-word;
 }
 
 /* Клас для кнопки "Read More" */
 .news-articles__item--read-more {
-    display: flex;
-    background-color: var(--color-default-backfround);
-    border: none;
-    cursor: pointer;
-    outline: none;
-    font-weight: bold;
-    text-align: left;
-    font-size: 15px;
-    text-align: left;
-    padding-top: 20px;
-    text-decoration: none;
+  display: flex;
+  background-color: var(--color-default-backfround);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  text-align: left;
+  font-size: 15px;
+  text-align: left;
+  padding-top: 20px;
+  text-decoration: none;
 }
 .news-articles__item--read-more:active,
-.news-articles__item--read-more:focus{
-color: var(--color-divider-background);
-    text-decoration: underline;
+.news-articles__item--read-more:focus {
+  color: var(--color-divider-background);
+  text-decoration: underline;
 }
 
 &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px solid var(--color-divider-background);
-  }
-
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid var(--color-divider-background);
+}

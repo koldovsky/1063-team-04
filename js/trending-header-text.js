@@ -1,2 +1,2 @@
-const headerText = document.querySelector('trending__header-title');
+const headerText = document.querySelector(".trending__header-title");
 console.log(headerText);

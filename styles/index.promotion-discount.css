@@ -1,61 +1,61 @@
 .cta {
-    background-image: url('../img/promotion/cta.jpg');
-    background-size: cover; 
-    height: 705px;
-    width: 385px;
-    display: inline-block;
-    padding: 90px 0 100px;
+  background-image: url("../img/promotion/cta.jpg");
+  background-size: cover;
+  height: 705px;
+  width: 385px;
+  display: inline-block;
+  padding: 90px 0 100px;
 }
 
 .promotion {
-    color: var(--seashell);
-    font-size: 15px;
-    font-weight: bold;
-    font-family: "PT Sans", sans-serif;
-    margin-left: 20px;
-    margin-bottom: 20px;
+  color: var(--seashell);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .cat-week {
-    font-family: "Baloo 2", cursive;
-    font-weight: bold;
-    color: var(--dark-grey);
-    font-size: 48px;
-    display: flex;
-    width: 300px;
-    word-break: break-word;
-    margin-left: 20px;
-    line-height: 1.1;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  color: var(--dark-grey);
+  font-size: 48px;
+  display: flex;
+  width: 300px;
+  word-break: break-word;
+  margin-left: 20px;
+  line-height: 1.1;
 }
 
 .special-prices {
-    color: #958B7E;
-    font-size: 19px;
-    font-family: "PT Sans", sans-serif;
-    display: flex;
-    width: 310px;
-    word-break: break-word;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    margin-top: 30px;
+  color: #958b7e;
+  font-size: 19px;
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  width: 310px;
+  word-break: break-word;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-top: 30px;
 }
 
 .discount {
-    color: var(--tangerine);
-    font-weight: bold;
+  color: var(--tangerine);
+  font-weight: bold;
 }
 
 .smooth-scroll-shop {
-    transition: scroll-behavior 0.5s ease-in-out;
-    text-decoration: none;
-    background-color: var(--pale-turquoise);
-    color: var(--seashell);
-    font-size: 17px;
-    font-weight: bold;
-    font-family: "PT Sans", sans-serif;
-    position: absolute;
-    padding: 10px 25px;
-    border-radius: 20px;
-    margin-left: 20px;
-    margin-top: 150px;
+  transition: scroll-behavior 0.5s ease-in-out;
+  text-decoration: none;
+  background-color: var(--pale-turquoise);
+  color: var(--seashell);
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  position: absolute;
+  padding: 10px 25px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: 150px;
 }
