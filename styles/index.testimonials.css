@@ -1,4 +1,80 @@
-.carousel__slides {
-   background-color : #fff ;
+.testimonials {
+   text-align: center;
+   background-color: var(--color-default-backfround);
+   padding: 40px;
 }
 
+
+.testimonials__title {
+   margin-bottom: 10px;
+   color: var(--color-h-text);
+   font-family: "Baloo 2", cursive;
+   font-size: 45px;
+}
+
+
+.testimonials__title-img {
+   display: flex;
+   justify-content: center; 
+   align-items: center; 
+   width: 209px;
+   height: 90px; 
+}
+
+
+.testimonials__text {
+   margin-bottom: 10px;
+   color: var(--color-content-text);
+   font-family: "PT sans", sans-serif;
+   font-size: 18px;
+}
+
+
+
+
+
+
+
+.carousel__slides {
+   display: flex;
+   align-items: center;
+}
+
+
+
+
+
+.carousel__slide img {
+   width: 200px; 
+   height: auto; 
+}
+
+
+.carousel__slide-title {
+   font-size: 24px;
+   margin: 10px 0;
+   color: var(--color-h-text);
+   font-family: "Baloo 2", cursive;
+   
+}
+
+.carousel__slide-animal {
+   margin-bottom: 10px;
+   color: var(--color-selection-text);
+   font-family: "PT sans", sans-serif;
+   font-size: 18px;
+}
+
+.carousel__slide-text {
+   margin-bottom: 10px;
+   color: #8e8e8e;
+   font-family: "PT sans", sans-serif;
+   font-size: 17px;
+}
+
+.carousel__slide-Date {
+   font-size: 14px;
+   color: var(--color-h-text);
+   font-family: "PT sans", sans-serif;
+   margin-top: 10px;
+}
