@@ -22,35 +22,33 @@
 }
 
 .lower-block {
-  background-image: url(../img/promo/bannerfood.png);
-  width: 305px;
-  height: 323px;
-  ackground-position-x: 96.72%;
-  background-position-y: 100%;
-  background-size: cover;
-  background-repeat-x: no-repeat;
-  background-repeat-y: no-repeat;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-repeat: no-repeat;
+    background-image: url(../img/promo/bannerfood.png);
+    width: 305px;
+    height: 323px;
+    background-position-y: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-repeat: no-repeat;
 }
 
 .promo-title {
-  color: var(--tangerine);
-  font-size: 15px;
-  font-weight: bold;
-  font-family: "PT Sans", sans-serif;
-  margin-top: 30px;
-  margin-left: 20px;
+    color: var(--color-number-text);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 .food-for-dogs {
-  font-family: "Baloo 2", cursive;
-  font-weight: bold;
-  color: var(--dark-grey);
-  font-size: 32px;
-  display: flex;
-  width: 300px;
-  word-break: break-word;
+    font-family: "Baloo 2", cursive;
+    font-weight: bold;
+    color: var(--color-p-text);
+    font-size: 32px;
+    display: flex;
+    width: 300px;
+    word-break: break-word;
 }
