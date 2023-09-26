@@ -5,19 +5,20 @@
   justify-content: center;
   align-items: center;
   font-family: "PT Sans", sans-serif;
-  padding: 0 40px;
+  padding: 45px 40px;
   min-width: 320px;
 }
 
-.carousel__header {
+.carousel__header-product {
   padding-left: 15px;
   padding-right: 15px;
 }
 
+
 /* Any Products for Any Pets */
 .carousel__header-top-text {
-  color: #3c3731;
-  font-family: "Baloo 2", cursive;
+  color: var(--color-carousel__header-top-text);
+  font-family: 'Baloo 2', cursive;
   font-size: 44px;
   word-wrap: break-word;
   font-weight: bold;
@@ -25,7 +26,7 @@
 }
 
 /* logo bone image */
-.carousel__logo img {
+.carousel__logo-product img {
   border-image-repeat: stretch;
   border-image-slice: 100%;
   border-image-width: 1;
@@ -36,38 +37,47 @@
 }
 
 /* blockimage */
-.carousel__logo {
+.carousel__logo-product {
   padding-top: 27.5px;
 }
 
 /* block down text */
-.carousel__header-text {
+.carousel__header-text-product {
   margin-top: 20px;
   text-decoration-style: solid;
   height: auto;
   width: auto;
   font-stretch: 100%;
   margin-block-start: 20px;
+
 }
 
 /* Best picks for your beloved companions only in Happy Paw. */
 .carousel__header-down-text {
-  color: rgb(149, 139, 126);
+  color: var(--color-carousel__header-down-text);
   font-size: 19px;
   font-weight: 400;
   line-height: 28.5px;
   overflow-wrap: break-word;
 }
 
+
+
 /* block carousel */
-.carousel__slides {
+.carousel__slides-card {
   margin-top: 50px;
+  width: 100%;
+  overflow: hidden;
   display: flex;
   flex: 1;
-  width: 100%;
 }
 
-.carosel-conteiner {
+.carousel-container-product-card {
+  display: flex;
+ /* overflow: hidden; */
+}
+
+.carosel-conteiner-product {
   display: block;
   justify-content: center;
   align-items: center;
@@ -76,22 +86,34 @@
   padding: 0 15px;
   display: block;
   width: 100%;
-}
-
-/* start card */
-.carousel {
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  border: 1.6px solid rgb(255, 230, 212);
-}
-
-.carousel-inner {
-  display: flex;
+  flex: 0 0 calc(100% / 3);
   transition: transform 0.3s ease-in-out;
 }
 
-.carousel-card {
+@media screen and (max-width: 992px) {
+  .carosel-conteiner-product {
+    flex: 0 0 calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carosel-conteiner-product {
+    flex: 0 0 100%;
+  }
+}
+
+/* start card */
+.carousel-border-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1.6px solid var(--color-carousel-any-products);
+}
+
+.carousel-card-block{
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -100,10 +122,12 @@
 }
 
 /* block image */
-.image {
+.image-product {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 /* image */
@@ -123,6 +147,7 @@
 .carousel__card-name {
   margin-top: 20px;
   font-size: 24px;
+ 
 }
 
 /* For Cats */
@@ -130,12 +155,12 @@
   font-family: "Baloo 2", cursive;
   font-size: 24px;
   display: inline;
-  max-width: 100%;
+  width: 100%;
   white-space: nowrap;
 }
 
 .carousel__arrow {
-  color: rgb(69, 193, 199);
+  color: var(--color-carousel__arrow);
 }
 
 /* block text */
@@ -144,24 +169,22 @@
   display: inline;
   max-width: 100%;
   line-height: 21.4275px;
-  height: auto;
 }
 
 /* text */
 .carousel__card-text {
-  color: rgb(149, 139, 126);
+  color: var(--color-carousel__card-text);
   font-size: 15px;
   font-weight: 400;
 }
 
-.button__carousel {
+.button__carousel-conteiner-card {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.carousel-button {
-  align-items: flex-start;
+.carousel-button-cards {
   appearance: auto;
   background-attachment: scroll;
   background-clip: border-box;
@@ -180,8 +203,9 @@
   border-image-slice: 100%;
   border-image-width: 1;
   cursor: pointer;
-  display: block;
-  font-stretch: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 400;
   height: 32px;
   text-align: center;
