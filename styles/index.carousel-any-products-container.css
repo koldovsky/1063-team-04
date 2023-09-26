@@ -19,7 +19,7 @@
 
 /* Any Products for Any Pets */
 .carousel__header-top-text {
-    color: #3c3731;
+    color: var(--color-carousel__header-top-text);
     font-family: 'Baloo 2', cursive;
     font-size: 44px;
     word-wrap: break-word;
@@ -56,11 +56,11 @@
 
 /* Best picks for your beloved companions only in Happy Paw. */
 .carousel__header-down-text {
-    color: rgb(149, 139, 126);
+    color: var(--color-carousel__header-down-text);
     font-size: 19px;
-        font-weight: 400;
-        line-height: 28.5px;
-        overflow-wrap: break-word;
+    font-weight: 400;
+    line-height: 28.5px;
+    overflow-wrap: break-word;
 }
 
 
@@ -71,38 +71,41 @@
 .carousel__slides {
     margin-top: 50px;
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     width: 100%;
+    overflow: hidden;
+    /* position: relative; */
 } 
 
 .carosel-conteiner {
     display: block;
-        justify-content: center;
-        align-items: center;
-        font-family: "PT Sans", sans-serif;
-        min-width: 320px;
+    justify-content: center;
+    align-items: center;
+    font-family: "PT Sans", sans-serif;
+    min-width: 320px;
     padding: 0 15px;
     display: block;
     width: 100%;
+    flex: 0 0 calc(100% / 3);
+    transition: transform 0.3s ease-in-out;
 }
 
 /* start card */
-.carousel {
+.carousel-border {
     display: flex;
     overflow: hidden;
     position: relative;
-    border: 1.6px solid rgb(255, 230, 212);
+    border: 1.6px solid var(--color-carousel-any-products);
 
 }
 
 .carousel-inner {
     display: flex;
     transition: transform 0.3s ease-in-out;
-    
 }
 
 .carousel-card {
-flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -145,7 +148,7 @@ flex-direction: column;
 }
 
 .carousel__arrow {
-    color: rgb(69, 193, 199);
+    color: var(--color-carousel__arrow);
 }
 
 /* block text */
@@ -154,12 +157,12 @@ flex-direction: column;
     display: inline;
     max-width: 100%;
     line-height: 21.4275px;
-    height: auto;
+    /* height: auto; */
 }
 
 /* text */
 .carousel__card-text {
-    color: rgb(149, 139, 126);
+    color: var(--color-carousel__card-text);
     font-size: 15px;
     font-weight: 400;
 }
@@ -172,7 +175,7 @@ flex-direction: column;
 
 
 .carousel-button {
-    align-items: flex-start;
+    /* align-items: flex-start; */
     appearance: auto;
     background-attachment: scroll;
     background-clip: border-box;
@@ -191,14 +194,17 @@ flex-direction: column;
     border-image-slice: 100%;
     border-image-width: 1;
     cursor: pointer;
-    display: block;
-    font-stretch: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-stretch: 100%; */
     font-weight: 400;
     height: 32px;
     text-align: center;
     width: 32px;
     border: none;
 }
+
 
 .prev-button {
     position: absolute;

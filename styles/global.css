@@ -20,6 +20,8 @@
   --color-border-bottom: #ed6435;
   --color-footer-hor-line: #ed6435;
   --color-divider-background: #ed6435;
+  --color-card__text-brands: #ed6435;
+  --color-card__discount: #ed6435;
 
   /* color:#6b6b6b  */
   --color-nav-link-text: #6b6b6b;
@@ -27,12 +29,16 @@
   /* --dark-grey: #3c3731; */
   --color-h-text: #3c3731;
   --color-p-text: #3c3731;
+  --color-card__title: #3c3731;
+  --color-carousel__header-top-text: #3c3731;
 
   /* --gray-olive: #958b7e; */
   --color-content-text: #958b7e;
   --color-timer-text: #958b7e;
   --color-dont-active-button-text: #9a9898;
   --color-link: #9a9898;
+  --color-carousel__header-down-text: #9a9898;
+  --color-carousel__card-text: #9a9898;;
 
   /* --seashell: #45c1c7; */
   --color-card__bottom-text: #45c1c7;
@@ -42,6 +48,7 @@
   --color-dry-food-hot-line: #45c1c7;
   --color-title-footer: #45c1c7;
   --color-icon-background: #45c1c7;
+  --color-carousel__arrow: #45c1c7;
 
   /* --dark-gray: #9a9898; */
   --color-footer-list-content-text: #9a9898;
@@ -49,6 +56,7 @@
   /* --pale-turquoise: #b2e7e9; */
   --color-background-gallery-button: #b2e7e9;
   --color-background-email-button-hover: #b2e7e9;
+  --color-background-card__button-hover: #b2e7e9;
 
   --color-default-text: #000000;
   --color-default-backfround: #ffffff;
@@ -56,6 +64,8 @@
   /* --antique-white: #ffe6d4; */
   --color-background-hover-button: #ffe6d4;
   --color-background-email-button: #ffe6d4;
+  --color-background-card__button: #ffe6d4;
+  --color-carousel-any-products: #ffe6d4;
 
   /* --text-color: #f2e8e4;
   
@@ -66,6 +76,7 @@
   --color-icon-background-hover: #32a1a7;
   --color-button-background: #f4e6e2;
   --color-background-footer: #faf4f2;
+  --color-card__bottom-text-hover: #32a1a7;
 
   --color-background-section: #faf4f2;
   --color-text-section-text: #958B7E;

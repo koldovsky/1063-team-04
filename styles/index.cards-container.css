@@ -127,7 +127,7 @@
 
 /* BUTCHERS, ROYAL CANIN, PEDIGREE */
 .card__header-text {
-    color: var(--tangerine);
+    color: var(--color-card__text-brands);
     font-size: 14px;
     font-family: 'PT Sans', sans-serif, 'Montserrat', sans-serif;
     line-height: 19.6px;
@@ -138,7 +138,7 @@
 
 /* Best-Quality and Food for Pets and get 10% Off for Cats & Dogs Stuff */
 .card__title {
-    color: var(--dark-grey);
+    color: var(--color-card__title);
     font-family: 'Baloo 2', cursive;
     font-weight: bold;
     margin-top: 20px;
@@ -184,7 +184,7 @@
 
 /* span  card__text-sale*/
 .card__discount {
-    color: var(--tangerine);
+    color: var(--color-card__text-brands);
 }
 
 .card__button a {
@@ -199,8 +199,7 @@
 
 .card__button {
     position: relative;
-    /* Додайте це */
-    background-color: #ffe6d4;
+    background-color: var(--color-background-card__button);
     background-position-x: 50%;
     background-position-y: 50%;
     border-bottom-left-radius: 25px;
@@ -223,22 +222,20 @@
     align-items: center;
     font-size: 16.5px;
     transition: background-color 0.3s, color 0.3s;
-    /* Додайте це */
 }
 
 .card__bottom-text {
-    color: #ed6435;
+    color: var(--color-card__discount);
 }
 
 .card__button:hover {
-    background-color: #b2e7e9;
-    color: #32a1a7;
-    /* Додайте це */
+    background-color: var(--color-background-card__button-hover);
+    color: var(--color-card__bottom-text-hover);
 }
 
 .card__bottom-text:hover {
     cursor: pointer;
-    color: #32a1a7;
+    color: var(--color-card__bottom-text-hover);
 }
 
 
