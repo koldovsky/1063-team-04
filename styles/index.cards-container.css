@@ -1,24 +1,23 @@
 .cards {
-    justify-content: center;
-    align-items: center;
-    display: block;
-    padding: 60px 24px;
-    min-width: 320px;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  padding: 60px 24px;
+  min-width: 320px;
 }
 
 .cards-conteiner {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 320px;
-    width: 100%;
-    height: 100%;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    -webkit-font-smoothing: antialiased;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  -webkit-font-smoothing: antialiased;
 }
-
 
 .card__content {
     width: 100%;
@@ -28,75 +27,72 @@
 
 /* large */
 @media (min-width: 768px) {
-    .card__container {
-        display: flex;
-    }
+  .card__container {
+    display: flex;
+  }
 }
 
 /* small */
 @media (max-width: 768px) {
-    .cards {
-        display: block;
-    }
+  .cards {
+    display: block;
+  }
 
-    .card__container {
-        height: 100%;
-        display: block;
-    }
+  .card__container {
+    height: 100%;
+    display: block;
+  }
 
-    .card__content-brands {
-        min-height: 320px;
-        display: flex;
-        align-items: center;
-    
-    }
+  .card__content-brands {
+    min-height: 320px;
+    display: flex;
+    align-items: center;
+  }
 
-    .card__content-sale {
-        margin-top: 50px;
-        background-origin: padding-box;
-        background-position-x: 47.66%;
-        background-position-y: 51.38%;
-        background-repeat: no-repeat;
-    }
+  .card__content-sale {
+    margin-top: 50px;
+    background-origin: padding-box;
+    background-position-x: 47.66%;
+    background-position-y: 51.38%;
+    background-repeat: no-repeat;
+  }
 
+  .card__header-brands {
+    padding: 35px 31px;
+    line-height: 36px;
+  }
 
-    .card__header-brands {
-        padding: 35px 31px;
-        line-height: 36px;
-    }
+  .card__header-sale {
+    padding: 31px 27px;
+    justify-content: space-between;
+    line-height: 33.6px;
+  }
 
-    .card__header-sale {
-        padding: 31px 27px;
-        justify-content: space-between;
-        line-height: 33.6px;
-    }
-
-    .card__title-part {
-        font-size: 30px;
-        line-height: 36px;
-    }
+  .card__title-part {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
-
 
 /* card__content-brands background */
 .card__content-brands {
-    background-image: url(../img/cards-container-backgroud/cards-container-background-1.webp);
-    text-align: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: content-box;
-    min-height: 320px;
+  background-image: url(../img/cards-container-backgroud/cards-container-background-1.webp);
+  text-align: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: content-box;
+  min-height: 320px;
 }
 
 /* card__content-sale background */
 .card__content-sale {
-    background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
-    text-align: center;
-    background-origin: content-box;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(../img/cards-container-backgroud/cards-container-background-2.webp);
+  text-align: center;
+  background-origin: content-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card__header {
@@ -110,18 +106,18 @@
 }
 
 .card__header-brands {
-    text-align: left;
-    font-size: 17px;
-    padding: 40px 50px;
-    justify-content: flex-start;
+  text-align: left;
+  font-size: 17px;
+  padding: 40px 50px;
+  justify-content: flex-start;
 }
 
 .card__header-sale {
-    display: flex;
-    flex-basis: 100%;
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 30px;
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px 30px;
 }
 
 /* BUTCHERS, ROYAL CANIN, PEDIGREE */
@@ -145,40 +141,40 @@
 
 /* Best-Quality and Food for Pets */
 .card__title-brands {
-    line-height: 1.2;
-    font-weight: 700px;
-    font-stretch: 100%;
-    font-weight: 700px;
-    white-space: nowrap;
-    text-decoration-style: solid;
-    overflow-wrap: break-word;
-    font-size: 50px;
-    max-width: 100%;
+  line-height: 1.2;
+  font-weight: 700px;
+  font-stretch: 100%;
+  font-weight: 700px;
+  white-space: nowrap;
+  text-decoration-style: solid;
+  overflow-wrap: break-word;
+  font-size: 50px;
+  max-width: 100%;
 }
 
 .card__title-part {
-    display: block;
-    font-size: 44px;
-    line-height: 52.8px;
+  display: block;
+  font-size: 44px;
+  line-height: 52.8px;
 }
 
 /* line top */
 .line {
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    color: transparent;
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  color: transparent;
 }
 
 .line-line {
-    height: 1px;
-    width: 100%;
+  height: 1px;
+  width: 100%;
 }
 
 /* get 10% Off for Cats & Dogs Stuff */
 .card__text-sale {
-    font-size: 30px;
-    line-height: 36px;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 /* span  card__text-sale*/
@@ -186,14 +182,10 @@
     color: var(--color-card__text-brands);
 }
 
-.card__button a {
-    text-decoration: none;
-    white-space: nowrap;
-}
-
+  text-decoration: none;
 .button {
-    display: flex;
-    margin-top: 35px;
+  display: flex;
+  margin-top: 35px;
 }
 
 .card__button {
@@ -239,7 +231,7 @@
 
 
 .button-sale {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

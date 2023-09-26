@@ -1,20 +1,18 @@
 /* all block */
 .carousel__wrap {
-    text-align: center;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    font-family: "PT Sans", sans-serif;
-    padding: 0 40px;
-    min-width: 320px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  padding: 0 40px;
+  min-width: 320px;
 }
-
 
 .carousel__header {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 
 
 /* Any Products for Any Pets */
@@ -29,29 +27,29 @@
 
 /* logo bone image */
 .carousel__logo img {
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-width: 1;
-    font-size: 17px;
-    height: 32px;
-    line-height: 27.2px;
-    object-fit: contain; 
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-width: 1;
+  font-size: 17px;
+  height: 32px;
+  line-height: 27.2px;
+  object-fit: contain;
 }
 
 /* blockimage */
 .carousel__logo {
-    padding-top: 27.5px;
+  padding-top: 27.5px;
 }
 
 /* block down text */
 .carousel__header-text {
-    margin-top: 20px;
-    text-decoration-style: solid;
-    height: auto;
-        width: auto;
-        font-stretch: 100%;
-        margin-block-start: 20px;
-        
+  margin-top: 20px;
+  text-decoration-style: solid;
+  height: auto;
+  width: auto;
+  font-stretch: 100%;
+  margin-block-start: 20px;
+
 }
 
 /* Best picks for your beloved companions only in Happy Paw. */
@@ -66,16 +64,13 @@
 
 
 
-
 /* block carousel */
 .carousel__slides {
-    margin-top: 50px;
-    display: flex;
-    /* flex: 1; */
-    width: 100%;
-    overflow: hidden;
-    /* position: relative; */
-} 
+  margin-top: 50px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
 
 .carosel-conteiner {
     display: block;
@@ -100,11 +95,16 @@
 }
 
 .carousel-inner {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
 }
 
 .carousel-card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 45px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -114,45 +114,51 @@
 
 /* block image */
 .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* image */
 .carousel__card-image {
-    min-height: 32px;
-    width: 120px;
-    height: 120px;
-    border-bottom-left-radius:50%;
-    border-bottom-right-radius: 50%;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 0;
+  min-height: 32px;
+  width: 120px;
+  height: 120px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 0;
 }
 
 /* block For Cats */
 .carousel__card-name {
-    margin-top: 20px;
-    font-size: 24px;
+  margin-top: 20px;
+  font-size: 24px;
 }
 
 /* For Cats */
 .carousel__card-category {
-    font-family: "Baloo 2", cursive;
-    font-size: 24px;
-    display: inline;
-    max-width: 100%;
-    white-space: nowrap;
+  font-family: "Baloo 2", cursive;
+  font-size: 24px;
+  display: inline;
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .carousel__arrow {
+  color: rgb(69, 193, 199);
     color: var(--color-carousel__arrow);
 }
 
 /* block text */
 .carousel__card-description {
+  margin-top: 20px;
+  display: inline;
+  max-width: 100%;
+  line-height: 21.4275px;
+  height: auto;
     margin-top: 20px;
     display: inline;
     max-width: 100%;
@@ -162,57 +168,54 @@
 
 /* text */
 .carousel__card-text {
-    color: var(--color-carousel__card-text);
-    font-size: 15px;
-    font-weight: 400;
+  color: var(--color-carousel__card-text);
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .button__carousel {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 
 .carousel-button {
-    /* align-items: flex-start; */
-    appearance: auto;
-    background-attachment: scroll;
-    background-clip: border-box;
-    background-color: black;
-    background-origin: padding-box;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-size: auto;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-width: 0px;
-    border-image-repeat: stretch;
-    border-image-slice: 100%;
-    border-image-width: 1;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* font-stretch: 100%; */
-    font-weight: 400;
-    height: 32px;
-    text-align: center;
-    width: 32px;
-    border: none;
+  /* align-items: flex-start; */
+  appearance: auto;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: black;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-size: auto;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-width: 0px;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-width: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-stretch: 100%; */
+  font-weight: 400;
+  height: 32px;
+  text-align: center;
+  width: 32px;
+  border: none;
 }
 
-
 .prev-button {
-    position: absolute;
-    left: 0;
+  position: absolute;
+  left: 0;
 }
 
 .next-button {
-    position: absolute;
-    right: 0;
+  position: absolute;
+  right: 0;
 }
-

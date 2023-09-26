@@ -1,14 +1,14 @@
 .cta {
-    background-image: url('../img/promotion/cta.jpg');
-    background-size: cover; 
-    height: 705px;
-    width: 385px;
-    display: inline-block;
-    padding: 90px 0 100px;
+  background-image: url("../img/promotion/cta.jpg");
+  background-size: cover;
+  height: 705px;
+  width: 385px;
+  display: inline-block;
+  padding: 90px 0 100px;
 }
 
 .promotion {
-    color: var(--seashell);
+    color: var(--color-button-border);
     font-size: 15px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
@@ -19,7 +19,7 @@
 .cat-week {
     font-family: "Baloo 2", cursive;
     font-weight: bold;
-    color: var(--dark-grey);
+    color: var(--color-p-text);
     font-size: 48px;
     display: flex;
     width: 300px;
@@ -29,7 +29,7 @@
 }
 
 .special-prices {
-    color: #958B7E;
+    color: var(--color-content-text);
     font-size: 19px;
     font-family: "PT Sans", sans-serif;
     display: flex;
@@ -41,21 +41,21 @@
 }
 
 .discount {
-    color: var(--tangerine);
+    color: var(--color-number-text);
     font-weight: bold;
 }
 
 .smooth-scroll-shop {
     transition: scroll-behavior 0.5s ease-in-out;
     text-decoration: none;
-    background-color: var(--pale-turquoise);
-    color: var(--seashell);
-    font-size: 17px;
+    background-color: var(--color-background-gallery-button);
+    color: var(--color-button-border);
+    font-size: 20px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
     position: absolute;
-    padding: 10px 25px;
-    border-radius: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
     margin-left: 20px;
     margin-top: 150px;
 }

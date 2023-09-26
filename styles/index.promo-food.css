@@ -1,35 +1,39 @@
 .smooth-scroll-discover {
-    transition: scroll-behavior 0.5s ease-in-out;
+  transition: scroll-behavior 0.5s ease-in-out;
+  color: var(--color-content-text);
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 17px;
+  font-family: "PT Sans", sans-serif;
 }
 
 .promo {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .upper-block {
-    background-image: url('../img/promo/pexels-cottonbro.png');
-    width: 305px;
-    height: 162px;
-    background-repeat: no-repeat;
-    margin-bottom: 40px;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-size: cover;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
+  background-image: url("../img/promo/pexels-cottonbro.png");
+  width: 305px;
+  height: 162px;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: cover;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
 }
 
 .lower-block {
     background-image: url(../img/promo/bannerfood.png);
     width: 305px;
     height: 323px;
-    ackground-position-x: 96.72%;
     background-position-y: 100%;
+    background-position-x: 100%;
     background-size: cover;
-    background-repeat-x: no-repeat;
-    background-repeat-y: no-repeat;
+    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -37,20 +41,24 @@
 }
 
 .promo-title {
-    color: var(--tangerine);
+    color: var(--color-number-text);
     font-size: 15px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
-    margin-top: 30px;
-    margin-left: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 .food-for-dogs {
     font-family: "Baloo 2", cursive;
     font-weight: bold;
-    color: var(--dark-grey);
+    color: var(--color-p-text);
     font-size: 32px;
     display: flex;
     width: 300px;
     word-break: break-word;
+    padding-left: 30px;
+    line-height: 1.1;
+    padding-top: 20px;
+    margin-bottom: 20px;
 }
