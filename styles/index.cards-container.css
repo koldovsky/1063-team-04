@@ -21,7 +21,6 @@
 
 
 .card__content {
-    display: flex;
     width: 100%;
     flex: 1;
     margin: 0 15px;
@@ -101,7 +100,7 @@
 }
 
 .card__header {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
