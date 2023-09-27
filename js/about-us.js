@@ -23,20 +23,22 @@ const services = [
 
 renderServices(services);
 
-function renderServices(services){
-    const servicesContainer = document.querySelector('.about-us__services-list');
-    servicesContainer.innerHTML = '';
-    for(const service of services) {
-        servicesContainer.innerHTML += 
+function renderServices(services) {
+  const servicesContainer = document.querySelector(".about-us__services-list");
+  servicesContainer.innerHTML = "";
+  for (const service of services) {
+    servicesContainer.innerHTML += 
         `<article class="about-us__service-card">
-          <div class="about-us__service-image-container">
-            <img class="about-us__service-image" src="${service.imageSvg}" alt="${service.title}">
+          <div class="about-us__service-card-container">
+            <div class="about-us__service-image-container">
+              <img class="about-us__service-image" src="${service.imageSvg}" alt="${service.title}">
+            </div>
+            <div class="about-us__service-description">
+                <h3 class="about-us__service-title">${service.title}</h3>
+                <p class="about-us__service-text">${service.text}</p>
+            </div>
           </div>
-          <div class="about-us__service-description">
-              <h3 class="about-us__service-title">${service.title}</h3>
-              <p class="about-us__service-text">${service.text}</p>
-          </div>
- 
         </article>`;
-    }
+  }
 }
+

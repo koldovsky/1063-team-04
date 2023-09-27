@@ -12,7 +12,7 @@
         xml:space="preserve"
         height="100%"
       >
-        <switch style="" fill="currentColor">
+        <switch style="color: var(--color-image-decoration);" fill="currentColor">
           <foreignObject
             requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
             x="0"
