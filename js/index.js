@@ -9,4 +9,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./new-arrivals-carousel-cards.js");
   import("./trending-products-carousel.js");
   import("./about-us.js");
+  import("./carousel-any-products.js")
 });

@@ -19,8 +19,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.card__content {
-  display: flex;
+.product-card__content {
   width: 100%;
   flex: 1;
   margin: 0 15px;
@@ -48,6 +47,7 @@
     min-height: 320px;
     display: flex;
     align-items: center;
+
   }
 
   .card__content-sale {
@@ -97,7 +97,7 @@
 }
 
 .card__header {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
@@ -123,9 +123,9 @@
 
 /* BUTCHERS, ROYAL CANIN, PEDIGREE */
 .card__header-text {
-  color: var(--tangerine);
+  color: var(--color-card__text-brands);
   font-size: 14px;
-  font-family: "PT Sans", sans-serif, "Montserrat", sans-serif;
+  font-family: 'PT Sans', sans-serif, 'Montserrat', sans-serif;
   line-height: 19.6px;
   overflow-wrap: break-word;
   font-weight: 700;
@@ -134,8 +134,8 @@
 
 /* Best-Quality and Food for Pets and get 10% Off for Cats & Dogs Stuff */
 .card__title {
-  color: var(--dark-grey);
-  font-family: "Baloo 2", cursive;
+  color: var(--color-card__title);
+  font-family: 'Baloo 2', cursive;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -180,23 +180,22 @@
 
 /* span  card__text-sale*/
 .card__discount {
-  color: var(--tangerine);
+  color: var(--color-card__text-brands);
 }
 
-.card__button a {
+.product-card__button a {
   text-decoration: none;
   white-space: nowrap;
 }
 
-.button {
+.button__conteiner-card {
   display: flex;
   margin-top: 35px;
 }
 
-/* button container (2) */
-.card__button {
+.product-card__button {
   position: relative;
-  background-color: var(--antique-white);
+  background-color: var(--color-background-card__button);
   background-position-x: 50%;
   background-position-y: 50%;
   border-bottom-left-radius: 25px;
@@ -214,7 +213,7 @@
   padding: 16px 28px;
   word-break: break-word;
   height: 48.5px;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   display: flex;
   align-items: center;
   font-size: 16.5px;
@@ -222,19 +221,20 @@
 }
 
 .card__bottom-text {
-  color: var(--tangerine);
+  color: var(--color-card__discount);
 }
 
-.card__button:hover {
-  background-color: var(--color-background-gallery-button) !important;
-  color: var(--sea-green) !important;
+.product-card__button:hover {
+  background-color: var(--color-background-card__button-hover);
+  color: var(--color-card__bottom-text-hover);
 }
 
-.card__button:hover .card__bottom-text {
-  color: var(--sea-green) !important;
+.card__bottom-text:hover {
+  cursor: pointer;
+  color: var(--color-card__bottom-text-hover);
 }
 
-.button-sale {
+.button-sale-product {
   display: flex;
   justify-content: center;
   align-items: center;
