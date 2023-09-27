@@ -39,24 +39,48 @@
   flex-direction: row;
 }
 .about-us__goods-paw{
-    height:24px;
-    object-fit: contain;
+  height:24px;
+  object-fit: contain;
 }
 
 @media (min-width: 768px){
     .about-us__heading{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
     }
     .about-us__heading-image{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
     }
     .about-us__heading-all-text{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
     }
+}
+
+.about-us__service-card{
+  display: flex;
+  flex-direction: row;
+  padding-top: 45px;
+}
+.about-us__service-image-container{
+  object-fit: contain;
+  padding-left: 20px;
+  padding-right: 17px;
+}
+.about-us__service-image{
+  height:30px;
+}
+.about-us__service-title{
+  font-family: 'Baloo 2', cursive;
+  color: var(--color-text-section-text);
+  font-size: 19px;
+}
+.about-us__service-text{
+  font-family: 'PT Sans', sans-serif;
+  color: var(--color-text-section-text);
+  font-size: 19px;
 }
