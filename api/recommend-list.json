@@ -1,0 +1,146 @@
+[
+  {
+    "id": "dogs",
+    "image": "img/recommend/dogs/doggy-fun-set.png",
+    "title": "DOGGY Fun Set",
+    "price": "$ 6.00"
+  },
+  {
+    "id": "dogs",
+    "image": "img/recommend/dogs/duna-pillow-bed.png",
+    "title": "DUNA Pillow Bed",
+    "price": "$ 10.00"
+  },
+  {
+    "id": "dogs",
+    "image": "img/recommend/dogs/aga-retractable-leash.png",
+    "title": "AGA Retractable Leash",
+    "price": "$ 33,00"
+  },
+  {
+    "id": "dogs",
+    "image": "img/recommend/dogs/doggy-2-bunch-toy.png",
+    "title": "DOGGY 2-Bunch Toy",
+    "price": "$ 5,00"
+  },
+  {
+    "id": "cats",
+    "image": "img/recommend/cats/aga-mice-set.png",
+    "title": "AGA Mice Set",
+    "price": "$3,00"
+  },
+  {
+    "id": "cats",
+    "image": "img/recommend/cats/vitalife-2-bowls-set.png",
+    "title": "VITALIFE 2-Bowls Set",
+    "price": "$9,00<"
+  },
+  {
+    "id": "cats",
+    "image": "img/recommend/cats/aga-leash&collar.png",
+    "title": "AGA Leash & Collar",
+    "price": "$13,00"
+  },
+  {
+    "id": "cats",
+    "image": "img/recommend/cats/duna-gray-bed.png",
+    "title": "DUNA Gray Bed",
+    "price": "$25,00"
+  },
+  {
+    "id": "parrots",
+    "image": "img/recommend/parrots/dora-hanging-mirror.png",
+    "title": "DORA Hanging Mirror",
+    "price": "$14,00"
+  },
+  {
+    "id": "parrots",
+    "image": "img/recommend/parrots/vetra-hanging-nest.png",
+    "title": "VETRA Hanging Nest",
+    "price": "$8,00"
+  },
+  {
+    "id": "parrots",
+    "image": "img/recommend/parrots/dora-wood-swing.png",
+    "title": "DORA Wood Swing",
+    "price": "$7,00"
+  },
+  {
+    "id": "parrots",
+    "image": "img/recommend/parrots/opty-wooden-stand.png",
+    "title": "OPTY ooden Stand",
+    "price": "$13,00"
+  },
+  {
+    "id": "rabbit",
+    "image": "img/recommend/rabbits/sera-purple-collar.png",
+    "title": "SERA Purple Collar",
+    "price": "$2,00<"
+  },
+  {
+    "id": "rabbit",
+    "image": "img/recommend/rabbits/aga-clinking-toy.png",
+    "title": "AGA Clinking Toy",
+    "price": "$2,00"
+  },
+  {
+    "id": "rabbit",
+    "image": "img/recommend/rabbits/harno-rabbit-cage.png",
+    "title": "HARNO Rabbit Cage",
+    "price": "$60,00"
+  },
+  {
+    "id": "rabbit",
+    "image": "img/recommend/rabbits/dora-rabbit-brush.png",
+    "title": "DORA Rabbit Brush",
+    "price": "$10,00"
+  },
+  {
+    "id": "hamsters",
+    "image": "img/recommend/hamsters/aga-bowl-for-hamsters.png",
+    "title": "AGA Bowl for Hamsters",
+    "price": "$2,00"
+  },
+  {
+    "id": "hamsters",
+    "image": "img/recommend/hamsters/tisco-toy-wheel.png",
+    "title": "TISCO Toy Wheel",
+    "price": "$9,00"
+  },
+  {
+    "id": "hamsters",
+    "image": "img/recommend/hamsters/sterco-rainbow-balls.png",
+    "title": "STERCO Rainbow Balls",
+    "price": "$3,50"
+  },
+  {
+    "id": "hamsters",
+    "image": "img/recommend/hamsters/aga-green-cage.png",
+    "title": "AGA Green Cage",
+    "price": "$25,00"
+  },
+  {
+    "id": "fish",
+    "image": "img/recommend/fish/ducca-air-pump.png",
+    "title": "DUCCA Air Pump",
+    "price": "$42,00<"
+  },
+  {
+    "id": "fish",
+    "image": "img/recommend/fish/tisco-50liter-aquarium.png",
+    "title": "TISCO 50 Liter Aquarium",
+    "price": "$70,00"
+  },
+  {
+    "id": "fish",
+    "image": "img/recommend/fish/vega-fish-castle.png",
+    "title": "VEGA Fish Castle",
+    "price": "$6,00"
+  },
+  {
+    "id": "fish",
+    "image": "img/recommend/fish/tisco-landing-net.png",
+    "title": "TISCO Landing Net",
+    "price": "$4,00"
+  }
+]
