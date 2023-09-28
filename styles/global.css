@@ -39,7 +39,7 @@
   --color-dont-active-button-text: #9a9898;
   --color-link: #9a9898;
   --color-carousel__header-down-text: #9a9898;
-  --color-carousel__card-text: #9a9898;;
+  --color-carousel__card-text: #9a9898;
 
   /* --seashell: #45c1c7; */
   --color-card__bottom-text: #45c1c7;
@@ -68,7 +68,6 @@
   --color-background-card__button: #ffe6d4;
   --color-background-image-decoration: #ffe6d4;
   --color-carousel-any-products: #ffe6d4;
-  
 
   /* --text-color: #f2e8e4;
   
@@ -82,7 +81,7 @@
   --color-card__bottom-text-hover: #32a1a7;
 
   --color-background-section: #faf4f2;
-  --color-text-section-text: #958B7E;
+  --color-text-section-text: #958b7e;
   --color-little-paw: #45c1c7;
 }
 
