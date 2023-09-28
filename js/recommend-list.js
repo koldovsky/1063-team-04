@@ -3,13 +3,13 @@ const recommendList = await responseRecommendList.json();
 
 function renderRecommendProducts(recommendList) {
   const partialFirst = document.querySelector(".recommend-partial-first");
-  let currentCountProduct = 1;
+  let currentCountProduct = 0;
   const partialSecond = document.querySelector(".recommend-partial-second");
   partialFirst.innerHTML = "";
   partialSecond.innerHTML = "";
   for (const product of recommendList) {
     if (product.id === "dogs") {
-      if (currentCountProduct < 3) {
+      if (currentCountProduct < 2) {
         partialFirst.innerHTML += `
 			<article class="recommend-card">
 			<div class="recommend-card__image">
@@ -45,3 +45,12 @@ function renderRecommendProducts(recommendList) {
 }
 
 renderRecommendProducts(recommendList);
+
+const buttons = document.querySelectorAll(".recommend__cards-tab-btn");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+  });
+});
