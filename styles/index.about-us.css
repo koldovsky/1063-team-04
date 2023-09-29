@@ -9,25 +9,27 @@
   padding-top: 90px;
   padding-bottom: 35px;
 }
+.about-us__heading-all-text{
+  padding-left: 5px;
+  margin-top: 20px;
+}
 .about-us__title {
   font-family: "Baloo 2", cursive;
   color: var(--color-h-text);
   font-size: 30px;
   overflow-wrap: break-word;
   font-weight: bold;
-  padding: 5px 20px;
+  padding-top: 5px;
 }
 .about-us__heading-img-decoration {
   height: 32px;
   object-fit: contain;
   object-position: 0% 50%;
-  padding-left: 20px;
 }
 .about-us__heading-text-paragraphs {
   color: var(--color-text-section-text);
   font-size: 19px;
   font-family: "PT Sans", sans-serif;
-  padding-left: 20px;
 }
 .about-us__heading-first-paragraph {
   padding-bottom: 17px;
@@ -39,24 +41,90 @@
   flex-direction: row;
 }
 .about-us__goods-paw{
-    height:24px;
-    object-fit: contain;
+  height:24px;
+  object-fit: contain;
 }
 
 @media (min-width: 768px){
     .about-us__heading{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
     }
     .about-us__heading-image{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: center;
     }
     .about-us__heading-all-text{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-left: 20px;
     }
+}
+.about-us__services-list{
+  display: flex;
+  flex-direction: column;
+  padding: 75px 0 75px 15px;
+}
+.about-us__service-card-container{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.about-us__service-image-container{
+  object-fit: contain;
+  background-color: var(--color-background-image-decoration);
+  background-attachment: scroll!important;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-us__service-image{
+  height:30px;
+}
+.about-us__service-title{
+  font-family: 'Baloo 2', cursive;
+  color: var(--color-p-text);
+  font-size: 24px;
+  font-weight: bold;
+}
+.about-us__service-text{
+  font-family: 'PT Sans', sans-serif;
+  color: var(--color-content-text);
+  font-size: 15px;
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+  .about-us__services-list{
+    display: grid;
+    grid: auto-flow 20vh / repeat(2, 50vw);
+  }
+  .about-us__service-card-container{
+    padding-left: 25px;
+  }
+  .about-us__service-title{
+    font-size: inherit;
+  }
+  .about-us__service-text{
+    font-size: inherit;
+  }
+}
+@media(min-width: 992px) {
+  .about-us__services-list{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .about-us__service-title{
+    font-size: inherit;
+  }
+  .about-us__service-text{
+    font-size: inherit;
+  }
 }

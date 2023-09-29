@@ -149,3 +149,11 @@
   background-color: var(--color-background-hover-button);
   color: var(--color-button-hover-text);
 }
+
+.carousel-card__title {
+  text-decoration: none;
+}
+
+.carousel-card__title:hover {
+  text-decoration: underline;
+}
