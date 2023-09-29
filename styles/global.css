@@ -83,6 +83,17 @@
   --color-background-section: #faf4f2;
   --color-text-section-text: #958b7e;
   --color-little-paw: #45c1c7;
+
+/* clock */
+  --clock-background: rgb(37, 73, 90);
+  --clock-border: rgb(25, 48, 60);
+  --clock-center: rgba(9, 25, 33, 1);
+  --hand-color: #333;
+  --custom-color: rgba(134, 134, 134, 0.35);
+  --custom-color2: #191919;
+  --custom-color3: #ffc600;
+  --custom-color4: #fff;
+
 }
 
 img {
