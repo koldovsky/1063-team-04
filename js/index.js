@@ -10,4 +10,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./trending-products-carousel.js");
   import("./about-us.js");
   import("./carousel-any-products.js")
+  import("./timer-promotion.js")
 });

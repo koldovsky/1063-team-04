@@ -102,3 +102,17 @@
     width: 450px;
   }
 }
+ 
+@media (min-width: 768px) {
+  .lower-block {
+    width: 209px;
+    height: 498px;
+    float: right;
+  }
+  .upper-block {
+    padding-left: 10px;
+    width: 448px;
+    height: 498px;
+    float: left;
+  }
+}
