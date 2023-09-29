@@ -119,10 +119,6 @@
   text-decoration: underline;
 }
 
-.recommend-card__title-wrapper {
-  text-transform: uppercase;
-}
-
 .recommend-card__price {
   color: var(--color-price-text);
   font-size: 18px;

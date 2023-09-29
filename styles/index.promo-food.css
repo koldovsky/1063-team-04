@@ -27,38 +27,78 @@
 }
 
 .lower-block {
-    background-image: url(../img/promo/bannerfood.png);
-    width: 305px;
-    height: 323px;
-    background-position-y: 100%;
-    background-position-x: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-repeat: no-repeat;
+  background-image: url(../img/promo/bannerfood.png);
+  width: 305px;
+  height: 323px;
+  background-position-y: 100%;
+  background-position-x: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-repeat: no-repeat;
 }
 
 .promo-title {
-    color: var(--color-number-text);
-    font-size: 15px;
-    font-weight: bold;
-    font-family: "PT Sans", sans-serif;
-    padding-top: 30px;
-    padding-left: 30px;
+  color: var(--color-number-text);
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "PT Sans", sans-serif;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
 .food-for-dogs {
-    font-family: "Baloo 2", cursive;
-    font-weight: bold;
-    color: var(--color-p-text);
-    font-size: 32px;
-    display: flex;
-    width: 300px;
-    word-break: break-word;
-    padding-left: 30px;
-    line-height: 1.1;
-    padding-top: 20px;
-    margin-bottom: 20px;
+  font-family: "Baloo 2", cursive;
+  font-weight: bold;
+  color: var(--color-p-text);
+  font-size: 28px;
+  display: flex;
+  width: 300px;
+  word-break: break-word;
+  padding-left: 30px;
+  line-height: 1.1;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.colorful-list {
+  content: "●";
+  color: var(--color-button-text);
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.colorful-list li div {
+  color: var(--color-p-text);
+  font-size: 15px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+}
+
+@media (min-width: 410px) {
+  .food-for-dogs {
+    width: 350px;
+  }
+
+  .upper-block {
+    width: auto;
+  }
+
+  .lower-block {
+    width: auto;
+  }
+}
+
+@media (min-width: 455px) {
+  .food-for-dogs {
+    width: 400px;
+  }
+}
+
+@media (min-width: 525px) {
+  .food-for-dogs {
+    width: 450px;
+  }
 }

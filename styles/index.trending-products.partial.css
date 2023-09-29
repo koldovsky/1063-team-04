@@ -3,7 +3,7 @@
   padding: 90px 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .trending__products-container {
     padding: 120px 0;
   }
@@ -33,6 +33,11 @@
   text-align: center;
 }
 
+.carousel__button-direction:hover {
+  background-color: --color-link;
+  opacity: 0.4;
+}
+
 @media (min-width: 768px) {
   .trending__header-title {
     font-size: 44px;
@@ -40,7 +45,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .trending__header-title {
     font-size: 50px;
     line-height: 60px;
@@ -99,13 +104,14 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .carousel-card {
     flex: 0 0 25%;
+    padding-left: 10px;
   }
 }
 .carousel-card__image {
-  max-width: 100%;
+  max-width: 100%; 
   height: auto;
 }
 
@@ -135,4 +141,19 @@
   height: 50px;
   border: none;
   border-radius: 25px;
+  transition: background-color 0.2s, opacity 0.2s; /* Додайте плавний перехід для стилів */
+}
+
+.carousel-card__button:hover {
+  cursor: pointer;
+  background-color: var(--color-background-hover-button);
+  color: var(--color-button-hover-text);
+}
+
+.carousel-card__title {
+  text-decoration: none;
+}
+
+.carousel-card__title:hover {
+  text-decoration: underline;
 }

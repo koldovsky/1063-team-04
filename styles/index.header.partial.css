@@ -3,6 +3,7 @@
   flex: 1;
   justify-content: space-between;
 }
+
 .header__info-item {
   height: 16px;
   font-weight: bold;
@@ -12,6 +13,7 @@
   margin-right: 90px;
   margin-top: 10px;
 }
+
 .header__contactus-item {
   color: rgb(237, 100, 53);
   font-size: 15px;
@@ -21,24 +23,29 @@
   margin-bottom: -5px;
   margin-right: 45px;
 }
+
 .header__logo-image {
-  font-size: 16px;
+  width: 182px;
   margin-top: -10px;
 }
+
 .header__nav {
   display: flex;
   flex-direction: row;
   flex: 1;
 }
+
 .header__logo-container {
   margin-top: 37px;
   margin-left: 93px;
 }
+
 .header__menu-list {
   text-align: center;
   display: flex;
   flex: 1;
 }
+
 .header__menu-item {
   font-size: 15px;
   margin: -100px;
@@ -49,16 +56,19 @@
   margin-top: 80px;
   margin-block: 40px;
 }
+
 .header__menu-link {
   font-weight: bold;
   color: #6b6b6b;
   font-family: "PT Sans";
   text-decoration: none;
 }
+
 .header__social-list {
   display: flex;
   justify-content: flex-end;
 }
+
 .header__social-item {
   width: 6%;
   list-style-type: none;
@@ -66,16 +76,19 @@
   margin-top: 60px;
   margin-block: 30px;
 }
+
 .header__social-link {
   color: rgb(69, 193, 199);
 }
+
 .header__banner {
   position: relative;
   padding-top: 200px;
   padding-bottom: 300px;
   height: 100vh;
-  background: url("img/index.header/header-background.png") center/cover;
+  background: url("../img/index.header/header-background.png") center/cover;
 }
+
 .header__banner-image {
   position: absolute;
   top: 53%;
@@ -83,6 +96,7 @@
   transform: translate(-50%, -50%);
   text-align: left;
 }
+
 .header__title {
   font-family: "Baloo 2";
   font-weight: bold;
@@ -90,12 +104,14 @@
   font-size: 80px;
   font-family: "Baloo 2";
 }
+
 .header__description {
   color: rgb(149, 139, 126);
   font-size: 19px;
   margin-bottom: 60px;
   margin-top: 30px;
 }
+
 .header__buttons-aboutus {
   font-size: 16.5px;
   border-radius: 20px;
@@ -106,10 +122,12 @@
   text-decoration: none;
   transition: all 0.5s ease;
 }
+
 .header__buttons-aboutus:hover {
   color: #5ccbd7;
   background-color: #b6e7e8;
 }
+
 .header__buttons-categories {
   font-size: 16.5px;
   margin-left: 20px;
@@ -125,10 +143,12 @@
   text-decoration: none;
   transition: all 0.5s ease;
 }
+
 .header__buttons-categories:hover {
   color: #fff;
   background-color: #45c1c7;
 }
+
 .header__group-inner {
   display: flex;
   flex-direction: row;
