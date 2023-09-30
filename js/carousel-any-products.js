@@ -38,6 +38,14 @@ function updateCarousel() {
     caroselContainers[(catIndex + 1) % totalContainers].style.display = "block";
   }
 
+  // Переміщення карточки з cat після останньої карточки
+  const catIndex = Array.from(caroselContainers).findIndex(container => container.dataset.category === "cat");
+  if (currentPosition === totalContainers - 1 && currentPosition !== hamsterIndex) {
+    carousel.insertBefore(caroselContainers[catIndex], caroselContainers[0]);
+  } else if (currentPosition !== totalContainers - 1 && catIndex !== 0) {
+    carousel.insertBefore(caroselContainers[catIndex], caroselContainers[1]);
+  }
+
   carousel.style.transition = "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
   carousel.style.opacity = 0;
   carousel.style.transform = "translateY(100%)";
@@ -48,6 +56,7 @@ function updateCarousel() {
 }
 
 updateCarousel();
+
 
 
 
