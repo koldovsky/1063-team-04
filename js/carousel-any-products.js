@@ -26,8 +26,8 @@ function updateCarousel() {
     }
   });
 
-  if (currentPosition + visibleContainers > totalContainers) {
-    currentPosition = 0;
+  if (currentPosition === totalContainers - 1) {
+    caroselContainers[0].style.display = "block";
   }
 
   carousel.style.transition = "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
@@ -40,6 +40,7 @@ function updateCarousel() {
 }
 
 updateCarousel();
+
 
 
 
