@@ -19,14 +19,16 @@ nextButton.addEventListener("click", () => {
 function updateCarousel() {
   caroselContainers.forEach((container, index) => {
     const newIndex = (index + currentPosition) % totalContainers;
-    if (newIndex >= totalContainers - visibleContainers && newIndex < totalContainers) {
-      container.style.display = "block";
-    } else if (index >= currentPosition && index < currentPosition + visibleContainers) {
+    if (index >= currentPosition && index < currentPosition + visibleContainers) {
       container.style.display = "block";
     } else {
       container.style.display = "none";
     }
   });
+
+  if (currentPosition + visibleContainers > totalContainers) {
+    currentPosition = 0;
+  }
 
   carousel.style.transition = "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
   carousel.style.opacity = 0;
@@ -38,6 +40,7 @@ function updateCarousel() {
 }
 
 updateCarousel();
+
 
 
 
