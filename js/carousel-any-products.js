@@ -1,35 +1,43 @@
-const carouselContainer = document.querySelector(".carousel-container-product-card");
-const carouselItems = document.querySelectorAll(".carosel-conteiner-product");
-const prevButton = document.getElementById("carouselPrevButton");
-const nextButton = document.getElementById("carouselNextButton");
-
-const visibleSlides = Math.min(3, window.innerWidth >= 992 ? 3 : window.innerWidth >= 768 ? 2 : 1);
-
-let currentIndex = 0;
-
-function moveCarousel(direction) {
-    if (direction === "next") {
-        currentIndex += visibleSlides;
-        if (currentIndex >= carouselItems.length) {
-            currentIndex = 0; 
-        }
-    } else if (direction === "prev") {
-        currentIndex -= visibleSlides;
-        if (currentIndex < 0) {
-            currentIndex = Math.floor(carouselItems.length / visibleSlides) * visibleSlides; 
-        }
-    }
-
-    carouselContainer.style.transform = `translateX(-${currentIndex * 100 / carouselItems.length}%)`;
-}
+const carousel = document.querySelector(".carousel-container-product-card");
+const caroselContainers = document.querySelectorAll(".carosel-conteiner-product");
+const totalContainers = caroselContainers.length;
+const visibleContainers = 3;
+let currentPosition = 0;
+const prevButton = document.querySelector(".carousel__button-prev-product");
+const nextButton = document.querySelector(".carousel__button-next-product");
 
 prevButton.addEventListener("click", () => {
-    moveCarousel("prev");
+  currentPosition = (currentPosition - 1 + totalContainers) % totalContainers;
+  updateCarousel();
 });
 
 nextButton.addEventListener("click", () => {
-    moveCarousel("next");
+  currentPosition = (currentPosition + 1) % totalContainers;
+  updateCarousel();
 });
+
+function updateCarousel() {
+  caroselContainers.forEach((container, index) => {
+    const newIndex = (index + currentPosition) % totalContainers;
+    if (index >= currentPosition && index < currentPosition + visibleContainers) {
+      container.style.display = "block";
+    } else {
+      container.style.display = "none";
+    }
+  });
+
+  // Застосовуємо анімацію до всієї каруселі
+  carousel.style.transition = "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
+  carousel.style.opacity = 0;
+  carousel.style.transform = "translateY(100%)"; 
+  setTimeout(() => {
+    carousel.style.opacity = 1;
+    carousel.style.transform = "translateY(0)";
+  }, 0); 
+}
+
+updateCarousel();
+
 
 
 
