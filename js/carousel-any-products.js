@@ -17,45 +17,27 @@ nextButton.addEventListener("click", () => {
 });
 
 function updateCarousel() {
-  caroselContainers.forEach((container, index) => {
-    const newIndex = (index + currentPosition) % totalContainers;
-    if (index >= currentPosition && index < currentPosition + visibleContainers) {
-      container.style.display = "block";
-    } else {
-      container.style.display = "none";
-    }
+  caroselContainers.forEach(container => {
+    container.style.display = "none";
   });
 
-  // Замикання каруселі: переносимо карточку на початок, якщо досягнута остання карточка
-  if (currentPosition === totalContainers - 1) {
-    caroselContainers[0].style.display = "block";
-  }
-
-  // Переміщення карточки з cat після карточки з hamster
-  const hamsterIndex = Array.from(caroselContainers).findIndex(container => container.dataset.category === "hamster");
-  if (currentPosition === hamsterIndex) {
-    const catIndex = Array.from(caroselContainers).findIndex(container => container.dataset.category === "cat");
-    caroselContainers[(catIndex + 1) % totalContainers].style.display = "block";
-  }
-
-  // Переміщення карточки з cat після останньої карточки
-  const catIndex = Array.from(caroselContainers).findIndex(container => container.dataset.category === "cat");
-  if (currentPosition === totalContainers - 1 && currentPosition !== hamsterIndex) {
-    carousel.insertBefore(caroselContainers[catIndex], caroselContainers[0]);
-  } else if (currentPosition !== totalContainers - 1 && catIndex !== 0) {
-    carousel.insertBefore(caroselContainers[catIndex], caroselContainers[1]);
+  for (let i = 0; i < visibleContainers; i++) {
+    const index = (currentPosition + i) % totalContainers;
+    caroselContainers[index].style.display = "block";
   }
 
   carousel.style.transition = "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
   carousel.style.opacity = 0;
-  carousel.style.transform = "translateY(100%)";
+  carousel.style.transform = "translateY(100%)"; 
   setTimeout(() => {
     carousel.style.opacity = 1;
     carousel.style.transform = "translateY(0)";
-  }, 0);
+  }, 0); 
 }
 
 updateCarousel();
+
+
 
 
 
