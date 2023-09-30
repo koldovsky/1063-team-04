@@ -21,12 +21,13 @@ function updateCarousel() {
     const newIndex = (index + currentPosition) % totalContainers;
     if (index >= currentPosition && index < currentPosition + visibleContainers) {
       container.style.display = "block";
+      container.style.flex = "0 0 33.3333%";
     } else {
       container.style.display = "none";
+      container.style.flex = "0 0 0"; 
     }
   });
 
-  // Застосовуємо анімацію до всієї каруселі
   carousel.style.transition = "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
   carousel.style.opacity = 0;
   carousel.style.transform = "translateY(100%)"; 
