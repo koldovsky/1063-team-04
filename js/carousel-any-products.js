@@ -17,13 +17,10 @@ nextButton.addEventListener("click", () => {
 });
 
 function updateCarousel() {
-  caroselContainers.forEach(container => {
-    container.style.display = "none";
-  });
-
-  for (let i = 0; i < visibleContainers; i++) {
+  for (let i = 0; i < totalContainers; i++) {
     const index = (currentPosition + i) % totalContainers;
-    caroselContainers[index].style.display = "block";
+    const container = caroselContainers[i];
+    container.style.display = i >= currentPosition && i < currentPosition + visibleContainers ? "block" : "none";
   }
 
   carousel.style.transition = "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
@@ -36,6 +33,7 @@ function updateCarousel() {
 }
 
 updateCarousel();
+
 
 
 
