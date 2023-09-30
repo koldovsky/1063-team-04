@@ -3,26 +3,24 @@ const carouselItems = document.querySelectorAll(".carosel-conteiner-product");
 const prevButton = document.getElementById("carouselPrevButton");
 const nextButton = document.getElementById("carouselNextButton");
 
-const slideWidth = carouselItems[0].offsetWidth;
-
-const numSlides = carouselItems.length;
+const visibleSlides = Math.min(3, window.innerWidth >= 992 ? 3 : window.innerWidth >= 768 ? 2 : 1);
 
 let currentIndex = 0;
 
 function moveCarousel(direction) {
     if (direction === "next") {
-        currentIndex++;
-        if (currentIndex === numSlides) {
+        currentIndex += visibleSlides;
+        if (currentIndex >= carouselItems.length) {
             currentIndex = 0; 
         }
     } else if (direction === "prev") {
-        currentIndex--;
-        if (currentIndex === -1) {
-            currentIndex = numSlides - 1; 
+        currentIndex -= visibleSlides;
+        if (currentIndex < 0) {
+            currentIndex = Math.floor(carouselItems.length / visibleSlides) * visibleSlides; 
         }
     }
 
-    carouselContainer.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    carouselContainer.style.transform = `translateX(-${currentIndex * 100 / carouselItems.length}%)`;
 }
 
 prevButton.addEventListener("click", () => {
@@ -32,6 +30,7 @@ prevButton.addEventListener("click", () => {
 nextButton.addEventListener("click", () => {
     moveCarousel("next");
 });
+
 
 
 
