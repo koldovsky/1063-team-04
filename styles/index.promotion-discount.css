@@ -1,10 +1,10 @@
 .cta {
-  background-image: url("../img/promotion/cta.jpg");
-  background-size: cover;
-  height: 705px;
-  width: 385px;
-  display: inline-block;
-  padding: 90px 0 100px;
+    background-image: url("../img/promotion/cta.jpg");
+    background-size: cover;
+    height: 705px;
+    width: 385px;
+    display: inline-block;
+    padding: 90px 0 100px;
 }
 
 .promotion {
@@ -58,4 +58,104 @@
     border-radius: 30px;
     margin-left: 20px;
     margin-top: 150px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.days-timer {
+    display: flex;
+    flex-flow: column;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid var(--color-button-border);
+    border-radius: 5px;
+    text-align: center;
+    width: 63px;
+    height: 63px;
+}
+
+.hours-timer {
+    display: flex;
+    flex-flow: column;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid var(--color-button-border);
+    border-radius: 5px;
+    text-align: center;
+    width: 63px;
+    height: 63px;
+}
+
+.minutes-timer {
+    display: flex;
+    flex-flow: column;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid var(--color-button-border);
+    border-radius: 5px;
+    text-align: center;
+    width: 63px;
+    height: 63px;
+}
+
+.seconds-timer {
+    display: flex;
+    flex-flow: column;
+    margin-right: 10px;
+    border: 1px solid var(--color-button-border);
+    border-radius: 5px;
+    text-align: center;
+    width: 63px;
+    height: 63px;
+}
+
+.days {
+    font-size: 12px;
+    font-family: "PT Sans", cursive;
+    color: var(--color-text-section-text);
+}
+
+.hours {
+    font-size: 12px;
+    font-family: "PT Sans", cursive;
+    color: var(--color-text-section-text);
+}
+
+.minutes {
+    font-size: 12px;
+    font-family: "PT Sans", cursive;
+    color: var(--color-text-section-text);
+}
+
+.seconds {
+    font-size: 12px;
+    font-family: "PT Sans", cursive;
+    color: var(--color-text-section-text);
+}
+
+#days {
+    font-size: 15px;
+    font-family: "Ballo 2", cursive;
+    color: var(--color-p-text);
+}
+
+#hours {
+    font-size: 15px;
+    font-family: "Ballo 2", cursive;
+    color: var(--color-p-text);
+}
+
+#minutes {
+    font-size: 15px;
+    font-family: "Ballo 2", cursive;
+    color: var(--color-p-text);
+}
+
+#seconds {
+    font-size: 15px;
+    font-family: "Ballo 2", cursive;
+    color: var(--color-p-text);
 }
