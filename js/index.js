@@ -9,6 +9,6 @@ document.addEventListener("partialsLoaded", async () => {
   await import("./trending-products-carousel.js");
   await import("./about-us.js");
   await import("./carousel-any-products.js");
-  await import("./clock-our-news-articles.js")
+  await import("./clock-our-news-articles.js") 
   await import("./timer-promotion.js")
 });
