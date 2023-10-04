@@ -1,10 +1,19 @@
-.cta {
+.promotion-container {
     background-image: url("../img/promotion/cta.jpg");
     background-size: cover;
     height: 705px;
-    width: 385px;
-    display: inline-block;
-    padding: 90px 0 100px;
+    display: flex;
+    flex-flow: column;
+    padding: 120px 50px;
+}
+
+.auto-size-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    max-width: 475px;
 }
 
 .promotion {
@@ -12,7 +21,6 @@
     font-size: 15px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
-    margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -20,11 +28,9 @@
     font-family: "Baloo 2", cursive;
     font-weight: bold;
     color: var(--color-p-text);
-    font-size: 48px;
+    font-size: 70px;
     display: flex;
-    width: 300px;
     word-break: break-word;
-    margin-left: 20px;
     line-height: 1.1;
 }
 
@@ -32,17 +38,51 @@
     color: var(--color-content-text);
     font-size: 19px;
     font-family: "PT Sans", sans-serif;
-    display: flex;
-    width: 310px;
     word-break: break-word;
     flex-wrap: wrap;
-    margin-left: 20px;
     margin-top: 30px;
 }
 
 .discount {
     color: var(--color-number-text);
     font-weight: bold;
+}
+
+.timer {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+}
+
+.timer-box {
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid var(--color-button-border);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+}
+
+.timer-text {
+    font-size: 20px;
+    font-family: "Ballo 2", cursive;
+    font-weight: bold;
+    color: var(--color-p-text);
+}
+
+.timer-sub-text {
+    font-size: 12px;
+    font-family: "PT Sans", cursive;
+    color: var(--color-text-section-text);
+}
+
+.shop-btn {
+    margin-top: 55px;
 }
 
 .smooth-scroll-shop {
@@ -53,109 +93,21 @@
     font-size: 20px;
     font-weight: bold;
     font-family: "PT Sans", sans-serif;
-    position: absolute;
     padding: 15px 30px;
     border-radius: 30px;
-    margin-left: 20px;
-    margin-top: 150px;
+    height: 48px;
 }
 
-.timer {
-    display: flex;
-    justify-content: space-between;
-}
+@media (max-width: 525px) {
+    .auto-size-container {
+        width: auto;
+    }
 
-.days-timer {
-    display: flex;
-    flex-flow: column;
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid var(--color-button-border);
-    border-radius: 5px;
-    text-align: center;
-    width: 63px;
-    height: 63px;
-}
+    .promotion-container {
+        padding: 120px 0
+    }
 
-.hours-timer {
-    display: flex;
-    flex-flow: column;
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid var(--color-button-border);
-    border-radius: 5px;
-    text-align: center;
-    width: 63px;
-    height: 63px;
-}
-
-.minutes-timer {
-    display: flex;
-    flex-flow: column;
-    margin-right: 10px;
-    padding: 5px;
-    border: 1px solid var(--color-button-border);
-    border-radius: 5px;
-    text-align: center;
-    width: 63px;
-    height: 63px;
-}
-
-.seconds-timer {
-    display: flex;
-    flex-flow: column;
-    margin-right: 10px;
-    border: 1px solid var(--color-button-border);
-    border-radius: 5px;
-    text-align: center;
-    width: 63px;
-    height: 63px;
-}
-
-.days {
-    font-size: 12px;
-    font-family: "PT Sans", cursive;
-    color: var(--color-text-section-text);
-}
-
-.hours {
-    font-size: 12px;
-    font-family: "PT Sans", cursive;
-    color: var(--color-text-section-text);
-}
-
-.minutes {
-    font-size: 12px;
-    font-family: "PT Sans", cursive;
-    color: var(--color-text-section-text);
-}
-
-.seconds {
-    font-size: 12px;
-    font-family: "PT Sans", cursive;
-    color: var(--color-text-section-text);
-}
-
-#days {
-    font-size: 15px;
-    font-family: "Ballo 2", cursive;
-    color: var(--color-p-text);
-}
-
-#hours {
-    font-size: 15px;
-    font-family: "Ballo 2", cursive;
-    color: var(--color-p-text);
-}
-
-#minutes {
-    font-size: 15px;
-    font-family: "Ballo 2", cursive;
-    color: var(--color-p-text);
-}
-
-#seconds {
-    font-size: 15px;
-    font-family: "Ballo 2", cursive;
-    color: var(--color-p-text);
+    .sidebar {
+        padding: 0 10px;
+    }
 }
