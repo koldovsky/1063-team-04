@@ -1,70 +1,70 @@
-const carousel = document.querySelector(".new-arrivals__carousel");
-const carouselInner = carousel.querySelector(".carousel__cards");
-const prevButton = carousel.querySelector(".carousel__button-prev");
-const nextButton = carousel.querySelector(".carousel__button-next");
+const carousel = document.querySelector(".carousel__cards");
+const arrowIcons = document.querySelectorAll(".carousel__button--navigation");
+const firstCard = carousel.querySelectorAll(".carousel__card")[0];
 
-let slidesPerView = getSlidesPerView();
-let slides = Array.from(carouselInner.children);
-let currentIndex = slidesPerView;
+let isDragStart = false,
+  isDragging = false,
+  prevPageX,
+  prevScrollLeft,
+  positionDiff;
 
-setupCarousel();
+const showHideIcons = () => {
+  let scrollWidth = carousel.scrollWidth - carousel.clientWidth; 
+  arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+  arrowIcons[1].style.display =
+    carousel.scrollLeft == scrollWidth ? "none" : "block";
+};
 
-function getSlidesPerView() {
-  if (window.innerWidth >= 992) return 4;
-  if (window.innerWidth >= 768) return 2;
-  return 1;
-}
-function setupCarousel() {
-  slides = slides.filter((slide) => !slide.classList.contains("clone"));
-
-  const clonesStart = slides.slice(-slidesPerView).map(cloneSlide);
-  const clonesEnd = slides.slice(0, slidesPerView).map(cloneSlide);
-
-  carouselInner.append(...clonesStart, ...slides, ...clonesEnd);
-
-  slides = Array.from(carouselInner.children);
-
-  updateCarousel();
-}
-function cloneSlide(slide) {
-  const clone = slide.cloneNode(true);
-  clone.classList.add("clone");
-  return clone;
-}
-function updateCarousel() {
-  carouselInner.style.transform = `translateX(-${
-    (currentIndex * 100) / slidesPerView
-  }%)`;
-}
-// Event listeners
-prevButton.addEventListener("click", () => {
-  if (--currentIndex < 0) {
-    currentIndex = slides.length - slidesPerView * 2 - 1;
-    carouselInner.style.transition = "none";
-    updateCarousel();
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        carouselInner.style.transition = "";
-      });
-    });
+arrowIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    let firstCardWidth = firstCard.clientWidth;
+    carousel.scrollLeft += icon.classList.contains("carousel__button-prev")
+      ? -firstCardWidth
+      : firstCardWidth;
+    setTimeout(() => showHideIcons(), 60);
+  });
+});
+const autoSlide = () => {
+  if (
+    carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 ||
+    carousel.scrollLeft <= 0
+  )
+    return;
+  positionDiff = Math.abs(positionDiff);
+  let firstCardWidth = firstCard.clientWidth;
+  let valDifference = firstCardWidth - positionDiff;
+  if (carousel.scrollLeft > prevScrollLeft) {
+    return (carousel.scrollLeft +=
+      positionDiff > firstCardWidth / 3 ? valDifference : -positionDiff);
   }
-  updateCarousel();
-});
-nextButton.addEventListener("click", () => {
-  carouselInner.style.transition = "";
-  if (++currentIndex >= slides.length - slidesPerView) {
-    currentIndex = slidesPerView;
-    carouselInner.style.transition = "none";
-    updateCarousel();
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        carouselInner.style.transition = "";
-      });
-    });
-  }
-  updateCarousel();
-});
-window.addEventListener("resize", () => {
-  slidesPerView = getSlidesPerView();
-  setupCarousel();
-});
+
+  carousel.scrollLeft -=
+    positionDiff > firstCardWidth / 3 ? valDifference : -positionDiff;
+};
+const dragStart = (e) => {
+  isDragStart = true;
+  prevPageX = e.pageX || e.touches[0].pageX;
+  prevScrollLeft = carousel.scrollLeft;
+};
+const dragging = (e) => {
+  if (!isDragStart) return;
+  e.preventDefault();
+  isDragging = true;
+  carousel.classList.add("dragging");
+  positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+  carousel.scrollLeft = prevScrollLeft - positionDiff;
+  showHideIcons();
+};
+const dragStop = () => {
+  isDragStart = false;
+  carousel.classList.remove("dragging");
+  if (!isDragging) return;
+  isDragging = false;
+  autoSlide();
+};
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);

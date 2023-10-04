@@ -1,20 +1,23 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding-bottom: 50px;
-  background-color: var(--color-background-footer);
+  font-family: "PT Sans", sans-serif;
 }
-
 .footer__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+}
+.footer__contact-navlinks{
+  background-color: var(--color-background-footer);
+  padding-bottom:70px;
 }
 .footer__contact {
   display: flex;
   flex-direction: column;
   padding-top: 90px;
   flex-basis: 100%;
+  background-color: var(--color-background-footer);
 }
 .contact__call {
   display: flex;
@@ -66,13 +69,10 @@
 .contact__subscription-link:hover {
   text-decoration: underline;
 }
-.highlighted {
-  color: var(--color-arrow);
-}
 .contact__email {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 4px;
   padding: 0 15px;
   margin-top: 50px;
   margin-bottom: 25px;
@@ -88,6 +88,31 @@
   line-height: 18px;
   margin-top: 12px;
 }
+.contact__email__control{
+  display:flex;
+  flex-direction: column;
+}
+.contact__email__control .error{
+  height:20px;
+}
+.contact__email__control.success input{
+  border: 1px solid var( --color-email-input-success); 
+}
+.contact__email__control.error input{
+  border: 1px solid var(--color-email-input-error);
+}
+
+.contact__email__control .success{
+  color:var( --color-email-input-success); 
+  font-size: 12px;
+  padding: 8px 0 0 8px;
+}
+.contact__email__control .error{
+  color:var(--color-email-input-error); 
+  font-size: 12px;
+  padding: 8px 0 0 8px;
+}
+
 .contact__email-button {
   text-align: center;
   border: none;
@@ -111,6 +136,7 @@
   flex-direction: column;
   gap: 35px;
   padding: 45px 15px 0 15px;
+  background-color: var(--color-background-footer);
 }
 .footer__about {
   display: flex;
@@ -131,7 +157,7 @@
   font-stretch: 80%;
 }
 .footer__about-description--email {
-  color: rgb(149, 139, 126);
+  color: var(--color-content-text);
   font-weight: 700;
   text-decoration: none;
 }
@@ -231,12 +257,10 @@
     flex-basis: 33.3333%;
     max-width: 33.3333%;
   }
-
   .contact__email {
     flex-basis: 25%;
     max-width: 25%;
   }
-
   .footer__navlinks {
     display: flex;
     flex-direction: row;
@@ -244,8 +268,11 @@
     flex: 1;
     flex-basis: 0;
     margin: 45px 0px 90px 15px;
-    padding: 0;
+    padding-bottom: 0;
     gap: 0;
+  }
+  .footer__contact-navlinks{
+    padding-bottom: 0px;
   }
   .contact__call-number {
     line-height: 52.8px;
@@ -293,7 +320,6 @@
   .information__link {
     font-size: 15px;
   }
-
   .footer__navigation,
   .footer__service,
   .footer__information {
@@ -308,4 +334,44 @@
   .contact__call-number {
     font-size: 50px;
   }
+}
+.footer__authority-right{
+  background-color: var(--color-footer-background-2);
+}
+.footer__authority-right__items{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.authority-right__copyright, .authority-right__rights{
+  font-size: 15px;
+  font-weight: 700;
+  color:var(--color-content-text);
+  text-align: center;
+  line-height: 21px;
+}
+.authority-right__copyright{
+  padding-top:10px;
+}
+.authority-right__rights{
+  margin-top:20px;
+}
+
+@media(min-width:768px){
+  .footer__authority-right__items{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  .authority-right__rights{
+    margin: 0;
+  }
+  .authority-right__copyright{
+    padding: 0;
+  }
+}
+.contact__subscription-link-arrow{
+  color:var(--color-arrow);
 }

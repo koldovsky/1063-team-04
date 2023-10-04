@@ -23,14 +23,15 @@
   --color-card__text-brands: #ed6435;
   --color-card__discount: #ed6435;
   --color-image-decoration: #ed6435;
-  --color-hover-decoration: #ed6435;
-  
+  --color-email-input-error: #ed6435;
+
   /* color:#6b6b6b  */
   --color-nav-link-text: #6b6b6b;
 
   /* --dark-grey: #3c3731; */
   --color-h-text: #3c3731;
   --color-p-text: #3c3731;
+  --color-footer-hor:#3c3731;
   --color-card__title: #3c3731;
   --color-carousel__header-top-text: #3c3731;
 
@@ -51,7 +52,6 @@
   --color-title-footer: #45c1c7;
   --color-icon-background: #45c1c7;
   --color-carousel__arrow: #45c1c7;
-  --color-arrow-direction: #45c1c7;
 
   /* --dark-gray: #9a9898; */
   --color-footer-list-content-text: #9a9898;
@@ -70,12 +70,13 @@
   --color-background-card__button: #ffe6d4;
   --color-background-image-decoration: #ffe6d4;
   --color-carousel-any-products: #ffe6d4;
-
+  --color-email-input-success:#45c1c7;
   /* --text-color: #f2e8e4;
-
+  
   --misty-rose: #f4e6e2;
   
   --sea-green: #32a1a7; */
+  --color-footer-background-2:#F2E8E4;
   --color-text-email-button-hover: #32a1a7;
   --color-icon-background-hover: #32a1a7;
   --color-button-background: #f4e6e2;
@@ -86,10 +87,6 @@
   --color-text-section-text: #958b7e;
   --color-little-paw: #45c1c7;
 
-<<<<<<< HEAD
-  /*  background-img-banner.and.carousel   */
-  --color-background--image: #faebd7;
-=======
 /* clock */
   --clock-background: rgb(37, 73, 90);
   --clock-border: rgb(25, 48, 60);
@@ -100,7 +97,6 @@
   --custom-color3: #ffc600;
   --custom-color4: #fff;
 
->>>>>>> 149b0ac2087efdbb7916b19eb82eb12db7e6c6f1
 }
 
 img {
@@ -112,5 +108,4 @@ img {
   max-width: 1200px;
   margin: auto;
 }
-
 
