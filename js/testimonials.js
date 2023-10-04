@@ -1,3 +1,4 @@
+
 const carousel = document.querySelector(".testimonials-carousel");
 const slides = Array.from(carousel.querySelectorAll(".carousel__slide"));
 const prevButton = carousel.querySelector(".carousel__prev");
@@ -47,3 +48,4 @@ nextButton.addEventListener("click", nextSlide);
 window.addEventListener("resize", setSlidesToShow);
 
 setSlidesToShow();
+

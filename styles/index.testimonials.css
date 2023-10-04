@@ -1,15 +1,15 @@
-.testimonials {
+ .testimonials {
   text-align: center;
   height: 100hv;
   background-color: var(--color-default-backfround);
   padding: 40px;
 }
-.testimonials__container {
+ .testimonials__container {
   max-width: 1200px;
   margin: 0 auto; 
   padding: 20px; 
   height: 900px; 
-}
+} 
 
 .testimonials__title {
   margin-bottom: 10px;
@@ -17,6 +17,8 @@
   font-family: "Baloo 2", cursive;
   font-size: 47px;
 }
+
+
 
 .testimonials__title-img {
   display: block; 
@@ -32,6 +34,11 @@
   font-size: 18px;
   margin-bottom: 50px;
 }
+@media  (max-width: 790px) {
+  .testimonials__title {
+    font-size: 30px;
+  }
+}
 
 .testimonials-carousel,
 .carousel {
@@ -39,10 +46,10 @@
 }
 
 .carousel__slides {
-  display: flex; 
+   display: flex; 
   align-items: center; 
-  justify-content: center; 
-  
+  justify-content: center;  
+   
 }
 
 .carousel__slide {
@@ -128,5 +135,26 @@
   width: 40px;
   height: 40px; 
 }
-
-
+@media  (max-width: 790px) {
+  .carousel__prev img {
+    width: 20px;
+    height: 20px; 
+  }
+  .carousel__next img {
+    width: 20px; 
+    height: 20px; 
+    
+  }
+  .carousel__slide img {
+    width: 70px;
+    }
+  .carousel__slide-title {
+      font-size: 20px;
+    }
+    
+  .carousel__slide-text {
+      font-size: 14px;
+    }
+  
+}
+ 
