@@ -1,6 +1,6 @@
 .testimonials {
   text-align: center;
-  height: 100vh;
+  height: 100hv;
   background-color: var(--color-default-backfround);
   padding: 40px;
 }
@@ -30,12 +30,12 @@
   color: var(--color-content-text);
   font-family: "PT sans", sans-serif;
   font-size: 18px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .testimonials-carousel,
 .carousel {
-  height: 800px; 
+  height: 500px; 
 }
 
 .carousel__slides {
@@ -50,8 +50,8 @@
   text-align: center;
   height: 480px;
   border: 2px solid var(--color-background-image-decoration);
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right:15px;
+  margin-left: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,9 +100,33 @@
   color: var(--color-h-text);
   font-family: "PT sans", sans-serif;
   margin-top: auto;
-  margin-bottom: 60px; 
+  margin-bottom: 30px; 
   position: absolute; 
   bottom: 0; 
   left: 50%; 
   transform: translateX(-50%); 
 }
+.carousel {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.carousel__prev,
+.carousel__next {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.carousel__next img {
+  width: 40px; 
+  height: 40px; 
+  
+}
+.carousel__prev img {
+  width: 40px;
+  height: 40px; 
+}
+
+

@@ -4,7 +4,18 @@ const prevButton = carousel.querySelector(".carousel__prev");
 const nextButton = carousel.querySelector(".carousel__next");
 
 let currentIndex = 0;
-const slidesToShow = 3;
+let slidesToShow = 3; 
+
+function setSlidesToShow() {
+  if (window.innerWidth < 1170 && window.innerWidth >= 800) {
+    slidesToShow = 2; 
+  } else if (window.innerWidth < 800) {
+    slidesToShow = 1; 
+  } else {
+    slidesToShow = 3;
+  }
+  showSlides();
+}
 
 function showSlides() {
   slides.forEach((slide, i) => {
@@ -17,24 +28,22 @@ function showSlides() {
 }
 
 function nextSlide() {
-  currentIndex += slidesToShow;
-  if (currentIndex >= slides.length) {
-    currentIndex = 0;
-  } else if (currentIndex + slidesToShow > slides.length) {
-    currentIndex = slides.length - slidesToShow;
+  const maxIndex = slides.length - slidesToShow;
+  if (currentIndex < maxIndex) {
+    currentIndex += 1;
+    showSlides();
   }
-  showSlides();
 }
 
 function prevSlide() {
-  currentIndex -= slidesToShow;
-  if (currentIndex < 0) {
-    currentIndex = slides.length - slidesToShow;
+  if (currentIndex > 0) {
+    currentIndex -= 1;
+    showSlides();
   }
-  showSlides();
 }
 
 prevButton.addEventListener("click", prevSlide);
 nextButton.addEventListener("click", nextSlide);
+window.addEventListener("resize", setSlidesToShow);
 
-showSlides();
+setSlidesToShow();
