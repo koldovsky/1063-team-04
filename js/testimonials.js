@@ -1,13 +1,26 @@
+
 const carousel = document.querySelector(".testimonials-carousel");
-const slides = carousel.querySelectorAll(".carousel__slide");
+const slides = Array.from(carousel.querySelectorAll(".carousel__slide"));
 const prevButton = carousel.querySelector(".carousel__prev");
 const nextButton = carousel.querySelector(".carousel__next");
 
 let currentIndex = 0;
+let slidesToShow = 3; 
 
-function showSlide(index) {
+function setSlidesToShow() {
+  if (window.innerWidth < 1170 && window.innerWidth >= 800) {
+    slidesToShow = 2; 
+  } else if (window.innerWidth < 800) {
+    slidesToShow = 1; 
+  } else {
+    slidesToShow = 3;
+  }
+  showSlides();
+}
+
+function showSlides() {
   slides.forEach((slide, i) => {
-    if (i === index) {
+    if (i >= currentIndex && i < currentIndex + slidesToShow) {
       slide.style.display = "block";
     } else {
       slide.style.display = "none";
@@ -16,22 +29,23 @@ function showSlide(index) {
 }
 
 function nextSlide() {
-  currentIndex++;
-  if (currentIndex >= slides.length) {
-    currentIndex = 0;
+  const maxIndex = slides.length - slidesToShow;
+  if (currentIndex < maxIndex) {
+    currentIndex += 1;
+    showSlides();
   }
-  showSlide(currentIndex);
 }
 
 function prevSlide() {
-  currentIndex--;
-  if (currentIndex < 0) {
-    currentIndex = slides.length - 1;
+  if (currentIndex > 0) {
+    currentIndex -= 1;
+    showSlides();
   }
-  showSlide(currentIndex);
 }
 
 prevButton.addEventListener("click", prevSlide);
 nextButton.addEventListener("click", nextSlide);
+window.addEventListener("resize", setSlidesToShow);
 
-showSlide(currentIndex);
+setSlidesToShow();
+
