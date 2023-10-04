@@ -67,28 +67,28 @@
 .carousel__slides-card {
   margin-top: 50px;
   width: 100%;
-  overflow: hidden;
   display: flex;
-  flex: 1;
 }
 
 .carousel-container-product-card {
   display: flex;
- /* overflow: hidden; */
+  width: 100%;
+  box-sizing: border-box;
 }
+
+
 
 .carosel-conteiner-product {
   display: block;
   justify-content: center;
   align-items: center;
   font-family: "PT Sans", sans-serif;
-  min-width: 320px;
   padding: 0 15px;
   display: block;
-  width: 100%;
   flex: 0 0 calc(100% / 3);
   transition: transform 0.3s ease-in-out;
 }
+
 
 @media screen and (max-width: 992px) {
   .carosel-conteiner-product {
@@ -102,9 +102,10 @@
   }
 }
 
+
 /* start card */
 .carousel-border-product {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -112,13 +113,13 @@
   border: 1.6px solid var(--color-carousel-any-products);
 }
 
-.carousel-card-block{
-  display: flex;
+.carousel-card-block {
+  /* display: flex; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 45px 20px;
+  padding: 45px 15px;
 }
 
 /* block image */
@@ -147,7 +148,7 @@
 .carousel__card-name {
   margin-top: 20px;
   font-size: 24px;
- 
+
 }
 
 /* For Cats */
@@ -178,47 +179,57 @@
   font-weight: 400;
 }
 
+
+/* button */
 .button__carousel-conteiner-card {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 45px;
 }
 
-.carousel-button-cards {
-  appearance: auto;
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-color: black;
-  background-origin: padding-box;
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-repeat: repeat;
-  background-size: auto;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-width: 0px;
-  border-image-repeat: stretch;
-  border-image-slice: 100%;
-  border-image-width: 1;
+.carousel__button--navigation-product {
+  width: 24px;
+  background-color: var(--color-p-text);
+  fill: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  position: absolute;
+  top: 50%;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 400;
-  height: 32px;
-  text-align: center;
-  width: 32px;
-  border: none;
+  z-index: 1;
+  opacity: 0.85;
 }
 
-.prev-button {
-  position: absolute;
-  left: 0;
+.carousel__button-prev-product {
+  transform: rotateY(180deg);
+  left: 5px;
 }
 
-.next-button {
-  position: absolute;
-  right: 0;
+.carousel__button-next-product {
+  right: 5px;
 }
+
+@media (min-width: 768px) {
+  .carousel__button--navigation-product {
+    padding: 5px;
+    width: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .carousel__button--navigation-product {
+    fill: var(--color-p-text);
+    background: none;
+    width: 40px;
+  }
+
+  .carousel__button-prev-product {
+    left: -12px;
+  }
+
+  .carousel__button-next-product {
+    right: -12px;
+  }
+}
+

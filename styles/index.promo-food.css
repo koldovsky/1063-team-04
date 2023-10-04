@@ -2,7 +2,6 @@
   transition: scroll-behavior 0.5s ease-in-out;
   color: var(--color-content-text);
   text-decoration: none;
-  margin-left: 30px;
   font-size: 17px;
   font-family: "PT Sans", sans-serif;
 }
@@ -12,32 +11,40 @@
   justify-content: center;
 }
 
-.upper-block {
+.video-container {
   background-image: url("../img/promo/pexels-cottonbro.png");
-  width: 305px;
-  height: 162px;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
-  background-position-x: 50%;
-  background-position-y: 50%;
+  width: 732px;
+  height: 510px;
+  margin: 15px 0 15px 15px;
+  background-position: 50%;
   background-size: cover;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.lower-block {
+.btn-wrapper {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+.play-button {
+  width: 40px;
+  color: var(--color-button-text-secondary);
+}
+
+.promo-food-container {
   background-image: url(../img/promo/bannerfood.png);
-  width: 305px;
-  height: 323px;
-  background-position-y: 100%;
-  background-position-x: 100%;
+  width: 350px;
+  height: 510px;
+  margin: 15px;
+  background-position: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-repeat: no-repeat;
+  padding: 27px;
 }
 
 .promo-title {
@@ -45,29 +52,26 @@
   font-size: 15px;
   font-weight: bold;
   font-family: "PT Sans", sans-serif;
-  padding-top: 30px;
-  padding-left: 30px;
 }
 
-.food-for-dogs {
+.promo-description {
   font-family: "Baloo 2", cursive;
   font-weight: bold;
   color: var(--color-p-text);
   font-size: 28px;
-  display: flex;
-  width: 300px;
-  word-break: break-word;
-  padding-left: 30px;
   line-height: 1.1;
-  padding-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .colorful-list {
-  content: "●";
-  color: var(--color-button-text);
-  margin-left: 30px;
   margin-top: 20px;
+  list-style-type: none;
+  color: var(--color-button-text);
+}
+
+.colorful-list li {
+  margin-bottom: 5px;
+  display: flex;
 }
 
 .colorful-list li div {
@@ -75,30 +79,70 @@
   font-size: 15px;
   font-family: "PT Sans", sans-serif;
   font-weight: bold;
+  margin-left: 5px;
 }
 
-@media (min-width: 410px) {
-  .food-for-dogs {
-    width: 350px;
+@media (max-width: 768px) {
+  .promo {
+    max-width: 700px;
+    align-items: center;
   }
 
-  .upper-block {
-    width: auto;
+  .video-container {
+    max-width: 700px;
+    height: 470px;
   }
 
-  .lower-block {
-    width: auto;
+  .promo-food-container {
+    max-width: 700px;
+    height: 470px;
+    background-position-x: 100%;
+    background-position-y: 100%;
+  }
+
+  .promo-description {
+    font-size: 32px;
   }
 }
 
-@media (min-width: 455px) {
-  .food-for-dogs {
-    width: 400px;
+@media (max-width: 525px) {
+  .promo {
+    max-width: 525px;
+    flex-flow: column wrap;
+  }
+
+  .video-container {
+    max-width: 350px;
+    height: 160px;
+    margin: 0;
+  }
+
+  .btn-wrapper {
+    height: 50px;
+    max-width: 50px;
+  }
+
+  .play-button {
+    width: 30px;
+  }
+
+  .promo-food-container {
+    max-width: 350px;
+    height: 320px;
+    margin: 50px 0;
   }
 }
 
-@media (min-width: 525px) {
-  .food-for-dogs {
-    width: 450px;
+@media (max-width: 350px) {
+  .promo {
+    max-width: 300px;
+  }
+
+  .video-container {
+    max-width: 300px;
+  }
+
+  .promo-food-container {
+    max-width: 300px;
   }
 }

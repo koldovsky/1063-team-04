@@ -1,20 +1,46 @@
 /* Клас для контейнера, який містить блок */
-.news-articles--container {
+.news-articles-container {
   width: 90%;
-  padding-top: 90px;
-  padding-bottom: 90px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding: 0px 15px;
+  box-sizing: unset;
 }
 
-.news-section__image {
+@media (min-width:1024px) {
+  .news-articles-container {
+  padding-left: 40px;
+  padding-right: 40px;
+  }
+}
+
+@media (min-width:1140px) {
+  .news-articles-container {
+    padding-top: 110px;
+    padding-bottom: 115px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.news-articles-image {
   height: 32px;
   object-fit: contain;
   margin-bottom: 25px;
 }
 
+@media (min-width:1024px) {
+  .news-articles-image {
+    padding-left: 35px;
+  }
+}
+
+.news-articles__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
 /* Клас для заголовка блоку */
-.news-articles__title {
+.news-articles-title {
   margin-top: 20px;
   font-size: 24px;
   font-weight: 600;
@@ -23,47 +49,109 @@
   color: var(--color-h-text);
 }
 
+@media (min-width:768px) {
+  .news-articles-title {
+    font-size: 44px;
+  }
+}
+
+@media (min-width:1024px) {
+  .news-articles-title {
+    font-size: 50px;
+    padding-top: 4px;
+  }
+}
+
+
+
+
+.news-articles-description {
+  font-size: 19px;
+  color: var(--color-content-text);
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "PT Sans", sans-serif;
+
+}
+
 /* Клас для списку новин та статей */
-.news-articles--list {
+.news-articles__container {
   list-style: none;
   padding: 0;
   margin: 0 0 20px;
 }
 
-/* Базовий клас для елемента */
-.news-articles__item {
+.news-articles__container .news-article-item {
   display: flex;
   flex-direction: column;
   text-align: left;
-  align-items: left;
   margin-bottom: 20px;
+
+}
+
+@media (min-width:768px) {
+  .news-articles__container  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 3rem;
+    grid-column: auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .news-articles__container{
+    display: flex;
+    grid-gap: 2rem;
+  }
 }
 
 /* Клас для зображення */
-.news-articles__item--img {
+.news-article-item-image {
   width: 272px;
   height: 182px;
 }
 
+@media (min-width:768px) {
+  .news-article-item-image {
+    width: 337px;
+    height: 225px;
+  }
+}
+
+@media (min-width:1024px) {
+  .news-article-item-image {
+    width: 294px;
+    height: 197px ;
+  }
+}
+
 /* Клас для заголовка */
-.news-articles__item--h3 {
+.news-article-item-heading {
   font-size: 22px;
   color: var(--color-h-text);
   font-weight: 600;
   font-family: "Baloo 2", cursive;
 }
 
+@media (min-width:768px) {
+  .news-article-item-heading {
+    font-size: 23px;
+  }
+}
+
 /* Клас для опису */
-.news-articles__item--p {
+.news-article-item-paragraph {
   font-size: 17px;
   font-family: "PT Sans", sans-serif;
   color: var(--color-content-text);
   text-align: justify;
-  word-wrap: break-word;
+  display: flex;
+  overflow-wrap: break-word;
 }
 
 /* Клас для кнопки "Read More" */
-.news-articles__item--read-more {
+.news-article-item-read-more {
   display: flex;
   background-color: var(--color-default-backfround);
   border: none;
@@ -76,8 +164,9 @@
   padding-top: 20px;
   text-decoration: none;
 }
-.news-articles__item--read-more:active,
-.news-articles__item--read-more:focus {
+
+.news-article-item-read-more:active,
+.news-article-item-read-more:focus {
   color: var(--color-divider-background);
   text-decoration: underline;
 }
@@ -88,4 +177,101 @@
   width: 100%;
   height: 1px;
   border-bottom: 1px solid var(--color-divider-background);
+}
+
+/*clock */
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+}
+
+.clock {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/clock/clock.png),
+    radial-gradient(circle, var(--clock-background) 0%, var(--clock-border) 11%, var(--clock-center) 38%);
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 -15px 15px var(--custom-color),
+    inset 0 -15px 15px var(--custom-color2),
+    0 15px 15px var(--custom-color),
+    inset 0 15px 15px var(--custom-color2);
+}
+
+.clock:before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: var(--custom-color4);
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec {
+  position: absolute;
+}
+
+.clock .hour,
+.hr {
+  width: 160px;
+  height: 160px;
+}
+
+.clock .min,
+.mn {
+  width: 190px;
+  height: 190px;
+}
+
+.clock .sec,
+.sc {
+  width: 230px;
+  height: 230px;
+}
+
+.hr,
+.mn,
+.sc {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hr:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background-color: var(--custom-color3);
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.mn:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background-color: var(--custom-color4);
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+
+.sc:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background-color: var(--custom-color4);
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
 }

@@ -86,8 +86,21 @@
   --color-text-section-text: #958b7e;
   --color-little-paw: #45c1c7;
 
+<<<<<<< HEAD
   /*  background-img-banner.and.carousel   */
   --color-background--image: #faebd7;
+=======
+/* clock */
+  --clock-background: rgb(37, 73, 90);
+  --clock-border: rgb(25, 48, 60);
+  --clock-center: rgba(9, 25, 33, 1);
+  --hand-color: #333;
+  --custom-color: rgba(134, 134, 134, 0.35);
+  --custom-color2: #191919;
+  --custom-color3: #ffc600;
+  --custom-color4: #fff;
+
+>>>>>>> 149b0ac2087efdbb7916b19eb82eb12db7e6c6f1
 }
 
 img {
