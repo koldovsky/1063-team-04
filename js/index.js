@@ -1,4 +1,6 @@
 document.addEventListener("partialsLoaded", async () => {
+  await import('./banners.and.carousel.js');
+  await import("./trending-products-carousel.js");
   await import("./trending-header-text.js");
   await import("./scroll-up.js");
   await import("./shopping-cart.js");

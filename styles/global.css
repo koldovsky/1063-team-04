@@ -23,7 +23,8 @@
   --color-card__text-brands: #ed6435;
   --color-card__discount: #ed6435;
   --color-image-decoration: #ed6435;
-
+  --color-hover-decoration: #ed6435;
+  
   /* color:#6b6b6b  */
   --color-nav-link-text: #6b6b6b;
 
@@ -50,6 +51,7 @@
   --color-title-footer: #45c1c7;
   --color-icon-background: #45c1c7;
   --color-carousel__arrow: #45c1c7;
+  --color-arrow-direction: #45c1c7;
 
   /* --dark-gray: #9a9898; */
   --color-footer-list-content-text: #9a9898;
@@ -70,7 +72,7 @@
   --color-carousel-any-products: #ffe6d4;
 
   /* --text-color: #f2e8e4;
-  
+
   --misty-rose: #f4e6e2;
   
   --sea-green: #32a1a7; */
@@ -83,6 +85,9 @@
   --color-background-section: #faf4f2;
   --color-text-section-text: #958b7e;
   --color-little-paw: #45c1c7;
+
+  /*  background-img-banner.and.carousel   */
+  --color-background--image: #faebd7;
 }
 
 img {
@@ -94,3 +99,5 @@ img {
   max-width: 1200px;
   margin: auto;
 }
+
+
