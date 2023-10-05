@@ -1,7 +1,3 @@
-// const slides = [
-//     '<div class="carousel_card">' +
-//     '<img class="img__card" src="img/banners.and.carousel/applaws.png" alt="Applaws">' +
-
 const slides = [
         '<div class="carousel_card">' +
         '<img class="img__card" src="img/banners.and.carousel/applaws.png" alt="Applaws">' +
@@ -35,23 +31,19 @@ const slides = [
         slideContainer.innerHTML = '';
     
         if (window.matchMedia('(max-width: 478px)').matches) {
-            // Додати одну карточку при ширині екрану менше 479px
             const index = currentSlide >= slides.length ? currentSlide - slides.length : currentSlide;
             slideContainer.innerHTML = slides[index];
         } else if (window.matchMedia('(max-width: 767px)').matches) {
-            // Додати дві карточки при ширині екрану від 479px до 768px включно
             for (let i = currentSlide; i < currentSlide + 2; i++) {
                 const index = i >= slides.length ? i - slides.length : i;
                 slideContainer.innerHTML += slides[index];
             }
         } else if (window.matchMedia('(max-width: 1023px)').matches) {
-            // Додати три карточки при ширині екрану від 768px до 1023px включно
             for (let i = currentSlide; i < currentSlide + 3; i++) {
                 const index = i >= slides.length ? i - slides.length : i;
                 slideContainer.innerHTML += slides[index];
             }
         } else {
-            // Додати шість карточок при ширині екрану більше 1023px
             for (let i = currentSlide; i < currentSlide + 6; i++) {
                 const index = i >= slides.length ? i - slides.length : i;
                 slideContainer.innerHTML += slides[index];
