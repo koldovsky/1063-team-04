@@ -14,4 +14,5 @@ document.addEventListener("partialsLoaded", async () => {
   await import("./timer-promotion.js");
   await import("./email-form.js");
   await import("./text-decoration-footer.js");
+  await import("./modal-of-order.partial.js");
 });
