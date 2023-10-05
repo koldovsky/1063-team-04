@@ -45,8 +45,6 @@ function renderRecommendProducts() {
       currentCountProduct++;
     }
   }
-
-  console.log(activeButtonIndex);
 }
 renderRecommendProducts();
 
