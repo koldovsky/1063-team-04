@@ -5,8 +5,8 @@
 }
 @media (min-width: 992px) {
   .new-arrivals {
-    padding: 120px 0;
-  }
+      padding: 120px 0;
+ }
 }
 .new-arrivals__container {
   max-width: 1200px;
@@ -31,15 +31,15 @@
 }
 @media (min-width: 768px) {
   .new-arrivals__title {
-    font-size: 44px;
-    line-height: 52.8px;
-  }
+      font-size: 44px;
+      line-height: 52.8px;
+ }
 }
 @media (min-width: 992px) {
   .new-arrivals__title {
-    font-size: 50px;
-    line-height: 60px;
-  }
+      font-size: 50px;
+      line-height: 60px;
+ }
 }
 .new-arrivals__decoration {
   height: 32px;
@@ -77,22 +77,22 @@
 }
 @media (min-width: 768px) {
   .carousel__button--navigation {
-    padding: 5px;
-    width: 32px;
-  }
+      padding: 5px;
+      width: 32px;
+ }
 }
 @media (min-width: 1200px) {
   .carousel__button--navigation {
-    fill: var(--color-p-text);
-    background: none;
-    width: 40px;
-  }
+      fill: var(--color-p-text);
+      background: none;
+      width: 40px;
+ }
   .carousel__button-prev {
-    left: -12px;
-  }
+      left: -12px;
+ }
   .carousel__button-next {
-    right: -12px;
-  }
+      right: -12px;
+ }
 }
 .carousel__card-img {
   max-width: 100%;
@@ -141,7 +141,17 @@
 }
 .carousel__cards {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel__cards.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel__card.dragging img{
+  pointer-events: none;
 }
 .carousel__card {
   flex: 0 0 100%;
@@ -150,11 +160,11 @@
 }
 @media (min-width: 768px) {
   .carousel__card {
-    flex: 0 0 50%;
-  }
+      flex: 0 0 50%;
+ }
 }
 @media (min-width: 992px) {
   .carousel__card {
-    flex: 0 0 25%;
-  }
+      flex: 0 0 25%;
+ }
 }
